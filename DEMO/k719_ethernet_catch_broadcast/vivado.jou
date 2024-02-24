@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Sun May 30 22:02:11 2021
+# Process ID: 7444
+# Current directory: C:/Users/Administrator/Desktop/K7325/R5/k719_ethernet_catch_broadcast
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16164 C:\Users\Administrator\Desktop\K7325\R5\k719_ethernet_catch_broadcast\k719_ethernet_catch_broadcast.xpr
+# Log file: C:/Users/Administrator/Desktop/K7325/R5/k719_ethernet_catch_broadcast/vivado.log
+# Journal file: C:/Users/Administrator/Desktop/K7325/R5/k719_ethernet_catch_broadcast\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Administrator/Desktop/K7325/R5/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.xpr
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+place_ports {gmii_rxd1[3]} AB1
+save_constraints
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1

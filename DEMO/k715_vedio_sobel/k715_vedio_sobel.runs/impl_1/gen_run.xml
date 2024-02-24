@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7k325tffg676-2" LaunchTime="1621434556">
+  <File Type="BITSTR-BMM" Name="vedio_sobel_bd.bmm"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="vedio_sobel_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="vedio_sobel_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR" Name="vedio_sobel_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="vedio_sobel.tcl"/>
+  <File Type="OPT-TIMING" Name="vedio_sobel_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="vedio_sobel_opt.dcp"/>
+  <File Type="ROUTE-PWR-SUM" Name="vedio_sobel_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="vedio_sobel_reports.tcl"/>
+  <File Type="OPT-DRC" Name="vedio_sobel_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="vedio_sobel.hwdef"/>
+  <File Type="PWROPT-DCP" Name="vedio_sobel_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="vedio_sobel_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="vedio_sobel_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="vedio_sobel_placed.dcp"/>
+  <File Type="PLACE-IO" Name="vedio_sobel_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="vedio_sobel_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="vedio_sobel_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="vedio_sobel_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="vedio_sobel_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="vedio_sobel_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="vedio_sobel_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="vedio_sobel_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="vedio_sobel_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="vedio_sobel.bin"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="vedio_sobel_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="vedio_sobel_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="vedio_sobel_drc_physopted.rpt"/>
+  <File Type="BITSTR-MSK" Name="vedio_sobel.msk"/>
+  <File Type="PHYSOPT-TIMING" Name="vedio_sobel_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="vedio_sobel_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="vedio_sobel_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="vedio_sobel_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="vedio_sobel_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="vedio_sobel_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="vedio_sobel_drc_routed.rpx"/>
+  <File Type="BITSTR-MMI" Name="vedio_sobel.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="vedio_sobel_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="vedio_sobel_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="vedio_sobel_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="vedio_sobel_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="vedio_sobel_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="vedio_sobel_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="vedio_sobel_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="vedio_sobel_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="vedio_sobel_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="vedio_sobel_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="vedio_sobel_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="vedio_sobel_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="vedio_sobel_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="vedio_sobel_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="vedio_sobel_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="vedio_sobel_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="vedio_sobel_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="vedio_sobel_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="vedio_sobel_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="vedio_sobel_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="vedio_sobel_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="vedio_sobel.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="vedio_sobel_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-RBT" Name="vedio_sobel.rbt"/>
+  <File Type="BITSTR-NKY" Name="vedio_sobel.nky"/>
+  <File Type="PDI-FILE" Name="vedio_sobel.pdi"/>
+  <File Type="RCFI_FILE" Name="vedio_sobel.rcfi"/>
+  <File Type="CFI_FILE" Name="vedio_sobel.cfi"/>
+  <File Type="RNPI_FILE" Name="vedio_sobel.rnpi"/>
+  <File Type="NPI_FILE" Name="vedio_sobel.npi"/>
+  <File Type="RBD_FILE" Name="vedio_sobel.rbd"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="vedio_sobel.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="vedio_sobel.sysdef"/>
+  <File Type="BG-BGN" Name="vedio_sobel.bgn"/>
+  <File Type="BG-DRC" Name="vedio_sobel.drc"/>
+  <File Type="RDI-RDI" Name="vedio_sobel.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/ip/fifo_generator_0/fifo_generator_0.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/rgb2dvi_0/rgb2dvi_0.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/clk_wiz_0/clk_wiz_0.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/i2c_driver.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/image_sobel_process.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/ov5640_capture.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/ov5640_reg_config.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/power_on_reset.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/vga_driver.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/vga_sync.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/vedio_sobel.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="vedio_sobel"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/vedio_sobel.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/new/vedio_sobel.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design" EnableStepBool="1"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

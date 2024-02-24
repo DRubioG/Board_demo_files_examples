@@ -1,0 +1,11 @@
+===================================
+Configuration Memory information
+===================================
+File Format        MCS
+Interface          SPIX4
+Size               32M
+Start Address      0x00000000
+End Address        0x01FFFFFF
+
+Addr1         Addr2         Date                    File(s)
+0x00000000    0x000DE57B    Jun 27 16:22:32 2021    C:/Users/Administrator/Desktop/k701_led_stream/k701_led_stream.runs/impl_1/led_stream.bit

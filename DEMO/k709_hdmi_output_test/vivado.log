@@ -1,0 +1,189 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Wed May 19 22:21:43 2021
+# Process ID: 15552
+# Current directory: C:/Users/Administrator/Desktop/K7325/R5/k709_hdmi_output_test
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17812 C:\Users\Administrator\Desktop\K7325\R5\k709_hdmi_output_test\k709_hdmi_output_test.xpr
+# Log file: C:/Users/Administrator/Desktop/K7325/R5/k709_hdmi_output_test/vivado.log
+# Journal file: C:/Users/Administrator/Desktop/K7325/R5/k709_hdmi_output_test\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Administrator/Desktop/K7325/R5/k709_hdmi_output_test/k709_hdmi_output_test.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/Administrator/Desktop/K7325/DEMO/k709_hdmi_output_test' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Administrator/Desktop/K7325/R5/k709_hdmi_output_test/tmds_ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
+open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:09 . Memory (MB): peak = 898.535 ; gain = 236.516
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7k325tffg676-2
+Top: hdmi_encoder_top
+INFO: [Device 21-403] Loading part xc7k325tffg676-2
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1504.105 ; gain = 218.902
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'hdmi_encoder_top' [C:/Users/Administrator/Desktop/K7325/R5/k709_hdmi_output_test/k709_hdmi_output_test.srcs/sources_1/new/hdmi_encoder_top.v:1]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/Administrator/Desktop/K7325/R5/k709_hdmi_output_test/k709_hdmi_output_test.srcs/sources_1/new/hdmi_encoder_top.v:31]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/Administrator/Desktop/K7325/R5/k709_hdmi_output_test/k709_hdmi_output_test.srcs/sources_1/new/hdmi_encoder_top.v:32]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/Administrator/Desktop/K7325/R5/k709_hdmi_output_test/k709_hdmi_output_test.srcs/sources_1/new/hdmi_encoder_top.v:33]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/Administrator/Desktop/K7325/R5/k709_hdmi_output_test/k709_hdmi_output_test.srcs/sources_1/new/hdmi_encoder_top.v:34]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/Administrator/Desktop/K7325/R5/k709_hdmi_output_test/k709_hdmi_output_test.srcs/sources_1/new/hdmi_encoder_top.v:35]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/Administrator/Desktop/K7325/R5/k709_hdmi_output_test/k709_hdmi_output_test.srcs/sources_1/new/hdmi_encoder_top.v:36]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/Administrator/Desktop/K7325/R5/k709_hdmi_output_test/k709_hdmi_output_test.srcs/sources_1/new/hdmi_encoder_top.v:73]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/Administrator/Desktop/K7325/R5/k709_hdmi_output_test/k709_hdmi_output_test.srcs/sources_1/new/hdmi_encoder_top.v:74]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/Administrator/Desktop/K7325/R5/k709_hdmi_output_test/k709_hdmi_output_test.srcs/sources_1/new/hdmi_encoder_top.v:75]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [C:/Users/Administrator/Desktop/K7325/R5/k709_hdmi_output_test/.Xil/Vivado-15552-FXTVWR85EI30285/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (1#1) [C:/Users/Administrator/Desktop/K7325/R5/k709_hdmi_output_test/.Xil/Vivado-15552-FXTVWR85EI30285/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'rgb2dvi_0' [C:/Users/Administrator/Desktop/K7325/R5/k709_hdmi_output_test/.Xil/Vivado-15552-FXTVWR85EI30285/realtime/rgb2dvi_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'rgb2dvi_0' (2#1) [C:/Users/Administrator/Desktop/K7325/R5/k709_hdmi_output_test/.Xil/Vivado-15552-FXTVWR85EI30285/realtime/rgb2dvi_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'vga_driver' [C:/Users/Administrator/Desktop/K7325/R5/k709_hdmi_output_test/k709_hdmi_output_test.srcs/sources_1/new/vga_driver.v:1]
+INFO: [Synth 8-6157] synthesizing module 'vga_sync' [C:/Users/Administrator/Desktop/K7325/R5/k709_hdmi_output_test/k709_hdmi_output_test.srcs/sources_1/new/vga_sync.v:1]
+	Parameter H_FRONT_PROCH bound to: 88 - type: integer 
+	Parameter H_SYNC_TIME bound to: 44 - type: integer 
+	Parameter H_BACK_PROCH bound to: 148 - type: integer 
+	Parameter H_ADDR_TIME bound to: 1920 - type: integer 
+	Parameter H_TIME_TOTAL bound to: 2200 - type: integer 
+	Parameter H_ADDR_START_PIX bound to: 132 - type: integer 
+	Parameter H_ADDR_END_PIX bound to: 2052 - type: integer 
+	Parameter V_FRONT_PROCH bound to: 4 - type: integer 
+	Parameter V_SYNC_TIME bound to: 5 - type: integer 
+	Parameter V_BACK_PROCH bound to: 36 - type: integer 
+	Parameter V_ADDR_TIME bound to: 1080 - type: integer 
+	Parameter V_TIME_TOTAL bound to: 1125 - type: integer 
+	Parameter V_ADDR_START_PIX bound to: 9 - type: integer 
+	Parameter V_ADDR_END_PIX bound to: 1089 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'vga_sync' (3#1) [C:/Users/Administrator/Desktop/K7325/R5/k709_hdmi_output_test/k709_hdmi_output_test.srcs/sources_1/new/vga_sync.v:1]
+INFO: [Synth 8-6157] synthesizing module 'color_generate' [C:/Users/Administrator/Desktop/K7325/R5/k709_hdmi_output_test/k709_hdmi_output_test.srcs/sources_1/new/color_generate.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'color_generate' (4#1) [C:/Users/Administrator/Desktop/K7325/R5/k709_hdmi_output_test/k709_hdmi_output_test.srcs/sources_1/new/color_generate.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'vga_driver' (5#1) [C:/Users/Administrator/Desktop/K7325/R5/k709_hdmi_output_test/k709_hdmi_output_test.srcs/sources_1/new/vga_driver.v:1]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'vga_driver_inst'. This will prevent further optimization [C:/Users/Administrator/Desktop/K7325/R5/k709_hdmi_output_test/k709_hdmi_output_test.srcs/sources_1/new/hdmi_encoder_top.v:77]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'rgb2dvi_0_inst2'. This will prevent further optimization [C:/Users/Administrator/Desktop/K7325/R5/k709_hdmi_output_test/k709_hdmi_output_test.srcs/sources_1/new/hdmi_encoder_top.v:55]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'rgb2dvi_0_inst1'. This will prevent further optimization [C:/Users/Administrator/Desktop/K7325/R5/k709_hdmi_output_test/k709_hdmi_output_test.srcs/sources_1/new/hdmi_encoder_top.v:39]
+INFO: [Synth 8-6155] done synthesizing module 'hdmi_encoder_top' (6#1) [C:/Users/Administrator/Desktop/K7325/R5/k709_hdmi_output_test/k709_hdmi_output_test.srcs/sources_1/new/hdmi_encoder_top.v:1]
+WARNING: [Synth 8-3917] design hdmi_encoder_top has port HDMI_OUT_EN1 driven by constant 1
+WARNING: [Synth 8-3917] design hdmi_encoder_top has port HDMI_OUT_EN2 driven by constant 1
+WARNING: [Synth 8-3331] design color_generate has unconnected port col_addr[10]
+WARNING: [Synth 8-3331] design color_generate has unconnected port col_addr[9]
+WARNING: [Synth 8-3331] design color_generate has unconnected port col_addr[8]
+WARNING: [Synth 8-3331] design color_generate has unconnected port row_addr[10]
+WARNING: [Synth 8-3331] design color_generate has unconnected port row_addr[9]
+WARNING: [Synth 8-3331] design color_generate has unconnected port row_addr[8]
+WARNING: [Synth 8-3331] design color_generate has unconnected port ready
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1550.484 ; gain = 265.281
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1550.484 ; gain = 265.281
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1550.484 ; gain = 265.281
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Administrator/Desktop/K7325/R5/k709_hdmi_output_test/k709_hdmi_output_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.dcp' for cell 'clk_wiz_0_inst'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Administrator/Desktop/K7325/R5/k709_hdmi_output_test/k709_hdmi_output_test.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0.dcp' for cell 'rgb2dvi_0_inst1'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1550.484 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 9 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 2 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/Administrator/Desktop/K7325/R5/k709_hdmi_output_test/k709_hdmi_output_test.srcs/sources_1/ip/rgb2dvi_0/src/rgb2dvi.xdc] for cell 'rgb2dvi_0_inst1/U0'
+Finished Parsing XDC File [c:/Users/Administrator/Desktop/K7325/R5/k709_hdmi_output_test/k709_hdmi_output_test.srcs/sources_1/ip/rgb2dvi_0/src/rgb2dvi.xdc] for cell 'rgb2dvi_0_inst1/U0'
+Parsing XDC File [c:/Users/Administrator/Desktop/K7325/R5/k709_hdmi_output_test/k709_hdmi_output_test.srcs/sources_1/ip/rgb2dvi_0/src/rgb2dvi.xdc] for cell 'rgb2dvi_0_inst2/U0'
+Finished Parsing XDC File [c:/Users/Administrator/Desktop/K7325/R5/k709_hdmi_output_test/k709_hdmi_output_test.srcs/sources_1/ip/rgb2dvi_0/src/rgb2dvi.xdc] for cell 'rgb2dvi_0_inst2/U0'
+Parsing XDC File [c:/Users/Administrator/Desktop/K7325/R5/k709_hdmi_output_test/k709_hdmi_output_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'clk_wiz_0_inst/inst'
+Finished Parsing XDC File [c:/Users/Administrator/Desktop/K7325/R5/k709_hdmi_output_test/k709_hdmi_output_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'clk_wiz_0_inst/inst'
+Parsing XDC File [c:/Users/Administrator/Desktop/K7325/R5/k709_hdmi_output_test/k709_hdmi_output_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'clk_wiz_0_inst/inst'
+Finished Parsing XDC File [c:/Users/Administrator/Desktop/K7325/R5/k709_hdmi_output_test/k709_hdmi_output_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'clk_wiz_0_inst/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/Administrator/Desktop/K7325/R5/k709_hdmi_output_test/k709_hdmi_output_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/hdmi_encoder_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/hdmi_encoder_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [C:/Users/Administrator/Desktop/K7325/R5/k709_hdmi_output_test/k709_hdmi_output_test.srcs/constrs_1/new/hdmi_output_test.xdc]
+Finished Parsing XDC File [C:/Users/Administrator/Desktop/K7325/R5/k709_hdmi_output_test/k709_hdmi_output_test.srcs/constrs_1/new/hdmi_output_test.xdc]
+Parsing XDC File [c:/Users/Administrator/Desktop/K7325/R5/k709_hdmi_output_test/k709_hdmi_output_test.srcs/sources_1/ip/rgb2dvi_0/src/rgb2dvi_clocks.xdc] for cell 'rgb2dvi_0_inst1/U0'
+Finished Parsing XDC File [c:/Users/Administrator/Desktop/K7325/R5/k709_hdmi_output_test/k709_hdmi_output_test.srcs/sources_1/ip/rgb2dvi_0/src/rgb2dvi_clocks.xdc] for cell 'rgb2dvi_0_inst1/U0'
+Parsing XDC File [c:/Users/Administrator/Desktop/K7325/R5/k709_hdmi_output_test/k709_hdmi_output_test.srcs/sources_1/ip/rgb2dvi_0/src/rgb2dvi_clocks.xdc] for cell 'rgb2dvi_0_inst2/U0'
+Finished Parsing XDC File [c:/Users/Administrator/Desktop/K7325/R5/k709_hdmi_output_test/k709_hdmi_output_test.srcs/sources_1/ip/rgb2dvi_0/src/rgb2dvi_clocks.xdc] for cell 'rgb2dvi_0_inst2/U0'
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1688.277 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:16 ; elapsed = 00:00:11 . Memory (MB): peak = 1741.074 ; gain = 455.871
+37 Infos, 9 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:16 . Memory (MB): peak = 1741.074 ; gain = 607.777
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.2
+  **** Build date : Nov  6 2019 at 22:12:23
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+****** Xilinx cs_server v2019.2.0
+  **** Build date : Nov 07 2019-13:28:22
+    ** Copyright 2017-2019 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1742.723 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210251A08870
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210251A08870.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Common 17-39] 'open_hw_target' failed due to earlier errors.
+set_property PROBES.FILE {} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k325t_0]
+set_property PROGRAM.FILE {C:/Users/Administrator/Desktop/K7325/R5/k709_hdmi_output_test/k709_hdmi_output_test.runs/impl_1/hdmi_encoder_top.bit} [get_hw_devices xc7k325t_0]
+program_hw_devices [get_hw_devices xc7k325t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 3047.313 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k325t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+place_ports TMDS_CLK_P1 Y22
+save_constraints
+reset_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Wed May 19 22:24:23 2021] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/K7325/R5/k709_hdmi_output_test/k709_hdmi_output_test.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k325t_0]
+set_property PROGRAM.FILE {C:/Users/Administrator/Desktop/K7325/R5/k709_hdmi_output_test/k709_hdmi_output_test.runs/impl_1/hdmi_encoder_top.bit} [get_hw_devices xc7k325t_0]
+program_hw_devices [get_hw_devices xc7k325t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 3077.555 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k325t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed May 19 22:27:55 2021...

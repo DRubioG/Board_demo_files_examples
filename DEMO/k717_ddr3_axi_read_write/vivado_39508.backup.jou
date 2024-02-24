@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue May 26 20:10:44 2020
+# Process ID: 39508
+# Current directory: C:/Users/Administrator/Desktop/K7325/DEMO/k717_ddr3_axi_read_write
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent28752 C:\Users\Administrator\Desktop\K7325\DEMO\k717_ddr3_axi_read_write\k717_ddr3_axi_read_write.xpr
+# Log file: C:/Users/Administrator/Desktop/K7325/DEMO/k717_ddr3_axi_read_write/vivado.log
+# Journal file: C:/Users/Administrator/Desktop/K7325/DEMO/k717_ddr3_axi_read_write\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Administrator/Desktop/K7325/DEMO/k717_ddr3_axi_read_write/k717_ddr3_axi_read_write.xpr
+update_compile_order -fileset sources_1

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="k732_hls_fir_filter_ip.cpp" path="C:\Users\Administrator\Desktop\k732_hls_fir_filter_ip\k732_hls_fir_filter_ip.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="tb_main.cpp" path="C:\Users\Administrator\Desktop\k732_hls_fir_filter_ip\tb_main.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

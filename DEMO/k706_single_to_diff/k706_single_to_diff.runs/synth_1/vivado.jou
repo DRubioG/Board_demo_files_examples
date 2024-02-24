@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Sat Jun 27 16:44:03 2020
+# Process ID: 26496
+# Current directory: C:/Users/Administrator/Desktop/K7325/DEMO/k706_single_to_diff/k706_single_to_diff.runs/synth_1
+# Command line: vivado.exe -log single_to_diff.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source single_to_diff.tcl
+# Log file: C:/Users/Administrator/Desktop/K7325/DEMO/k706_single_to_diff/k706_single_to_diff.runs/synth_1/single_to_diff.vds
+# Journal file: C:/Users/Administrator/Desktop/K7325/DEMO/k706_single_to_diff/k706_single_to_diff.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source single_to_diff.tcl -notrace

@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../axi_simulation_project.srcs/sim_1/imports/Desktop/axi_full_v1.v" \
+"../../../../axi_simulation_project.srcs/sim_1/imports/Desktop/axi_full_v1_M00_AXI.v" \
+"../../../../axi_simulation_project.srcs/sim_1/imports/Desktop/axi_full_v1_S00_AXI.v" \
+"../../../../axi_simulation_project.srcs/sim_1/imports/Desktop/tb_AXI_full.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

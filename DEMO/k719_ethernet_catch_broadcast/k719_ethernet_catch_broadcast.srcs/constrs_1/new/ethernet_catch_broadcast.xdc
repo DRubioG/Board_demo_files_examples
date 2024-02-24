@@ -1,0 +1,88 @@
+set_property IOSTANDARD LVCMOS33 [get_ports {gmii_rxd2[3]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {gmii_rxd2[2]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {gmii_rxd2[1]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {gmii_rxd2[0]}]
+set_property IOSTANDARD LVCMOS18 [get_ports {gmii_rxd1[3]}]
+set_property IOSTANDARD LVCMOS18 [get_ports {gmii_rxd1[2]}]
+set_property IOSTANDARD LVCMOS18 [get_ports {gmii_rxd1[1]}]
+set_property IOSTANDARD LVCMOS18 [get_ports {gmii_rxd1[0]}]
+set_property PACKAGE_PIN AE2 [get_ports {gmii_rxd1[0]}]
+set_property PACKAGE_PIN AE1 [get_ports {gmii_rxd1[1]}]
+set_property PACKAGE_PIN AC1 [get_ports {gmii_rxd1[2]}]
+set_property PACKAGE_PIN AB1 [get_ports {gmii_rxd1[3]}]
+set_property PACKAGE_PIN AB2 [get_ports gmii_rx_clk1]
+set_property PACKAGE_PIN AF3 [get_ports gmii_rx_dv1]
+
+set_property PACKAGE_PIN H26 [get_ports rstn]
+set_property PACKAGE_PIN V26 [get_ports {gmii_rxd2[0]}]
+set_property PACKAGE_PIN V21 [get_ports {gmii_rxd2[1]}]
+set_property PACKAGE_PIN U24 [get_ports {gmii_rxd2[2]}]
+set_property PACKAGE_PIN U25 [get_ports {gmii_rxd2[3]}]
+set_property PACKAGE_PIN AA23 [get_ports gmii_rx_clk2]
+set_property PACKAGE_PIN U26 [get_ports gmii_rx_dv2]
+
+connect_debug_port u_ila_0/clk [get_nets [list gmii_rx_clk1_IBUF]]
+connect_debug_port u_ila_0/probe0 [get_nets [list {gmii_rxd1_IBUF[0]} {gmii_rxd1_IBUF[1]} {gmii_rxd1_IBUF[2]} {gmii_rxd1_IBUF[3]}]]
+connect_debug_port u_ila_0/probe1 [get_nets [list gmii_rx_clk1_IBUF]]
+connect_debug_port u_ila_0/probe2 [get_nets [list gmii_rx_dv1]]
+connect_debug_port dbg_hub/clk [get_nets gmii_rx_clk1_IBUF]
+
+connect_debug_port u_ila_0/clk [get_nets [list clk1]]
+connect_debug_port u_ila_0/probe2 [get_nets [list clk1]]
+connect_debug_port dbg_hub/clk [get_nets clk1]
+
+
+set_property IOSTANDARD LVCMOS33 [get_ports gmii_rx_clk2]
+set_property IOSTANDARD LVCMOS33 [get_ports gmii_rx_dv2]
+set_property IOSTANDARD LVCMOS33 [get_ports rstn]
+set_property IOSTANDARD LVCMOS18 [get_ports gmii_rx_clk1]
+set_property IOSTANDARD LVCMOS18 [get_ports gmii_rx_dv1]
+
+
+create_debug_core u_ila_0 ila
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU_CNT 4 [get_debug_cores u_ila_0]
+set_property C_ADV_TRIGGER true [get_debug_cores u_ila_0]
+set_property C_DATA_DEPTH 4096 [get_debug_cores u_ila_0]
+set_property C_EN_STRG_QUAL true [get_debug_cores u_ila_0]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
+set_property port_width 1 [get_debug_ports u_ila_0/clk]
+connect_debug_port u_ila_0/clk [get_nets [list clk2]]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
+set_property port_width 8 [get_debug_ports u_ila_0/probe0]
+connect_debug_port u_ila_0/probe0 [get_nets [list {rxd_eth1[0]} {rxd_eth1[1]} {rxd_eth1[2]} {rxd_eth1[3]} {rxd_eth1[4]} {rxd_eth1[5]} {rxd_eth1[6]} {rxd_eth1[7]}]]
+create_debug_port u_ila_0 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe1]
+set_property port_width 4 [get_debug_ports u_ila_0/probe1]
+connect_debug_port u_ila_0/probe1 [get_nets [list {rxd1[0]} {rxd1[1]} {rxd1[2]} {rxd1[3]}]]
+create_debug_port u_ila_0 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe2]
+set_property port_width 4 [get_debug_ports u_ila_0/probe2]
+connect_debug_port u_ila_0/probe2 [get_nets [list {rxd2[0]} {rxd2[1]} {rxd2[2]} {rxd2[3]}]]
+create_debug_port u_ila_0 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe3]
+set_property port_width 8 [get_debug_ports u_ila_0/probe3]
+connect_debug_port u_ila_0/probe3 [get_nets [list {rxd_eth2[0]} {rxd_eth2[1]} {rxd_eth2[2]} {rxd_eth2[3]} {rxd_eth2[4]} {rxd_eth2[5]} {rxd_eth2[6]} {rxd_eth2[7]}]]
+create_debug_port u_ila_0 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe4]
+set_property port_width 1 [get_debug_ports u_ila_0/probe4]
+connect_debug_port u_ila_0/probe4 [get_nets [list clk1]]
+create_debug_port u_ila_0 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe5]
+set_property port_width 1 [get_debug_ports u_ila_0/probe5]
+connect_debug_port u_ila_0/probe5 [get_nets [list clk2]]
+create_debug_port u_ila_0 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe6]
+set_property port_width 1 [get_debug_ports u_ila_0/probe6]
+connect_debug_port u_ila_0/probe6 [get_nets [list rxdv1]]
+create_debug_port u_ila_0 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe7]
+set_property port_width 1 [get_debug_ports u_ila_0/probe7]
+connect_debug_port u_ila_0/probe7 [get_nets [list rxdv2]]
+set_property C_CLK_INPUT_FREQ_HZ 300000000 [get_debug_cores dbg_hub]
+set_property C_ENABLE_CLK_DIVIDER false [get_debug_cores dbg_hub]
+set_property C_USER_SCAN_CHAIN 1 [get_debug_cores dbg_hub]
+connect_debug_port dbg_hub/clk [get_nets clk2]
+

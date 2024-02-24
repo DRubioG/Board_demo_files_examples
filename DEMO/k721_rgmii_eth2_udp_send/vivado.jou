@@ -1,0 +1,218 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Wed Jun  2 18:00:54 2021
+# Process ID: 9120
+# Current directory: C:/Users/Administrator/Desktop/ETH1_BACK/k720_rgmii_eth2_udp_send
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3688 C:\Users\Administrator\Desktop\ETH1_BACK\k720_rgmii_eth2_udp_send\eth_test.xpr
+# Log file: C:/Users/Administrator/Desktop/ETH1_BACK/k720_rgmii_eth2_udp_send/vivado.log
+# Journal file: C:/Users/Administrator/Desktop/ETH1_BACK/k720_rgmii_eth2_udp_send\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Administrator/Desktop/ETH1_BACK/k720_rgmii_eth2_udp_send/eth_test.xpr
+update_compile_order -fileset sources_1
+open_hw_manager
+synth_design -rtl -name rtl_1
+refresh_design
+set_property IOSTANDARD LVCMOS33 [get_ports [list clk]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list rgmii_rxc1]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list rgmii_rxctl1]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list rgmii_txc1]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list rgmii_txctl1]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list rstn]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {rgmii_txd1[3]} {rgmii_txd1[2]} {rgmii_txd1[1]} {rgmii_txd1[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {rgmii_rxd1[3]} {rgmii_rxd1[2]} {rgmii_rxd1[1]} {rgmii_rxd1[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {led[7]} {led[6]} {led[5]} {led[4]} {led[3]} {led[2]} {led[1]} {led[0]}]]
+save_constraints
+refresh_design
+refresh_design
+refresh_design
+set_property IOSTANDARD LVCMOS33 [get_ports [list rgmii_rxc1]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list rgmii_rxctl1]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list rgmii_txc1]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list rgmii_txctl1]]
+save_constraints
+set_property IOSTANDARD LVCMOS33 [get_ports [list {rgmii_rxd1[3]} {rgmii_rxd1[2]} {rgmii_rxd1[1]} {rgmii_rxd1[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {rgmii_txd1[3]} {rgmii_txd1[2]} {rgmii_txd1[1]} {rgmii_txd1[0]}]]
+save_constraints
+place_ports rgmii_rxc1 AA23
+place_ports rgmii_rxctl1 U26
+place_ports rgmii_txc1 W23
+place_ports rgmii_txc1 AB24
+place_ports rgmii_txctl1 W23
+save_constraints
+place_ports {rgmii_txd1[0]} V22
+place_ports {rgmii_txd1[1]} W26
+place_ports {rgmii_txd1[2]} W25
+place_ports {rgmii_txd1[3]} W21
+save_constraints
+place_ports {rgmii_rxd1[0]} V26
+place_ports {rgmii_rxd1[1]} V21
+place_ports {rgmii_rxd1[2]} U24
+place_ports {rgmii_rxd1[3]} U25
+save_constraints
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/Administrator/Desktop/ETH1_BACK/k720_rgmii_eth2_udp_send/eth_test.runs/impl_1/ethernet_top.bit} [get_hw_devices xc7k325t_0]
+current_hw_device [get_hw_devices xc7k325t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7k325t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k325t_0]
+set_property PROGRAM.FILE {C:/Users/Administrator/Desktop/ETH1_BACK/k720_rgmii_eth2_udp_send/eth_test.runs/impl_1/ethernet_top.bit} [get_hw_devices xc7k325t_0]
+program_hw_devices [get_hw_devices xc7k325t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+close_hw_manager
+open_run synth_1 -name synth_1
+create_debug_core u_ila_0 ila
+set_property C_DATA_DEPTH 2048 [get_debug_cores u_ila_0]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_0]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]
+startgroup 
+set_property C_EN_STRG_QUAL true [get_debug_cores u_ila_0 ]
+set_property C_ADV_TRIGGER true [get_debug_cores u_ila_0 ]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0 ]
+set_property ALL_PROBE_SAME_MU_CNT 4 [get_debug_cores u_ila_0 ]
+endgroup
+connect_debug_port u_ila_0/clk [get_nets [list u1/util_gmii_to_rgmii_m0/gmii_tx_clk ]]
+set_property port_width 8 [get_debug_ports u_ila_0/probe0]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
+connect_debug_port u_ila_0/probe0 [get_nets [list {u1/gmii_rxd[0]} {u1/gmii_rxd[1]} {u1/gmii_rxd[2]} {u1/gmii_rxd[3]} {u1/gmii_rxd[4]} {u1/gmii_rxd[5]} {u1/gmii_rxd[6]} {u1/gmii_rxd[7]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 8 [get_debug_ports u_ila_0/probe1]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe1]
+connect_debug_port u_ila_0/probe1 [get_nets [list {u1/gmii_txd[0]} {u1/gmii_txd[1]} {u1/gmii_txd[2]} {u1/gmii_txd[3]} {u1/gmii_txd[4]} {u1/gmii_txd[5]} {u1/gmii_txd[6]} {u1/gmii_txd[7]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 32 [get_debug_ports u_ila_0/probe2]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe2]
+connect_debug_port u_ila_0/probe2 [get_nets [list {u1/pack_total_len[0]} {u1/pack_total_len[1]} {u1/pack_total_len[2]} {u1/pack_total_len[3]} {u1/pack_total_len[4]} {u1/pack_total_len[5]} {u1/pack_total_len[6]} {u1/pack_total_len[7]} {u1/pack_total_len[8]} {u1/pack_total_len[9]} {u1/pack_total_len[10]} {u1/pack_total_len[11]} {u1/pack_total_len[12]} {u1/pack_total_len[13]} {u1/pack_total_len[14]} {u1/pack_total_len[15]} {u1/pack_total_len[16]} {u1/pack_total_len[17]} {u1/pack_total_len[18]} {u1/pack_total_len[19]} {u1/pack_total_len[20]} {u1/pack_total_len[21]} {u1/pack_total_len[22]} {u1/pack_total_len[23]} {u1/pack_total_len[24]} {u1/pack_total_len[25]} {u1/pack_total_len[26]} {u1/pack_total_len[27]} {u1/pack_total_len[28]} {u1/pack_total_len[29]} {u1/pack_total_len[30]} {u1/pack_total_len[31]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 2 [get_debug_ports u_ila_0/probe3]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe3]
+connect_debug_port u_ila_0/probe3 [get_nets [list {u1/speed[0]} {u1/speed[1]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe4]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe4]
+connect_debug_port u_ila_0/probe4 [get_nets [list u1/gmii_rx_clk ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe5]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe5]
+connect_debug_port u_ila_0/probe5 [get_nets [list u1/gmii_rx_dv ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe6]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe6]
+connect_debug_port u_ila_0/probe6 [get_nets [list u1/gmii_rx_er ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe7]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe7]
+connect_debug_port u_ila_0/probe7 [get_nets [list u1/gmii_tx_clk ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe8]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe8]
+connect_debug_port u_ila_0/probe8 [get_nets [list u1/gmii_tx_en ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe9]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe9]
+connect_debug_port u_ila_0/probe9 [get_nets [list u1/gmii_tx_er ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe10]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe10]
+connect_debug_port u_ila_0/probe10 [get_nets [list u1/link ]]
+save_constraints
+reset_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+delete_debug_core [get_debug_cores {u_ila_0 }]
+create_debug_core u_ila_0 ila
+set_property C_DATA_DEPTH 2048 [get_debug_cores u_ila_0]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_0]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]
+startgroup 
+set_property C_EN_STRG_QUAL true [get_debug_cores u_ila_0 ]
+set_property C_ADV_TRIGGER true [get_debug_cores u_ila_0 ]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0 ]
+set_property ALL_PROBE_SAME_MU_CNT 4 [get_debug_cores u_ila_0 ]
+endgroup
+connect_debug_port u_ila_0/clk [get_nets [list u1/util_gmii_to_rgmii_m0/gmii_tx_clk ]]
+set_property port_width 8 [get_debug_ports u_ila_0/probe0]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
+connect_debug_port u_ila_0/probe0 [get_nets [list {u1/gmii_rxd[0]} {u1/gmii_rxd[1]} {u1/gmii_rxd[2]} {u1/gmii_rxd[3]} {u1/gmii_rxd[4]} {u1/gmii_rxd[5]} {u1/gmii_rxd[6]} {u1/gmii_rxd[7]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 8 [get_debug_ports u_ila_0/probe1]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe1]
+connect_debug_port u_ila_0/probe1 [get_nets [list {u1/gmii_txd[0]} {u1/gmii_txd[1]} {u1/gmii_txd[2]} {u1/gmii_txd[3]} {u1/gmii_txd[4]} {u1/gmii_txd[5]} {u1/gmii_txd[6]} {u1/gmii_txd[7]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 32 [get_debug_ports u_ila_0/probe2]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe2]
+connect_debug_port u_ila_0/probe2 [get_nets [list {u1/pack_total_len[0]} {u1/pack_total_len[1]} {u1/pack_total_len[2]} {u1/pack_total_len[3]} {u1/pack_total_len[4]} {u1/pack_total_len[5]} {u1/pack_total_len[6]} {u1/pack_total_len[7]} {u1/pack_total_len[8]} {u1/pack_total_len[9]} {u1/pack_total_len[10]} {u1/pack_total_len[11]} {u1/pack_total_len[12]} {u1/pack_total_len[13]} {u1/pack_total_len[14]} {u1/pack_total_len[15]} {u1/pack_total_len[16]} {u1/pack_total_len[17]} {u1/pack_total_len[18]} {u1/pack_total_len[19]} {u1/pack_total_len[20]} {u1/pack_total_len[21]} {u1/pack_total_len[22]} {u1/pack_total_len[23]} {u1/pack_total_len[24]} {u1/pack_total_len[25]} {u1/pack_total_len[26]} {u1/pack_total_len[27]} {u1/pack_total_len[28]} {u1/pack_total_len[29]} {u1/pack_total_len[30]} {u1/pack_total_len[31]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 2 [get_debug_ports u_ila_0/probe3]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe3]
+connect_debug_port u_ila_0/probe3 [get_nets [list {u1/speed[0]} {u1/speed[1]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe4]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe4]
+connect_debug_port u_ila_0/probe4 [get_nets [list u1/gmii_rx_clk ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe5]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe5]
+connect_debug_port u_ila_0/probe5 [get_nets [list u1/gmii_rx_dv ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe6]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe6]
+connect_debug_port u_ila_0/probe6 [get_nets [list u1/gmii_rx_er ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe7]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe7]
+connect_debug_port u_ila_0/probe7 [get_nets [list u1/gmii_tx_clk ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe8]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe8]
+connect_debug_port u_ila_0/probe8 [get_nets [list u1/gmii_tx_en ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe9]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe9]
+connect_debug_port u_ila_0/probe9 [get_nets [list u1/gmii_tx_er ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe10]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe10]
+connect_debug_port u_ila_0/probe10 [get_nets [list u1/link ]]
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/Administrator/Desktop/ETH1_BACK/k720_rgmii_eth2_udp_send/eth_test.runs/impl_1/ethernet_top.bit} [get_hw_devices xc7k325t_0]
+set_property PROBES.FILE {C:/Users/Administrator/Desktop/ETH1_BACK/k720_rgmii_eth2_udp_send/eth_test.runs/impl_1/ethernet_top.ltx} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {C:/Users/Administrator/Desktop/ETH1_BACK/k720_rgmii_eth2_udp_send/eth_test.runs/impl_1/ethernet_top.ltx} [get_hw_devices xc7k325t_0]
+current_hw_device [get_hw_devices xc7k325t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+set_property PROBES.FILE {C:/Users/Administrator/Desktop/ETH1_BACK/k720_rgmii_eth2_udp_send/eth_test.runs/impl_1/ethernet_top.ltx} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {C:/Users/Administrator/Desktop/ETH1_BACK/k720_rgmii_eth2_udp_send/eth_test.runs/impl_1/ethernet_top.ltx} [get_hw_devices xc7k325t_0]
+set_property PROGRAM.FILE {C:/Users/Administrator/Desktop/ETH1_BACK/k720_rgmii_eth2_udp_send/eth_test.runs/impl_1/ethernet_top.bit} [get_hw_devices xc7k325t_0]
+program_hw_devices [get_hw_devices xc7k325t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+add_wave -into {hw_ila_data_1.wcfg} -radix hex { {u1/gmii_rx_clk} {u1/gmii_rx_dv} {u1/gmii_rx_er} {u1/gmii_rxd} {u1/gmii_tx_clk} {u1/gmii_tx_en} {u1/gmii_tx_er} {u1/gmii_txd} {u1/link} {u1/pack_total_len} {u1/speed} }
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'bX [get_hw_probes u1/gmii_rx_dv -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'bR [get_hw_probes u1/gmii_tx_en -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+save_constraints
+save_wave_config {C:/Users/Administrator/Desktop/ETH1_BACK/k720_rgmii_eth2_udp_send/eth_test.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}

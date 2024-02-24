@@ -1,0 +1,280 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Tue Jul  7 21:43:16 2020
+# Process ID: 17360
+# Current directory: C:/Users/Administrator/Desktop/K7325/K727_PCIE_XDMA
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent21248 C:\Users\Administrator\Desktop\K7325\K727_PCIE_XDMA\K727_PCIE_XDMA.xpr
+# Log file: C:/Users/Administrator/Desktop/K7325/K727_PCIE_XDMA/vivado.log
+# Journal file: C:/Users/Administrator/Desktop/K7325/K727_PCIE_XDMA\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Administrator/Desktop/K7325/K727_PCIE_XDMA/K727_PCIE_XDMA.xpr
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/Administrator/Desktop/K7325/K727_PCIE_XDMA/K727_PCIE_XDMA.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_0/mig_a.prj'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
+open_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:11 . Memory (MB): peak = 983.637 ; gain = 340.629
+update_compile_order -fileset sources_1
+make_wrapper -files [get_files C:/Users/Administrator/Desktop/K7325/K727_PCIE_XDMA/K727_PCIE_XDMA.srcs/sources_1/bd/design_1/design_1.bd] -top
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Tue Jul  7 21:46:33 2020] Launched synth_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/K7325/K727_PCIE_XDMA/K727_PCIE_XDMA.runs/synth_1/runme.log
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/Administrator/Desktop/K7325/K727_PCIE_XDMA/K727_PCIE_XDMA.srcs/sources_1/bd/design_1/design_1.bd]
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7k325tffg676-2
+Top: design_1_wrapper
+INFO: [Device 21-403] Loading part xc7k325tffg676-2
+WARNING: [Synth 8-6901] identifier 'init_calib_complete_0' is used before its declaration [C:/Users/Administrator/Desktop/K7325/K727_PCIE_XDMA/K727_PCIE_XDMA.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v:39]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1649.586 ; gain = 223.918
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_wrapper' [C:/Users/Administrator/Desktop/K7325/K727_PCIE_XDMA/K727_PCIE_XDMA.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'design_1' [C:/Users/Administrator/Desktop/K7325/K727_PCIE_XDMA/K727_PCIE_XDMA.srcs/sources_1/bd/design_1/synth/design_1.v:13]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_smc_3' [C:/Users/Administrator/Desktop/K7325/K727_PCIE_XDMA/.Xil/Vivado-17360-FXTVWR85EI30285/realtime/design_1_axi_smc_3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_smc_3' (1#1) [C:/Users/Administrator/Desktop/K7325/K727_PCIE_XDMA/.Xil/Vivado-17360-FXTVWR85EI30285/realtime/design_1_axi_smc_3_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_clk_wiz_0_1' [C:/Users/Administrator/Desktop/K7325/K727_PCIE_XDMA/.Xil/Vivado-17360-FXTVWR85EI30285/realtime/design_1_clk_wiz_0_1_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_clk_wiz_0_1' (2#1) [C:/Users/Administrator/Desktop/K7325/K727_PCIE_XDMA/.Xil/Vivado-17360-FXTVWR85EI30285/realtime/design_1_clk_wiz_0_1_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'design_1_mig_7series_0_2' [C:/Users/Administrator/Desktop/K7325/K727_PCIE_XDMA/.Xil/Vivado-17360-FXTVWR85EI30285/realtime/design_1_mig_7series_0_2_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_mig_7series_0_2' (3#1) [C:/Users/Administrator/Desktop/K7325/K727_PCIE_XDMA/.Xil/Vivado-17360-FXTVWR85EI30285/realtime/design_1_mig_7series_0_2_stub.v:5]
+WARNING: [Synth 8-7023] instance 'mig_7series_0' of module 'design_1_mig_7series_0_2' has 64 connections declared, but only 58 given [C:/Users/Administrator/Desktop/K7325/K727_PCIE_XDMA/K727_PCIE_XDMA.srcs/sources_1/bd/design_1/synth/design_1.v:262]
+INFO: [Synth 8-6157] synthesizing module 'design_1_rst_mig_7series_0_100M_3' [C:/Users/Administrator/Desktop/K7325/K727_PCIE_XDMA/.Xil/Vivado-17360-FXTVWR85EI30285/realtime/design_1_rst_mig_7series_0_100M_3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_rst_mig_7series_0_100M_3' (4#1) [C:/Users/Administrator/Desktop/K7325/K727_PCIE_XDMA/.Xil/Vivado-17360-FXTVWR85EI30285/realtime/design_1_rst_mig_7series_0_100M_3_stub.v:6]
+WARNING: [Synth 8-7023] instance 'rst_mig_7series_0_100M' of module 'design_1_rst_mig_7series_0_100M_3' has 10 connections declared, but only 6 given [C:/Users/Administrator/Desktop/K7325/K727_PCIE_XDMA/K727_PCIE_XDMA.srcs/sources_1/bd/design_1/synth/design_1.v:321]
+INFO: [Synth 8-6157] synthesizing module 'design_1_util_ds_buf_0_1' [C:/Users/Administrator/Desktop/K7325/K727_PCIE_XDMA/.Xil/Vivado-17360-FXTVWR85EI30285/realtime/design_1_util_ds_buf_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_util_ds_buf_0_1' (5#1) [C:/Users/Administrator/Desktop/K7325/K727_PCIE_XDMA/.Xil/Vivado-17360-FXTVWR85EI30285/realtime/design_1_util_ds_buf_0_1_stub.v:6]
+WARNING: [Synth 8-7023] instance 'util_ds_buf_0' of module 'design_1_util_ds_buf_0_1' has 4 connections declared, but only 3 given [C:/Users/Administrator/Desktop/K7325/K727_PCIE_XDMA/K727_PCIE_XDMA.srcs/sources_1/bd/design_1/synth/design_1.v:328]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xdma_0_0' [C:/Users/Administrator/Desktop/K7325/K727_PCIE_XDMA/.Xil/Vivado-17360-FXTVWR85EI30285/realtime/design_1_xdma_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xdma_0_0' (6#1) [C:/Users/Administrator/Desktop/K7325/K727_PCIE_XDMA/.Xil/Vivado-17360-FXTVWR85EI30285/realtime/design_1_xdma_0_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'xdma_0' of module 'design_1_xdma_0_0' has 56 connections declared, but only 50 given [C:/Users/Administrator/Desktop/K7325/K727_PCIE_XDMA/K727_PCIE_XDMA.srcs/sources_1/bd/design_1/synth/design_1.v:332]
+INFO: [Synth 8-6155] done synthesizing module 'design_1' (7#1) [C:/Users/Administrator/Desktop/K7325/K727_PCIE_XDMA/K727_PCIE_XDMA.srcs/sources_1/bd/design_1/synth/design_1.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_wrapper' (8#1) [C:/Users/Administrator/Desktop/K7325/K727_PCIE_XDMA/K727_PCIE_XDMA.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
+WARNING: [Synth 8-3917] design design_1_wrapper has port led[7] driven by constant 0
+WARNING: [Synth 8-3917] design design_1_wrapper has port led[6] driven by constant 0
+WARNING: [Synth 8-3917] design design_1_wrapper has port led[5] driven by constant 0
+WARNING: [Synth 8-3917] design design_1_wrapper has port led[4] driven by constant 0
+WARNING: [Synth 8-3917] design design_1_wrapper has port led[3] driven by constant 0
+WARNING: [Synth 8-3917] design design_1_wrapper has port led[2] driven by constant 0
+WARNING: [Synth 8-3917] design design_1_wrapper has port led[1] driven by constant 0
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1702.219 ; gain = 276.551
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1702.219 ; gain = 276.551
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1702.219 ; gain = 276.551
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Administrator/Desktop/K7325/K727_PCIE_XDMA/K727_PCIE_XDMA.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_3/design_1_axi_smc_3.dcp' for cell 'design_1_i/axi_smc'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Administrator/Desktop/K7325/K727_PCIE_XDMA/K727_PCIE_XDMA.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_1/design_1_clk_wiz_0_1.dcp' for cell 'design_1_i/clk_wiz_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Administrator/Desktop/K7325/K727_PCIE_XDMA/K727_PCIE_XDMA.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_2/design_1_mig_7series_0_2.dcp' for cell 'design_1_i/mig_7series_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Administrator/Desktop/K7325/K727_PCIE_XDMA/K727_PCIE_XDMA.srcs/sources_1/bd/design_1/ip/design_1_rst_mig_7series_0_100M_3/design_1_rst_mig_7series_0_100M_3.dcp' for cell 'design_1_i/rst_mig_7series_0_100M'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Administrator/Desktop/K7325/K727_PCIE_XDMA/K727_PCIE_XDMA.srcs/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1.dcp' for cell 'design_1_i/util_ds_buf_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Administrator/Desktop/K7325/K727_PCIE_XDMA/K727_PCIE_XDMA.srcs/sources_1/bd/design_1/ip/design_1_xdma_0_0/design_1_xdma_0_0.dcp' for cell 'design_1_i/xdma_0'
+Netlist sorting complete. Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1748.258 ; gain = 7.238
+INFO: [Netlist 29-17] Analyzing 2035 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 9 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 16 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/Administrator/Desktop/K7325/K727_PCIE_XDMA/K727_PCIE_XDMA.srcs/sources_1/bd/design_1/ip/design_1_xdma_0_0/ip_4/pcie2_fifo_generator_tgt_brdg.xdc] for cell 'design_1_i/xdma_0/inst/design_1_xdma_0_0_pcie2_to_pcie3_wrapper_i/design_1_xdma_0_0_axi_stream_intf_i/design_1_xdma_0_0_rx_demux_i/tgt_brdg_fifo_inst/U0'
+Finished Parsing XDC File [c:/Users/Administrator/Desktop/K7325/K727_PCIE_XDMA/K727_PCIE_XDMA.srcs/sources_1/bd/design_1/ip/design_1_xdma_0_0/ip_4/pcie2_fifo_generator_tgt_brdg.xdc] for cell 'design_1_i/xdma_0/inst/design_1_xdma_0_0_pcie2_to_pcie3_wrapper_i/design_1_xdma_0_0_axi_stream_intf_i/design_1_xdma_0_0_rx_demux_i/tgt_brdg_fifo_inst/U0'
+Parsing XDC File [c:/Users/Administrator/Desktop/K7325/K727_PCIE_XDMA/K727_PCIE_XDMA.srcs/sources_1/bd/design_1/ip/design_1_xdma_0_0/ip_3/pcie2_fifo_generator_dma_cpl.xdc] for cell 'design_1_i/xdma_0/inst/design_1_xdma_0_0_pcie2_to_pcie3_wrapper_i/design_1_xdma_0_0_axi_stream_intf_i/design_1_xdma_0_0_rx_demux_i/dma_cpl_fifo_inst/U0'
+Finished Parsing XDC File [c:/Users/Administrator/Desktop/K7325/K727_PCIE_XDMA/K727_PCIE_XDMA.srcs/sources_1/bd/design_1/ip/design_1_xdma_0_0/ip_3/pcie2_fifo_generator_dma_cpl.xdc] for cell 'design_1_i/xdma_0/inst/design_1_xdma_0_0_pcie2_to_pcie3_wrapper_i/design_1_xdma_0_0_axi_stream_intf_i/design_1_xdma_0_0_rx_demux_i/dma_cpl_fifo_inst/U0'
+Parsing XDC File [c:/Users/Administrator/Desktop/K7325/K727_PCIE_XDMA/K727_PCIE_XDMA.srcs/sources_1/bd/design_1/ip/design_1_xdma_0_0/ip_0/source/design_1_xdma_0_0_pcie2_ip-PCIE_X0Y0.xdc] for cell 'design_1_i/xdma_0/inst/design_1_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst'
+INFO: [Timing 38-2] Deriving generated clocks [c:/Users/Administrator/Desktop/K7325/K727_PCIE_XDMA/K727_PCIE_XDMA.srcs/sources_1/bd/design_1/ip/design_1_xdma_0_0/ip_0/source/design_1_xdma_0_0_pcie2_ip-PCIE_X0Y0.xdc:136]
+Finished Parsing XDC File [c:/Users/Administrator/Desktop/K7325/K727_PCIE_XDMA/K727_PCIE_XDMA.srcs/sources_1/bd/design_1/ip/design_1_xdma_0_0/ip_0/source/design_1_xdma_0_0_pcie2_ip-PCIE_X0Y0.xdc] for cell 'design_1_i/xdma_0/inst/design_1_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/Administrator/Desktop/K7325/K727_PCIE_XDMA/K727_PCIE_XDMA.srcs/sources_1/bd/design_1/ip/design_1_xdma_0_0/ip_0/source/design_1_xdma_0_0_pcie2_ip-PCIE_X0Y0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [c:/Users/Administrator/Desktop/K7325/K727_PCIE_XDMA/K727_PCIE_XDMA.srcs/sources_1/bd/design_1/ip/design_1_xdma_0_0/design_1_xdma_0_0_board.xdc] for cell 'design_1_i/xdma_0/inst'
+Finished Parsing XDC File [c:/Users/Administrator/Desktop/K7325/K727_PCIE_XDMA/K727_PCIE_XDMA.srcs/sources_1/bd/design_1/ip/design_1_xdma_0_0/design_1_xdma_0_0_board.xdc] for cell 'design_1_i/xdma_0/inst'
+Parsing XDC File [c:/Users/Administrator/Desktop/K7325/K727_PCIE_XDMA/K727_PCIE_XDMA.srcs/sources_1/bd/design_1/ip/design_1_xdma_0_0/source/design_1_xdma_0_0_pcie3_7vx_ip.xdc] for cell 'design_1_i/xdma_0/inst'
+Finished Parsing XDC File [c:/Users/Administrator/Desktop/K7325/K727_PCIE_XDMA/K727_PCIE_XDMA.srcs/sources_1/bd/design_1/ip/design_1_xdma_0_0/source/design_1_xdma_0_0_pcie3_7vx_ip.xdc] for cell 'design_1_i/xdma_0/inst'
+Parsing XDC File [c:/Users/Administrator/Desktop/K7325/K727_PCIE_XDMA/K727_PCIE_XDMA.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_2/design_1_mig_7series_0_2/user_design/constraints/design_1_mig_7series_0_2.xdc] for cell 'design_1_i/mig_7series_0'
+WARNING: [Designutils 20-1567] Use of 'set_multicycle_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [c:/Users/Administrator/Desktop/K7325/K727_PCIE_XDMA/K727_PCIE_XDMA.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_2/design_1_mig_7series_0_2/user_design/constraints/design_1_mig_7series_0_2.xdc:529]
+WARNING: [Designutils 20-1567] Use of 'set_multicycle_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [c:/Users/Administrator/Desktop/K7325/K727_PCIE_XDMA/K727_PCIE_XDMA.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_2/design_1_mig_7series_0_2/user_design/constraints/design_1_mig_7series_0_2.xdc:536]
+Finished Parsing XDC File [c:/Users/Administrator/Desktop/K7325/K727_PCIE_XDMA/K727_PCIE_XDMA.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_2/design_1_mig_7series_0_2/user_design/constraints/design_1_mig_7series_0_2.xdc] for cell 'design_1_i/mig_7series_0'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/Administrator/Desktop/K7325/K727_PCIE_XDMA/K727_PCIE_XDMA.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_2/design_1_mig_7series_0_2/user_design/constraints/design_1_mig_7series_0_2.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [c:/Users/Administrator/Desktop/K7325/K727_PCIE_XDMA/K727_PCIE_XDMA.srcs/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1_board.xdc] for cell 'design_1_i/util_ds_buf_0/U0'
+Finished Parsing XDC File [c:/Users/Administrator/Desktop/K7325/K727_PCIE_XDMA/K727_PCIE_XDMA.srcs/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1_board.xdc] for cell 'design_1_i/util_ds_buf_0/U0'
+Parsing XDC File [c:/Users/Administrator/Desktop/K7325/K727_PCIE_XDMA/K727_PCIE_XDMA.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_1/design_1_clk_wiz_0_1_board.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+Finished Parsing XDC File [c:/Users/Administrator/Desktop/K7325/K727_PCIE_XDMA/K727_PCIE_XDMA.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_1/design_1_clk_wiz_0_1_board.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+Parsing XDC File [c:/Users/Administrator/Desktop/K7325/K727_PCIE_XDMA/K727_PCIE_XDMA.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_1/design_1_clk_wiz_0_1.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+Finished Parsing XDC File [c:/Users/Administrator/Desktop/K7325/K727_PCIE_XDMA/K727_PCIE_XDMA.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_1/design_1_clk_wiz_0_1.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/Administrator/Desktop/K7325/K727_PCIE_XDMA/K727_PCIE_XDMA.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_1/design_1_clk_wiz_0_1.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [c:/Users/Administrator/Desktop/K7325/K727_PCIE_XDMA/K727_PCIE_XDMA.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_1/bd_ae83_psr0_0_board.xdc] for cell 'design_1_i/axi_smc/inst/clk_map/psr0/U0'
+Finished Parsing XDC File [c:/Users/Administrator/Desktop/K7325/K727_PCIE_XDMA/K727_PCIE_XDMA.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_1/bd_ae83_psr0_0_board.xdc] for cell 'design_1_i/axi_smc/inst/clk_map/psr0/U0'
+Parsing XDC File [c:/Users/Administrator/Desktop/K7325/K727_PCIE_XDMA/K727_PCIE_XDMA.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_1/bd_ae83_psr0_0.xdc] for cell 'design_1_i/axi_smc/inst/clk_map/psr0/U0'
+Finished Parsing XDC File [c:/Users/Administrator/Desktop/K7325/K727_PCIE_XDMA/K727_PCIE_XDMA.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_1/bd_ae83_psr0_0.xdc] for cell 'design_1_i/axi_smc/inst/clk_map/psr0/U0'
+Parsing XDC File [c:/Users/Administrator/Desktop/K7325/K727_PCIE_XDMA/K727_PCIE_XDMA.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_2/bd_ae83_psr_aclk_0_board.xdc] for cell 'design_1_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [c:/Users/Administrator/Desktop/K7325/K727_PCIE_XDMA/K727_PCIE_XDMA.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_2/bd_ae83_psr_aclk_0_board.xdc] for cell 'design_1_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [c:/Users/Administrator/Desktop/K7325/K727_PCIE_XDMA/K727_PCIE_XDMA.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_2/bd_ae83_psr_aclk_0.xdc] for cell 'design_1_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [c:/Users/Administrator/Desktop/K7325/K727_PCIE_XDMA/K727_PCIE_XDMA.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_2/bd_ae83_psr_aclk_0.xdc] for cell 'design_1_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [c:/Users/Administrator/Desktop/K7325/K727_PCIE_XDMA/K727_PCIE_XDMA.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_3/bd_ae83_psr_aclk1_0_board.xdc] for cell 'design_1_i/axi_smc/inst/clk_map/psr_aclk1/U0'
+Finished Parsing XDC File [c:/Users/Administrator/Desktop/K7325/K727_PCIE_XDMA/K727_PCIE_XDMA.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_3/bd_ae83_psr_aclk1_0_board.xdc] for cell 'design_1_i/axi_smc/inst/clk_map/psr_aclk1/U0'
+Parsing XDC File [c:/Users/Administrator/Desktop/K7325/K727_PCIE_XDMA/K727_PCIE_XDMA.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_3/bd_ae83_psr_aclk1_0.xdc] for cell 'design_1_i/axi_smc/inst/clk_map/psr_aclk1/U0'
+Finished Parsing XDC File [c:/Users/Administrator/Desktop/K7325/K727_PCIE_XDMA/K727_PCIE_XDMA.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/ip/ip_3/bd_ae83_psr_aclk1_0.xdc] for cell 'design_1_i/axi_smc/inst/clk_map/psr_aclk1/U0'
+Parsing XDC File [c:/Users/Administrator/Desktop/K7325/K727_PCIE_XDMA/K727_PCIE_XDMA.srcs/sources_1/bd/design_1/ip/design_1_rst_mig_7series_0_100M_3/design_1_rst_mig_7series_0_100M_3_board.xdc] for cell 'design_1_i/rst_mig_7series_0_100M/U0'
+Finished Parsing XDC File [c:/Users/Administrator/Desktop/K7325/K727_PCIE_XDMA/K727_PCIE_XDMA.srcs/sources_1/bd/design_1/ip/design_1_rst_mig_7series_0_100M_3/design_1_rst_mig_7series_0_100M_3_board.xdc] for cell 'design_1_i/rst_mig_7series_0_100M/U0'
+Parsing XDC File [c:/Users/Administrator/Desktop/K7325/K727_PCIE_XDMA/K727_PCIE_XDMA.srcs/sources_1/bd/design_1/ip/design_1_rst_mig_7series_0_100M_3/design_1_rst_mig_7series_0_100M_3.xdc] for cell 'design_1_i/rst_mig_7series_0_100M/U0'
+Finished Parsing XDC File [c:/Users/Administrator/Desktop/K7325/K727_PCIE_XDMA/K727_PCIE_XDMA.srcs/sources_1/bd/design_1/ip/design_1_rst_mig_7series_0_100M_3/design_1_rst_mig_7series_0_100M_3.xdc] for cell 'design_1_i/rst_mig_7series_0_100M/U0'
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [C:/Users/Administrator/Desktop/K7325/K727_PCIE_XDMA/K727_PCIE_XDMA.srcs/constrs_1/new/PCIE_XDMA.xdc]
+Finished Parsing XDC File [C:/Users/Administrator/Desktop/K7325/K727_PCIE_XDMA/K727_PCIE_XDMA.srcs/constrs_1/new/PCIE_XDMA.xdc]
+Sourcing Tcl File [C:/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'design_1_i/axi_smc/inst/s00_nodes/s00_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_async_clocks.inst_cdc_addrb_to_wr_clk'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'design_1_i/axi_smc/inst/s00_nodes/s00_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_async_clocks.inst_cdc_addrb_to_wr_clk'
+Sourcing Tcl File [C:/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'design_1_i/axi_smc/inst/s00_nodes/s00_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_async_clocks.inst_cdc_addra_to_rd_clk'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'design_1_i/axi_smc/inst/s00_nodes/s00_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_async_clocks.inst_cdc_addra_to_rd_clk'
+Sourcing Tcl File [C:/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'design_1_i/axi_smc/inst/s00_nodes/s00_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_async_clocks.inst_cdc_addrb_to_wr_clk'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'design_1_i/axi_smc/inst/s00_nodes/s00_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_async_clocks.inst_cdc_addrb_to_wr_clk'
+Sourcing Tcl File [C:/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'design_1_i/axi_smc/inst/s00_nodes/s00_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_async_clocks.inst_cdc_addra_to_rd_clk'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'design_1_i/axi_smc/inst/s00_nodes/s00_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_async_clocks.inst_cdc_addra_to_rd_clk'
+Sourcing Tcl File [C:/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'design_1_i/axi_smc/inst/s00_nodes/s00_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_async_clocks.inst_cdc_addrb_to_wr_clk'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'design_1_i/axi_smc/inst/s00_nodes/s00_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_async_clocks.inst_cdc_addrb_to_wr_clk'
+Sourcing Tcl File [C:/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'design_1_i/axi_smc/inst/s00_nodes/s00_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_async_clocks.inst_cdc_addra_to_rd_clk'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'design_1_i/axi_smc/inst/s00_nodes/s00_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_async_clocks.inst_cdc_addra_to_rd_clk'
+Sourcing Tcl File [C:/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'design_1_i/axi_smc/inst/s00_nodes/s00_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_async_clocks.inst_cdc_addrb_to_wr_clk'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'design_1_i/axi_smc/inst/s00_nodes/s00_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_async_clocks.inst_cdc_addrb_to_wr_clk'
+Sourcing Tcl File [C:/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'design_1_i/axi_smc/inst/s00_nodes/s00_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_async_clocks.inst_cdc_addra_to_rd_clk'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'design_1_i/axi_smc/inst/s00_nodes/s00_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_async_clocks.inst_cdc_addra_to_rd_clk'
+Sourcing Tcl File [C:/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'design_1_i/axi_smc/inst/s00_nodes/s00_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_async_clocks.inst_cdc_addrb_to_wr_clk'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'design_1_i/axi_smc/inst/s00_nodes/s00_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_async_clocks.inst_cdc_addrb_to_wr_clk'
+Sourcing Tcl File [C:/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'design_1_i/axi_smc/inst/s00_nodes/s00_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_async_clocks.inst_cdc_addra_to_rd_clk'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'design_1_i/axi_smc/inst/s00_nodes/s00_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_async_clocks.inst_cdc_addra_to_rd_clk'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Sourcing Tcl File [C:/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'design_1_i/xdma_0/inst/udma_wrapper/dma_top/base/IRQ_INST/usr_irq_xpm_cdc'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'design_1_i/xdma_0/inst/udma_wrapper/dma_top/base/IRQ_INST/usr_irq_xpm_cdc'
+Sourcing Tcl File [C:/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'design_1_i/xdma_0/inst/design_1_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/pl_received_hot_rst_cdc'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'design_1_i/xdma_0/inst/design_1_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/pl_received_hot_rst_cdc'
+Sourcing Tcl File [C:/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'design_1_i/xdma_0/inst/design_1_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/phy_lnk_up_cdc'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'design_1_i/xdma_0/inst/design_1_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/phy_lnk_up_cdc'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Sourcing Tcl File [C:/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_i/axi_smc/inst/s00_nodes/s00_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_i/axi_smc/inst/s00_nodes/s00_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Sourcing Tcl File [C:/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_i/axi_smc/inst/s00_nodes/s00_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_i/axi_smc/inst/s00_nodes/s00_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Sourcing Tcl File [C:/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_i/axi_smc/inst/s00_nodes/s00_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_i/axi_smc/inst/s00_nodes/s00_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Sourcing Tcl File [C:/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_i/axi_smc/inst/s00_nodes/s00_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_i/axi_smc/inst/s00_nodes/s00_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Sourcing Tcl File [C:/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_i/axi_smc/inst/s00_nodes/s00_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_i/axi_smc/inst/s00_nodes/s00_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 2143.613 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 955 instances were transformed.
+  IOBUFDS_DIFF_OUT_DCIEN => IOBUFDS_DIFF_OUT_DCIEN (IBUFDS_IBUFDISABLE_INT(x2), INV, OBUFTDS_DCIEN(x2)): 4 instances
+  IOBUF_DCIEN => IOBUF_DCIEN (IBUF_IBUFDISABLE, OBUFT_DCIEN): 32 instances
+  LUT6_2 => LUT6_2 (LUT5, LUT6): 26 instances
+  OBUFDS => OBUFDS_DUAL_BUF (INV, OBUFDS(x2)): 1 instance 
+  RAM16X1D => RAM32X1D (RAMD32(x2)): 20 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 853 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 10 instances
+  RAM64X1S => RAM64X1S (RAMS64E): 9 instances
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:48 ; elapsed = 00:00:34 . Memory (MB): peak = 2159.113 ; gain = 733.445
+39 Infos, 14 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:53 ; elapsed = 00:00:40 . Memory (MB): peak = 2159.113 ; gain = 856.289
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Tue Jul  7 21:49:35 2020] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/K7325/K727_PCIE_XDMA/K727_PCIE_XDMA.runs/impl_1/runme.log
+open_bd_design {C:/Users/Administrator/Desktop/K7325/K727_PCIE_XDMA/K727_PCIE_XDMA.srcs/sources_1/bd/design_1/design_1.bd}
+Adding component instance block -- xilinx.com:ip:xdma:4.1 - xdma_0
+Adding component instance block -- xilinx.com:ip:mig_7series:4.2 - mig_7series_0
+Adding component instance block -- xilinx.com:ip:util_ds_buf:2.1 - util_ds_buf_0
+Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_0
+Adding component instance block -- xilinx.com:ip:smartconnect:1.0 - axi_smc
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_mig_7series_0_100M
+Successfully read diagram <design_1> from BD file <C:/Users/Administrator/Desktop/K7325/K727_PCIE_XDMA/K727_PCIE_XDMA.srcs/sources_1/bd/design_1/design_1.bd>
+not writing pins
+open_bd_design {C:/Users/Administrator/Desktop/K7325/K727_PCIE_XDMA/K727_PCIE_XDMA.srcs/sources_1/bd/design_1/design_1.bd}
+startgroup
+set_property -dict [list CONFIG.PRIM_IN_FREQ {50} CONFIG.CLKIN1_JITTER_PS {200.0} CONFIG.MMCM_CLKFBOUT_MULT_F {20.000} CONFIG.MMCM_CLKIN1_PERIOD {20.000} CONFIG.MMCM_CLKIN2_PERIOD {10.0} CONFIG.CLKOUT1_JITTER {126.902} CONFIG.CLKOUT1_PHASE_ERROR {164.985}] [get_bd_cells clk_wiz_0]
+endgroup
+validate_bd_design
+ERROR: [BD 41-238] Port/Pin property FREQ_HZ does not match between /clk_wiz_0/clk_in1(50000000) and /clk50m(100000000)
+validate_bd_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2267.277 ; gain = 32.734
+ERROR: [Common 17-39] 'validate_bd_design' failed due to earlier errors.
+startgroup
+set_property -dict [list CONFIG.PRIM_IN_FREQ.VALUE_SRC USER] [get_bd_cells clk_wiz_0]
+set_property -dict [list CONFIG.PRIM_IN_FREQ {50.000} CONFIG.CLKIN1_JITTER_PS {200.0} CONFIG.MMCM_CLKFBOUT_MULT_F {20.000} CONFIG.MMCM_CLKIN1_PERIOD {20.000} CONFIG.MMCM_CLKIN2_PERIOD {10.0} CONFIG.CLKOUT1_JITTER {126.902} CONFIG.CLKOUT1_PHASE_ERROR {164.985}] [get_bd_cells clk_wiz_0]
+endgroup
+startgroup
+endgroup
+validate_bd_design
+ERROR: [BD 41-238] Port/Pin property FREQ_HZ does not match between /clk_wiz_0/clk_in1(50000000) and /clk50m(100000000)
+validate_bd_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 2283.598 ; gain = 9.145
+ERROR: [Common 17-39] 'validate_bd_design' failed due to earlier errors.
+startgroup
+set_property -dict [list CONFIG.PRIM_IN_FREQ.VALUE_SRC PROPAGATED] [get_bd_cells clk_wiz_0]
+set_property -dict [list CONFIG.CLKIN1_JITTER_PS {100.0} CONFIG.MMCM_CLKFBOUT_MULT_F {10.000} CONFIG.MMCM_CLKIN1_PERIOD {10.000} CONFIG.MMCM_CLKIN2_PERIOD {10.000} CONFIG.CLKOUT1_JITTER {101.114} CONFIG.CLKOUT1_PHASE_ERROR {98.575}] [get_bd_cells clk_wiz_0]
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'MMCM_CLKFBOUT_MULT_F' from '20.000' to '10.000' has been ignored for IP 'clk_wiz_0'
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'MMCM_CLKIN1_PERIOD' from '20.000' to '10.000' has been ignored for IP 'clk_wiz_0'
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'MMCM_CLKIN2_PERIOD' from '10.0' to '10.000' has been ignored for IP 'clk_wiz_0'
+endgroup
+validate_bd_design
+validate_bd_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2315.352 ; gain = 17.281
+generate_target all [get_files  C:/Users/Administrator/Desktop/K7325/K727_PCIE_XDMA/K727_PCIE_XDMA.srcs/sources_1/bd/design_1/design_1.bd]
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+Wrote  : <C:\Users\Administrator\Desktop\K7325\K727_PCIE_XDMA\K727_PCIE_XDMA.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/Users/Administrator/Desktop/K7325/K727_PCIE_XDMA/K727_PCIE_XDMA.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+VHDL Output written to : C:/Users/Administrator/Desktop/K7325/K727_PCIE_XDMA/K727_PCIE_XDMA.srcs/sources_1/bd/design_1/synth/design_1.v
+VHDL Output written to : C:/Users/Administrator/Desktop/K7325/K727_PCIE_XDMA/K727_PCIE_XDMA.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : C:/Users/Administrator/Desktop/K7325/K727_PCIE_XDMA/K727_PCIE_XDMA.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xdma_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mig_7series_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block util_ds_buf_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
+Exporting to file c:/Users/Administrator/Desktop/K7325/K727_PCIE_XDMA/K727_PCIE_XDMA.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/hw_handoff/design_1_axi_smc_3.hwh
+Generated Block Design Tcl file c:/Users/Administrator/Desktop/K7325/K727_PCIE_XDMA/K727_PCIE_XDMA.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/hw_handoff/design_1_axi_smc_3_bd.tcl
+Generated Hardware Definition File c:/Users/Administrator/Desktop/K7325/K727_PCIE_XDMA/K727_PCIE_XDMA.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/synth/design_1_axi_smc_3.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_smc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_mig_7series_0_100M .
+Exporting to file C:/Users/Administrator/Desktop/K7325/K727_PCIE_XDMA/K727_PCIE_XDMA.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file C:/Users/Administrator/Desktop/K7325/K727_PCIE_XDMA/K727_PCIE_XDMA.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File C:/Users/Administrator/Desktop/K7325/K727_PCIE_XDMA/K727_PCIE_XDMA.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+generate_target: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2326.922 ; gain = 11.570
+catch { config_ip_cache -export [get_ips -all design_1_axi_smc_3] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_axi_smc_3, cache-ID = 9e744a7f7da8597d; cache size = 67.165 MB.
+export_ip_user_files -of_objects [get_files C:/Users/Administrator/Desktop/K7325/K727_PCIE_XDMA/K727_PCIE_XDMA.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/Administrator/Desktop/K7325/K727_PCIE_XDMA/K727_PCIE_XDMA.srcs/sources_1/bd/design_1/design_1.bd]
+export_simulation -of_objects [get_files C:/Users/Administrator/Desktop/K7325/K727_PCIE_XDMA/K727_PCIE_XDMA.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/Users/Administrator/Desktop/K7325/K727_PCIE_XDMA/K727_PCIE_XDMA.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Administrator/Desktop/K7325/K727_PCIE_XDMA/K727_PCIE_XDMA.ip_user_files -ipstatic_source_dir C:/Users/Administrator/Desktop/K7325/K727_PCIE_XDMA/K727_PCIE_XDMA.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Administrator/Desktop/K7325/K727_PCIE_XDMA/K727_PCIE_XDMA.cache/compile_simlib/modelsim} {questa=C:/Users/Administrator/Desktop/K7325/K727_PCIE_XDMA/K727_PCIE_XDMA.cache/compile_simlib/questa} {riviera=C:/Users/Administrator/Desktop/K7325/K727_PCIE_XDMA/K727_PCIE_XDMA.cache/compile_simlib/riviera} {activehdl=C:/Users/Administrator/Desktop/K7325/K727_PCIE_XDMA/K727_PCIE_XDMA.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+make_wrapper -files [get_files C:/Users/Administrator/Desktop/K7325/K727_PCIE_XDMA/K727_PCIE_XDMA.srcs/sources_1/bd/design_1/design_1.bd] -top
+set_property source_mgmt_mode All [current_project]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Tue Jul  7 22:03:37 2020] Launched synth_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/K7325/K727_PCIE_XDMA/K727_PCIE_XDMA.runs/synth_1/runme.log
+[Tue Jul  7 22:03:37 2020] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/K7325/K727_PCIE_XDMA/K727_PCIE_XDMA.runs/impl_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Jul  7 22:13:55 2020...

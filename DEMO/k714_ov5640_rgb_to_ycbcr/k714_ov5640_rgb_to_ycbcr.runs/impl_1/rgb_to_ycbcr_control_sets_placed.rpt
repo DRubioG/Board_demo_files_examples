@@ -1,0 +1,109 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Wed May 19 22:33:22 2021
+| Host         : FXTVWR85EI30285 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file rgb_to_ycbcr_control_sets_placed.rpt
+| Design       : rgb_to_ycbcr
+| Device       : xc7k325t
+-----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    31 |
+|    Minimum number of control sets                        |    31 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    99 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    31 |
+| >= 0 to < 4        |     2 |
+| >= 4 to < 6        |     4 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     2 |
+| >= 10 to < 12      |     4 |
+| >= 12 to < 14      |     1 |
+| >= 14 to < 16      |     3 |
+| >= 16              |    15 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             186 |          106 |
+| No           | No                    | Yes                    |              82 |           30 |
+| No           | Yes                   | No                     |              84 |           38 |
+| Yes          | No                    | No                     |              44 |           31 |
+| Yes          | No                    | Yes                    |             217 |           61 |
+| Yes          | Yes                   | No                     |              16 |            4 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-------------------------------+-----------------------------------------------------+--------------------------------------------------------------------------+------------------+----------------+
+|          Clock Signal         |                    Enable Signal                    |                             Set/Reset Signal                             | Slice Load Count | Bel Load Count |
++-------------------------------+-----------------------------------------------------+--------------------------------------------------------------------------+------------------+----------------+
+|  clk50m_IBUF_BUFG             |                                                     | vga_driver_inst/vga_sync_inst/rstn                                       |                1 |              1 |
+|  clk50m_IBUF_BUFG             |                                                     |                                                                          |                1 |              2 |
+|  cmos_pclk2_IBUF_BUFG         | ov5640_capture_inst2/frame_cont                     | ov5640_capture_inst2/cmos_oclk_i_2_n_0                                   |                1 |              4 |
+|  cmos_pclk1_IBUF_BUFG         | ov5640_capture_inst1/frame_cont                     | power_on_reset_inst1/camera_rstn_reg_reg_0                               |                1 |              4 |
+|  cmos_pclk2_IBUF_BUFG         |                                                     | ov5640_capture_inst2/cmos_oclk_i_2_n_0                                   |                2 |              5 |
+|  cmos_pclk1_IBUF_BUFG         |                                                     | power_on_reset_inst1/camera_rstn_reg_reg_0                               |                2 |              5 |
+|  cmos_pclk2_IBUF_BUFG         | ov5640_capture_inst2/pre_cmos_idata[7]_i_1_n_0      | ov5640_capture_inst2/cmos_oclk_i_2_n_0                                   |                2 |              8 |
+|  cmos_pclk1_IBUF_BUFG         | ov5640_capture_inst1/__3                            | power_on_reset_inst1/camera_rstn_reg_reg_0                               |                3 |              8 |
+|  clk_wiz_0_inst/inst/clk_out1 |                                                     | rgb2dvi_0_inst1/U0/DataEncoders[0].DataEncoder/pDataOutRaw[9]_i_1__1_n_0 |                4 |             10 |
+|  clk_wiz_0_inst/inst/clk_out1 |                                                     | rgb2dvi_0_inst2/U0/DataEncoders[0].DataEncoder/pDataOutRaw[9]_i_1__1_n_0 |                3 |             10 |
+|  clk_wiz_0_inst/inst/clk_out1 | vga_driver_inst/vga_sync_inst/ready_reg_reg_2[0]    | vga_driver_inst/vga_sync_inst/rstn                                       |                4 |             10 |
+|  clk_wiz_0_inst/inst/clk_out1 | vga_driver_inst/vga_sync_inst/E[0]                  | vga_driver_inst/vga_sync_inst/rstn                                       |                5 |             10 |
+|  clk_wiz_0_inst/inst/clk_out1 | vga_driver_inst/vga_sync_inst/cnt_vreg[12]_i_1_n_0  | vga_driver_inst/vga_sync_inst/rstn                                       |                3 |             13 |
+|  clock_iic_ref_reg_0          |                                                     | power_on_reset_inst1/camera_rstn_reg_reg_0                               |                7 |             15 |
+|  clock_iic_ref_reg            |                                                     | power_on_reset_inst1/camera_rstn_reg_reg_0                               |                6 |             15 |
+|  clk_wiz_0_inst/inst/clk_out1 |                                                     | vga_driver_inst/vga_sync_inst/rstn                                       |                7 |             15 |
+|  clk50m_IBUF_BUFG             | power_on_reset_inst1/cnt2[0]_i_1_n_0                | power_on_reset_inst1/camera_pwnd_reg                                     |                4 |             16 |
+|  cmos_pclk2_IBUF_BUFG         | ov5640_capture_inst2/cmos_odata[15]_i_1_n_0         | ov5640_capture_inst2/cmos_oclk_i_2_n_0                                   |                7 |             16 |
+|  cmos_pclk1_IBUF_BUFG         | ov5640_capture_inst1/p_2_out[15]                    | power_on_reset_inst1/camera_rstn_reg_reg_0                               |                5 |             16 |
+|  clock_iic_ref_reg_0          | ov5640_reg_config_inst1/sel                         | power_on_reset_inst1/camera_rstn_reg_reg_0                               |                4 |             18 |
+|  clock_iic_ref_reg            | ov5640_reg_config_inst2/reg_index_rep[8]_i_1__0_n_0 | power_on_reset_inst1/camera_rstn_reg_reg_0                               |                4 |             18 |
+|  cmos_pclk2_IBUF_BUFG         | write_addr_ram_reg2[0]_i_1_n_0                      | vga_driver_inst/vga_sync_inst/rstn                                       |                5 |             20 |
+|  cmos_pclk1_IBUF_BUFG         | ov5640_capture_inst1/cmos_oclk_reg_0                | vga_driver_inst/vga_sync_inst/rstn                                       |                5 |             20 |
+|  clock_iic_ref_reg_0          | ov5640_reg_config_inst1/i2c_data                    |                                                                          |               16 |             22 |
+|  clock_iic_ref_reg            | ov5640_reg_config_inst2/i2c_data[22]_i_1__0_n_0     |                                                                          |               15 |             22 |
+|  clk50m_IBUF_BUFG             |                                                     | power_on_reset_inst1/camera_rstn_reg_reg_0                               |                5 |             26 |
+|  clk50m_IBUF_BUFG             | cnt_key1_detect_reg[25]_i_1_n_0                     | vga_driver_inst/vga_sync_inst/rstn                                       |                7 |             26 |
+|  clk50m_IBUF_BUFG             | cnt_key2_detect_reg                                 | vga_driver_inst/vga_sync_inst/rstn                                       |                5 |             26 |
+|  clk_wiz_0_inst/inst/clk_out1 |                                                     | rgb2dvi_0_inst1/U0/DataEncoders[0].DataEncoder/SR[0]                     |               13 |             32 |
+|  clk_wiz_0_inst/inst/clk_out1 |                                                     | rgb2dvi_0_inst2/U0/DataEncoders[0].DataEncoder/SR[0]                     |               18 |             32 |
+|  clk_wiz_0_inst/inst/clk_out1 |                                                     |                                                                          |              105 |            184 |
++-------------------------------+-----------------------------------------------------+--------------------------------------------------------------------------+------------------+----------------+
+
+

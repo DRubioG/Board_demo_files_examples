@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Sun May 30 22:08:20 2021
+# Process ID: 7844
+# Current directory: C:/Users/Administrator/Desktop/K7325/R5/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.runs/impl_1
+# Command line: vivado.exe -log ethernet_catch_bordcast.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source ethernet_catch_bordcast.tcl -notrace
+# Log file: C:/Users/Administrator/Desktop/K7325/R5/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.runs/impl_1/ethernet_catch_bordcast.vdi
+# Journal file: C:/Users/Administrator/Desktop/K7325/R5/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source ethernet_catch_bordcast.tcl -notrace

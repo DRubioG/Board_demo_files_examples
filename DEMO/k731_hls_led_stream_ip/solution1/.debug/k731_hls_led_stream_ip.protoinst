@@ -1,0 +1,9 @@
+{
+	"version": "1.0",
+	"modules": {
+		"k731_hls_led_stream_ip": {
+			"proto_instances": {
+			}
+		}
+	}
+}

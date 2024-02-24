@@ -1,0 +1,308 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Sun May 30 22:07:37 2021
+# Process ID: 1888
+# Current directory: C:/Users/Administrator/Desktop/K7325/R5/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.runs/synth_1
+# Command line: vivado.exe -log ethernet_catch_bordcast.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ethernet_catch_bordcast.tcl
+# Log file: C:/Users/Administrator/Desktop/K7325/R5/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.runs/synth_1/ethernet_catch_bordcast.vds
+# Journal file: C:/Users/Administrator/Desktop/K7325/R5/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source ethernet_catch_bordcast.tcl -notrace
+Command: synth_design -top ethernet_catch_bordcast -part xc7k325tffg676-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k325t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k325t'
+INFO: [Device 21-403] Loading part xc7k325tffg676-2
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 3948 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1010.402 ; gain = 235.316
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'ethernet_catch_bordcast' [C:/Users/Administrator/Desktop/K7325/R5/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/sources_1/new/ethernet_catch_bordcast.v:1]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/Administrator/Desktop/K7325/R5/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/sources_1/new/ethernet_catch_bordcast.v:13]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/Administrator/Desktop/K7325/R5/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/sources_1/new/ethernet_catch_bordcast.v:14]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/Administrator/Desktop/K7325/R5/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/sources_1/new/ethernet_catch_bordcast.v:15]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/Administrator/Desktop/K7325/R5/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/sources_1/new/ethernet_catch_bordcast.v:16]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/Administrator/Desktop/K7325/R5/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/sources_1/new/ethernet_catch_bordcast.v:17]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/Administrator/Desktop/K7325/R5/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/sources_1/new/ethernet_catch_bordcast.v:18]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/Administrator/Desktop/K7325/R5/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/sources_1/new/ethernet_catch_bordcast.v:20]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/Administrator/Desktop/K7325/R5/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/sources_1/new/ethernet_catch_bordcast.v:21]
+INFO: [Synth 8-6157] synthesizing module 'eth_catch' [C:/Users/Administrator/Desktop/K7325/R5/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/sources_1/new/eth_catch.v:1]
+INFO: [Synth 8-6157] synthesizing module 'IDDR2' [C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:34918]
+	Parameter DDR_ALIGNMENT bound to: C1 - type: string 
+	Parameter INIT_Q0 bound to: 1'b0 
+	Parameter INIT_Q1 bound to: 1'b0 
+	Parameter SRTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IDDR2' (1#1) [C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:34918]
+INFO: [Synth 8-6155] done synthesizing module 'eth_catch' (2#1) [C:/Users/Administrator/Desktop/K7325/R5/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/sources_1/new/eth_catch.v:1]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'eth_catch_inst1'. This will prevent further optimization [C:/Users/Administrator/Desktop/K7325/R5/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/sources_1/new/ethernet_catch_bordcast.v:32]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'eth_catch_inst2'. This will prevent further optimization [C:/Users/Administrator/Desktop/K7325/R5/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/sources_1/new/ethernet_catch_bordcast.v:41]
+INFO: [Synth 8-6155] done synthesizing module 'ethernet_catch_bordcast' (3#1) [C:/Users/Administrator/Desktop/K7325/R5/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/sources_1/new/ethernet_catch_bordcast.v:1]
+WARNING: [Synth 8-3331] design eth_catch has unconnected port rstn
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1083.402 ; gain = 308.316
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1083.402 ; gain = 308.316
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1083.402 ; gain = 308.316
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1083.402 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 10 Unisim elements for replacement
+WARNING: [Netlist 29-151] Pin 'C0' on instance 'eth_catch_inst1/IDDR2_inst1[0]' of cell type 'IDDR2' does not have an equivalent function on the new cell type 'IDDR'. Net 'gmii_rx_clk' that is connected to this pin will not be connected to the replacement instance.
+WARNING: [Netlist 29-151] Pin 'C0' on instance 'eth_catch_inst1/IDDR2_inst1[1]' of cell type 'IDDR2' does not have an equivalent function on the new cell type 'IDDR'. Net 'gmii_rx_clk' that is connected to this pin will not be connected to the replacement instance.
+WARNING: [Netlist 29-151] Pin 'C0' on instance 'eth_catch_inst1/IDDR2_inst1[2]' of cell type 'IDDR2' does not have an equivalent function on the new cell type 'IDDR'. Net 'gmii_rx_clk' that is connected to this pin will not be connected to the replacement instance.
+WARNING: [Netlist 29-151] Pin 'C0' on instance 'eth_catch_inst1/IDDR2_inst1[3]' of cell type 'IDDR2' does not have an equivalent function on the new cell type 'IDDR'. Net 'gmii_rx_clk' that is connected to this pin will not be connected to the replacement instance.
+WARNING: [Netlist 29-151] Pin 'C0' on instance 'eth_catch_inst1/IDDR2_inst2' of cell type 'IDDR2' does not have an equivalent function on the new cell type 'IDDR'. Net 'gmii_rx_clk' that is connected to this pin will not be connected to the replacement instance.
+WARNING: [Netlist 29-151] Pin 'C0' on instance 'eth_catch_inst2/IDDR2_inst1[0]' of cell type 'IDDR2' does not have an equivalent function on the new cell type 'IDDR'. Net 'gmii_rx_clk' that is connected to this pin will not be connected to the replacement instance.
+WARNING: [Netlist 29-151] Pin 'C0' on instance 'eth_catch_inst2/IDDR2_inst1[1]' of cell type 'IDDR2' does not have an equivalent function on the new cell type 'IDDR'. Net 'gmii_rx_clk' that is connected to this pin will not be connected to the replacement instance.
+WARNING: [Netlist 29-151] Pin 'C0' on instance 'eth_catch_inst2/IDDR2_inst1[2]' of cell type 'IDDR2' does not have an equivalent function on the new cell type 'IDDR'. Net 'gmii_rx_clk' that is connected to this pin will not be connected to the replacement instance.
+WARNING: [Netlist 29-151] Pin 'C0' on instance 'eth_catch_inst2/IDDR2_inst1[3]' of cell type 'IDDR2' does not have an equivalent function on the new cell type 'IDDR'. Net 'gmii_rx_clk' that is connected to this pin will not be connected to the replacement instance.
+WARNING: [Netlist 29-151] Pin 'C0' on instance 'eth_catch_inst2/IDDR2_inst2' of cell type 'IDDR2' does not have an equivalent function on the new cell type 'IDDR'. Net 'gmii_rx_clk' that is connected to this pin will not be connected to the replacement instance.
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Administrator/Desktop/K7325/R5/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/constrs_1/new/ethernet_catch_broadcast.xdc]
+Finished Parsing XDC File [C:/Users/Administrator/Desktop/K7325/R5/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/constrs_1/new/ethernet_catch_broadcast.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Administrator/Desktop/K7325/R5/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/constrs_1/new/ethernet_catch_broadcast.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/ethernet_catch_bordcast_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/ethernet_catch_bordcast_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1146.039 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 10 instances were transformed.
+  IDDR2 => IDDR: 10 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1146.039 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1146.039 ; gain = 370.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k325tffg676-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1146.039 ; gain = 370.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1146.039 ; gain = 370.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1146.039 ; gain = 370.953
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 840 (col length:140)
+BRAMs: 890 (col length: RAMB18 140 RAMB36 70)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3331] design eth_catch has unconnected port rstn
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1146.039 ; gain = 370.953
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1146.039 ; gain = 370.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1146.039 ; gain = 370.953
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1153.922 ; gain = 378.836
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1169.703 ; gain = 394.617
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1169.703 ; gain = 394.617
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1169.703 ; gain = 394.617
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1169.703 ; gain = 394.617
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1169.703 ; gain = 394.617
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1169.703 ; gain = 394.617
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |IDDR2 |    10|
+|2     |LUT1  |     2|
+|3     |IBUF  |    12|
++------+------+------+
+
+Report Instance Areas: 
++------+------------------+-------------+------+
+|      |Instance          |Module       |Cells |
++------+------------------+-------------+------+
+|1     |top               |             |    24|
+|2     |  eth_catch_inst1 |eth_catch__1 |     6|
+|3     |  eth_catch_inst2 |eth_catch    |     6|
++------+------------------+-------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1169.703 ; gain = 394.617
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 1169.703 ; gain = 331.980
+Synthesis Optimization Complete : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1169.703 ; gain = 394.617
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1169.703 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 10 Unisim elements for replacement
+WARNING: [Netlist 29-151] Pin 'C0' on instance 'eth_catch_inst1/IDDR2_inst1[0]' of cell type 'IDDR2' does not have an equivalent function on the new cell type 'IDDR'. Net 'gmii_rx_clk' that is connected to this pin will not be connected to the replacement instance.
+WARNING: [Netlist 29-151] Pin 'C0' on instance 'eth_catch_inst1/IDDR2_inst1[1]' of cell type 'IDDR2' does not have an equivalent function on the new cell type 'IDDR'. Net 'gmii_rx_clk' that is connected to this pin will not be connected to the replacement instance.
+WARNING: [Netlist 29-151] Pin 'C0' on instance 'eth_catch_inst1/IDDR2_inst1[2]' of cell type 'IDDR2' does not have an equivalent function on the new cell type 'IDDR'. Net 'gmii_rx_clk' that is connected to this pin will not be connected to the replacement instance.
+WARNING: [Netlist 29-151] Pin 'C0' on instance 'eth_catch_inst1/IDDR2_inst1[3]' of cell type 'IDDR2' does not have an equivalent function on the new cell type 'IDDR'. Net 'gmii_rx_clk' that is connected to this pin will not be connected to the replacement instance.
+WARNING: [Netlist 29-151] Pin 'C0' on instance 'eth_catch_inst1/IDDR2_inst2' of cell type 'IDDR2' does not have an equivalent function on the new cell type 'IDDR'. Net 'gmii_rx_clk' that is connected to this pin will not be connected to the replacement instance.
+WARNING: [Netlist 29-151] Pin 'C0' on instance 'eth_catch_inst2/IDDR2_inst1[0]' of cell type 'IDDR2' does not have an equivalent function on the new cell type 'IDDR'. Net 'gmii_rx_clk' that is connected to this pin will not be connected to the replacement instance.
+WARNING: [Netlist 29-151] Pin 'C0' on instance 'eth_catch_inst2/IDDR2_inst1[1]' of cell type 'IDDR2' does not have an equivalent function on the new cell type 'IDDR'. Net 'gmii_rx_clk' that is connected to this pin will not be connected to the replacement instance.
+WARNING: [Netlist 29-151] Pin 'C0' on instance 'eth_catch_inst2/IDDR2_inst1[2]' of cell type 'IDDR2' does not have an equivalent function on the new cell type 'IDDR'. Net 'gmii_rx_clk' that is connected to this pin will not be connected to the replacement instance.
+WARNING: [Netlist 29-151] Pin 'C0' on instance 'eth_catch_inst2/IDDR2_inst1[3]' of cell type 'IDDR2' does not have an equivalent function on the new cell type 'IDDR'. Net 'gmii_rx_clk' that is connected to this pin will not be connected to the replacement instance.
+WARNING: [Netlist 29-151] Pin 'C0' on instance 'eth_catch_inst2/IDDR2_inst2' of cell type 'IDDR2' does not have an equivalent function on the new cell type 'IDDR'. Net 'gmii_rx_clk' that is connected to this pin will not be connected to the replacement instance.
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 2 inverter(s) to 10 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1195.445 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 10 instances were transformed.
+  IDDR2 => IDDR (inverted pins: C): 10 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+30 Infos, 22 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1195.445 ; gain = 769.008
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1195.445 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Administrator/Desktop/K7325/R5/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.runs/synth_1/ethernet_catch_bordcast.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file ethernet_catch_bordcast_utilization_synth.rpt -pb ethernet_catch_bordcast_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun May 30 22:08:12 2021...

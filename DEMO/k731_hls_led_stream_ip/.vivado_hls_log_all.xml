@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [RTGEN 206-101] Register 'led_number' is power-on initialization." projectName="k731_hls_led_stream_ip" solutionName="solution1" date="2020-06-29T20:57:28.204+0800" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'cnt_reg' is power-on initialization." projectName="k731_hls_led_stream_ip" solutionName="solution1" date="2020-06-29T20:57:28.190+0800" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Port 'led_V' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port." projectName="k731_hls_led_stream_ip" solutionName="solution1" date="2020-06-29T20:57:28.182+0800" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

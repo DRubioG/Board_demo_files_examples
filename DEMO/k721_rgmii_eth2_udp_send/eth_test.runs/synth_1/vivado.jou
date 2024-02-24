@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Wed Jun  2 18:07:45 2021
+# Process ID: 11784
+# Current directory: C:/Users/Administrator/Desktop/ETH1_BACK/k720_rgmii_eth2_udp_send/eth_test.runs/synth_1
+# Command line: vivado.exe -log ethernet_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ethernet_top.tcl
+# Log file: C:/Users/Administrator/Desktop/ETH1_BACK/k720_rgmii_eth2_udp_send/eth_test.runs/synth_1/ethernet_top.vds
+# Journal file: C:/Users/Administrator/Desktop/ETH1_BACK/k720_rgmii_eth2_udp_send/eth_test.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source ethernet_top.tcl -notrace

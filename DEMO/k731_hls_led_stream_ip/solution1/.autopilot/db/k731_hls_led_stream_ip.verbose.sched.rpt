@@ -1,0 +1,147 @@
+
+
+================================================================
+== Vivado HLS Report for 'k731_hls_led_stream_ip'
+================================================================
+* Date:           Mon Jun 29 20:57:28 2020
+
+* Version:        2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)
+* Project:        k731_hls_led_stream_ip
+* Solution:       solution1
+* Product family: kintex7
+* Target device:  xc7k325t-ffg676-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  | 10.00 ns | 4.167 ns |   1.25 ns  |
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        0|        0|   0 ns   |   0 ns   |    0|    0|   none  |
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 0
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 1
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 4.16>
+ST_1 : Operation 2 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i4* %led_V), !map !19"   --->   Operation 2 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 3 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecTopModule([23 x i8]* @k731_hls_led_stream_s) nounwind"   --->   Operation 3 'spectopmodule' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i4* %led_V, [8 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [k731_hls_led_stream_ip/k731_hls_led_stream_ip.cpp:6]   --->   Operation 4 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32 0, [13 x i8]* @p_str2, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [k731_hls_led_stream_ip/k731_hls_led_stream_ip.cpp:7]   --->   Operation 5 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%cnt_reg_load = load i32* @cnt_reg, align 4" [k731_hls_led_stream_ip/k731_hls_led_stream_ip.cpp:10]   --->   Operation 6 'load' 'cnt_reg_load' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (1.28ns)   --->   "%icmp_ln10 = icmp slt i32 %cnt_reg_load, 50000000" [k731_hls_led_stream_ip/k731_hls_led_stream_ip.cpp:10]   --->   Operation 7 'icmp' 'icmp_ln10' <Predicate = true> <Delay = 1.28> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.28> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%led_number_load = load i32* @led_number, align 4" [k731_hls_led_stream_ip/k731_hls_led_stream_ip.cpp:14]   --->   Operation 8 'load' 'led_number_load' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "br i1 %icmp_ln10, label %1, label %._crit_edge" [k731_hls_led_stream_ip/k731_hls_led_stream_ip.cpp:10]   --->   Operation 9 'br' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.87ns)   --->   "store i32 0, i32* @cnt_reg, align 4" [k731_hls_led_stream_ip/k731_hls_led_stream_ip.cpp:13]   --->   Operation 10 'store' <Predicate = (!icmp_ln10)> <Delay = 0.87>
+ST_1 : Operation 11 [1/1] (1.28ns)   --->   "%icmp_ln14 = icmp slt i32 %led_number_load, 3" [k731_hls_led_stream_ip/k731_hls_led_stream_ip.cpp:14]   --->   Operation 11 'icmp' 'icmp_ln14' <Predicate = (!icmp_ln10)> <Delay = 1.28> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.28> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 12 [1/1] (1.51ns)   --->   "%add_ln14 = add nsw i32 %led_number_load, 1" [k731_hls_led_stream_ip/k731_hls_led_stream_ip.cpp:14]   --->   Operation 12 'add' 'add_ln14' <Predicate = (!icmp_ln10 & icmp_ln14)> <Delay = 1.51> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.51> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 13 [1/1] (0.49ns)   --->   "%select_ln14 = select i1 %icmp_ln14, i32 %add_ln14, i32 0" [k731_hls_led_stream_ip/k731_hls_led_stream_ip.cpp:14]   --->   Operation 13 'select' 'select_ln14' <Predicate = (!icmp_ln10)> <Delay = 0.49> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.49> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "store i32 %select_ln14, i32* @led_number, align 4" [k731_hls_led_stream_ip/k731_hls_led_stream_ip.cpp:14]   --->   Operation 14 'store' <Predicate = (!icmp_ln10)> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.87ns)   --->   "br label %2"   --->   Operation 15 'br' <Predicate = (!icmp_ln10)> <Delay = 0.87>
+ST_1 : Operation 16 [1/1] (1.51ns)   --->   "%add_ln10 = add nsw i32 %cnt_reg_load, 1" [k731_hls_led_stream_ip/k731_hls_led_stream_ip.cpp:10]   --->   Operation 16 'add' 'add_ln10' <Predicate = (icmp_ln10)> <Delay = 1.51> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.51> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 17 [1/1] (0.87ns)   --->   "store i32 %add_ln10, i32* @cnt_reg, align 4" [k731_hls_led_stream_ip/k731_hls_led_stream_ip.cpp:10]   --->   Operation 17 'store' <Predicate = (icmp_ln10)> <Delay = 0.87>
+ST_1 : Operation 18 [1/1] (0.87ns)   --->   "br label %2" [k731_hls_led_stream_ip/k731_hls_led_stream_ip.cpp:10]   --->   Operation 18 'br' <Predicate = (icmp_ln10)> <Delay = 0.87>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%led_number_loc_0 = phi i32 [ %led_number_load, %1 ], [ %select_ln14, %._crit_edge ]" [k731_hls_led_stream_ip/k731_hls_led_stream_ip.cpp:14]   --->   Operation 19 'phi' 'led_number_loc_0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (1.28ns)   --->   "%icmp_ln17 = icmp eq i32 %led_number_loc_0, 0" [k731_hls_led_stream_ip/k731_hls_led_stream_ip.cpp:17]   --->   Operation 20 'icmp' 'icmp_ln17' <Predicate = true> <Delay = 1.28> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.28> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "br i1 %icmp_ln17, label %3, label %4" [k731_hls_led_stream_ip/k731_hls_led_stream_ip.cpp:17]   --->   Operation 21 'br' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (1.28ns)   --->   "%icmp_ln21 = icmp eq i32 %led_number_loc_0, 1" [k731_hls_led_stream_ip/k731_hls_led_stream_ip.cpp:21]   --->   Operation 22 'icmp' 'icmp_ln21' <Predicate = (!icmp_ln17)> <Delay = 1.28> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.28> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "br i1 %icmp_ln21, label %5, label %6" [k731_hls_led_stream_ip/k731_hls_led_stream_ip.cpp:21]   --->   Operation 23 'br' <Predicate = (!icmp_ln17)> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (1.28ns)   --->   "%icmp_ln25 = icmp eq i32 %led_number_loc_0, 2" [k731_hls_led_stream_ip/k731_hls_led_stream_ip.cpp:25]   --->   Operation 24 'icmp' 'icmp_ln25' <Predicate = (!icmp_ln17 & !icmp_ln21)> <Delay = 1.28> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.28> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "br i1 %icmp_ln25, label %7, label %8" [k731_hls_led_stream_ip/k731_hls_led_stream_ip.cpp:25]   --->   Operation 25 'br' <Predicate = (!icmp_ln17 & !icmp_ln21)> <Delay = 0.00>
+ST_1 : Operation 26 [1/1] (1.28ns)   --->   "%icmp_ln29 = icmp eq i32 %led_number_loc_0, 3" [k731_hls_led_stream_ip/k731_hls_led_stream_ip.cpp:29]   --->   Operation 26 'icmp' 'icmp_ln29' <Predicate = (!icmp_ln17 & !icmp_ln21 & !icmp_ln25)> <Delay = 1.28> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.28> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 27 [1/1] (0.00ns)   --->   "br i1 %icmp_ln29, label %9, label %._crit_edge28" [k731_hls_led_stream_ip/k731_hls_led_stream_ip.cpp:29]   --->   Operation 27 'br' <Predicate = (!icmp_ln17 & !icmp_ln21 & !icmp_ln25)> <Delay = 0.00>
+ST_1 : Operation 28 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_none.i4P(i4* %led_V, i4 -8)" [k731_hls_led_stream_ip/k731_hls_led_stream_ip.cpp:31]   --->   Operation 28 'write' <Predicate = (!icmp_ln17 & !icmp_ln21 & !icmp_ln25 & icmp_ln29)> <Delay = 0.00>
+ST_1 : Operation 29 [1/1] (0.00ns)   --->   "br label %._crit_edge28" [k731_hls_led_stream_ip/k731_hls_led_stream_ip.cpp:32]   --->   Operation 29 'br' <Predicate = (!icmp_ln17 & !icmp_ln21 & !icmp_ln25 & icmp_ln29)> <Delay = 0.00>
+ST_1 : Operation 30 [1/1] (0.00ns)   --->   "br label %10"   --->   Operation 30 'br' <Predicate = (!icmp_ln17 & !icmp_ln21 & !icmp_ln25)> <Delay = 0.00>
+ST_1 : Operation 31 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_none.i4P(i4* %led_V, i4 4)" [k731_hls_led_stream_ip/k731_hls_led_stream_ip.cpp:27]   --->   Operation 31 'write' <Predicate = (!icmp_ln17 & !icmp_ln21 & icmp_ln25)> <Delay = 0.00>
+ST_1 : Operation 32 [1/1] (0.00ns)   --->   "br label %10" [k731_hls_led_stream_ip/k731_hls_led_stream_ip.cpp:28]   --->   Operation 32 'br' <Predicate = (!icmp_ln17 & !icmp_ln21 & icmp_ln25)> <Delay = 0.00>
+ST_1 : Operation 33 [1/1] (0.00ns)   --->   "br label %11"   --->   Operation 33 'br' <Predicate = (!icmp_ln17 & !icmp_ln21)> <Delay = 0.00>
+ST_1 : Operation 34 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_none.i4P(i4* %led_V, i4 2)" [k731_hls_led_stream_ip/k731_hls_led_stream_ip.cpp:23]   --->   Operation 34 'write' <Predicate = (!icmp_ln17 & icmp_ln21)> <Delay = 0.00>
+ST_1 : Operation 35 [1/1] (0.00ns)   --->   "br label %11" [k731_hls_led_stream_ip/k731_hls_led_stream_ip.cpp:24]   --->   Operation 35 'br' <Predicate = (!icmp_ln17 & icmp_ln21)> <Delay = 0.00>
+ST_1 : Operation 36 [1/1] (0.00ns)   --->   "br label %12"   --->   Operation 36 'br' <Predicate = (!icmp_ln17)> <Delay = 0.00>
+ST_1 : Operation 37 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_none.i4P(i4* %led_V, i4 1)" [k731_hls_led_stream_ip/k731_hls_led_stream_ip.cpp:19]   --->   Operation 37 'write' <Predicate = (icmp_ln17)> <Delay = 0.00>
+ST_1 : Operation 38 [1/1] (0.00ns)   --->   "br label %12" [k731_hls_led_stream_ip/k731_hls_led_stream_ip.cpp:20]   --->   Operation 38 'br' <Predicate = (icmp_ln17)> <Delay = 0.00>
+ST_1 : Operation 39 [1/1] (0.00ns)   --->   "ret void" [k731_hls_led_stream_ip/k731_hls_led_stream_ip.cpp:33]   --->   Operation 39 'ret' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1.25ns.
+
+ <State 1>: 4.17ns
+The critical path consists of the following:
+	'load' operation ('led_number_load', k731_hls_led_stream_ip/k731_hls_led_stream_ip.cpp:14) on static variable 'led_number' [11]  (0 ns)
+	'add' operation ('add_ln14', k731_hls_led_stream_ip/k731_hls_led_stream_ip.cpp:14) [16]  (1.51 ns)
+	'select' operation ('select_ln14', k731_hls_led_stream_ip/k731_hls_led_stream_ip.cpp:14) [17]  (0.492 ns)
+	multiplexor before 'phi' operation ('led_number_loc_0', k731_hls_led_stream_ip/k731_hls_led_stream_ip.cpp:14) with incoming values : ('led_number_load', k731_hls_led_stream_ip/k731_hls_led_stream_ip.cpp:14) ('select_ln14', k731_hls_led_stream_ip/k731_hls_led_stream_ip.cpp:14) [25]  (0.872 ns)
+	'phi' operation ('led_number_loc_0', k731_hls_led_stream_ip/k731_hls_led_stream_ip.cpp:14) with incoming values : ('led_number_load', k731_hls_led_stream_ip/k731_hls_led_stream_ip.cpp:14) ('select_ln14', k731_hls_led_stream_ip/k731_hls_led_stream_ip.cpp:14) [25]  (0 ns)
+	'icmp' operation ('icmp_ln21', k731_hls_led_stream_ip/k731_hls_led_stream_ip.cpp:21) [29]  (1.29 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

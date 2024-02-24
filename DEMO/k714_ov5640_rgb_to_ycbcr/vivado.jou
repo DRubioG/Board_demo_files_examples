@@ -1,0 +1,31 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Wed May 19 22:24:54 2021
+# Process ID: 18504
+# Current directory: C:/Users/Administrator/Desktop/K7325/R5/k714_ov5640_rgb_to_ycbcr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5304 C:\Users\Administrator\Desktop\K7325\R5\k714_ov5640_rgb_to_ycbcr\k714_ov5640_rgb_to_ycbcr.xpr
+# Log file: C:/Users/Administrator/Desktop/K7325/R5/k714_ov5640_rgb_to_ycbcr/vivado.log
+# Journal file: C:/Users/Administrator/Desktop/K7325/R5/k714_ov5640_rgb_to_ycbcr\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Administrator/Desktop/K7325/R5/k714_ov5640_rgb_to_ycbcr/k714_ov5640_rgb_to_ycbcr.xpr
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+place_ports TMDS_CLK_P1 Y22
+set_property target_constrs_file C:/Users/Administrator/Desktop/K7325/R5/k714_ov5640_rgb_to_ycbcr/k714_ov5640_rgb_to_ycbcr.srcs/constrs_1/new/rgb_to_ycbcr.xdc [current_fileset -constrset]
+save_constraints -force
+reset_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+current_hw_device [get_hw_devices xc7k325t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7k325t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k325t_0]
+set_property PROGRAM.FILE {C:/Users/Administrator/Desktop/K7325/R5/k714_ov5640_rgb_to_ycbcr/k714_ov5640_rgb_to_ycbcr.runs/impl_1/rgb_to_ycbcr.bit} [get_hw_devices xc7k325t_0]
+program_hw_devices [get_hw_devices xc7k325t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]

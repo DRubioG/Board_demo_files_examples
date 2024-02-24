@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Wed May 19 22:29:21 2021
+# Process ID: 15552
+# Current directory: C:/Users/Administrator/Desktop/K7325/R5/k714_ov5640_rgb_to_ycbcr/k714_ov5640_rgb_to_ycbcr.runs/impl_1
+# Command line: vivado.exe -log rgb_to_ycbcr.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source rgb_to_ycbcr.tcl -notrace
+# Log file: C:/Users/Administrator/Desktop/K7325/R5/k714_ov5640_rgb_to_ycbcr/k714_ov5640_rgb_to_ycbcr.runs/impl_1/rgb_to_ycbcr.vdi
+# Journal file: C:/Users/Administrator/Desktop/K7325/R5/k714_ov5640_rgb_to_ycbcr/k714_ov5640_rgb_to_ycbcr.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source rgb_to_ycbcr.tcl -notrace

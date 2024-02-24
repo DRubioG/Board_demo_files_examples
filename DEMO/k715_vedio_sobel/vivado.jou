@@ -1,0 +1,31 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Wed May 19 22:24:58 2021
+# Process ID: 17124
+# Current directory: C:/Users/Administrator/Desktop/K7325/R5/k715_vedio_sobel
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5268 C:\Users\Administrator\Desktop\K7325\R5\k715_vedio_sobel\k715_vedio_sobel.xpr
+# Log file: C:/Users/Administrator/Desktop/K7325/R5/k715_vedio_sobel/vivado.log
+# Journal file: C:/Users/Administrator/Desktop/K7325/R5/k715_vedio_sobel\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Administrator/Desktop/K7325/R5/k715_vedio_sobel/k715_vedio_sobel.xpr
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+place_ports TMDS_CLK_P1 Y22
+save_constraints
+reset_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+current_hw_device [get_hw_devices xc7k325t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7k325t_0] 0]
+set_property PROBES.FILE {C:/Users/Administrator/Desktop/K7325/R5/k715_vedio_sobel/k715_vedio_sobel.runs/impl_1/vedio_sobel.ltx} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {C:/Users/Administrator/Desktop/K7325/R5/k715_vedio_sobel/k715_vedio_sobel.runs/impl_1/vedio_sobel.ltx} [get_hw_devices xc7k325t_0]
+set_property PROGRAM.FILE {C:/Users/Administrator/Desktop/K7325/R5/k715_vedio_sobel/k715_vedio_sobel.runs/impl_1/vedio_sobel.bit} [get_hw_devices xc7k325t_0]
+program_hw_devices [get_hw_devices xc7k325t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]]

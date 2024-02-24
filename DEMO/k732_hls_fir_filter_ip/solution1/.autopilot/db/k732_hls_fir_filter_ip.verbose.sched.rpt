@@ -1,0 +1,573 @@
+
+
+================================================================
+== Vivado HLS Report for 'k732_hls_fir_filter_ip'
+================================================================
+* Date:           Mon Jun 29 22:00:38 2020
+
+* Version:        2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)
+* Project:        k732_hls_fir_filter_ip
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z010-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  | 10.00 ns | 6.794 ns |   1.25 ns  |
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute)  |  Interval | Pipeline|
+    |   min   |   max   |    min    |    max   | min | max |   Type  |
+    +---------+---------+-----------+----------+-----+-----+---------+
+    |        1|      554| 10.000 ns | 5.540 us |    1|  554|   none  |
+    +---------+---------+-----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +----------+---------+---------+----------+-----------+-----------+---------+----------+
+        |          |  Latency (cycles) | Iteration|  Initiation Interval  |   Trip  |          |
+        | Loop Name|   min   |   max   |  Latency |  achieved |   target  |  Count  | Pipelined|
+        +----------+---------+---------+----------+-----------+-----------+---------+----------+
+        |- Loop 1  |        0|      510|         2|          -|          -| 0 ~ 255 |    no    |
+        +----------+---------+---------+----------+-----------+-----------+---------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 46
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 46 2 
+2 --> 3 4 
+3 --> 2 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 9 
+9 --> 10 
+10 --> 11 
+11 --> 12 
+12 --> 13 
+13 --> 14 
+14 --> 15 
+15 --> 16 
+16 --> 17 
+17 --> 18 
+18 --> 19 
+19 --> 20 
+20 --> 21 
+21 --> 22 
+22 --> 23 
+23 --> 24 
+24 --> 25 
+25 --> 26 
+26 --> 27 
+27 --> 28 
+28 --> 29 
+29 --> 30 
+30 --> 31 
+31 --> 32 
+32 --> 33 
+33 --> 34 
+34 --> 35 
+35 --> 36 
+36 --> 37 
+37 --> 38 
+38 --> 39 
+39 --> 40 
+40 --> 41 
+41 --> 42 
+42 --> 43 
+43 --> 44 
+44 --> 45 
+45 --> 46 
+46 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 3.32>
+ST_1 : Operation 47 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32 %input_r) nounwind, !map !7"   --->   Operation 47 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 48 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i8 %fir_time) nounwind, !map !13"   --->   Operation 48 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 49 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32* %output_r) nounwind, !map !17"   --->   Operation 49 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 50 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i8* %result_valid) nounwind, !map !23"   --->   Operation 50 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 51 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecTopModule([23 x i8]* @k732_hls_fir_filter_s) nounwind"   --->   Operation 51 'spectopmodule' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 52 [1/1] (0.00ns)   --->   "%fir_time_read = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %fir_time) nounwind" [k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:6]   --->   Operation 52 'read' 'fir_time_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 53 [1/1] (0.00ns)   --->   "%input_read = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %input_r) nounwind" [k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:6]   --->   Operation 53 'read' 'input_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 54 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32 0, [13 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:8]   --->   Operation 54 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 55 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32* %output_r, [8 x i8]* @p_str2, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:9]   --->   Operation 55 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 56 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i8* %result_valid, [8 x i8]* @p_str2, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:10]   --->   Operation 56 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 57 [1/1] (1.55ns)   --->   "%icmp_ln19 = icmp eq i8 %fir_time_read, 0" [k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:19]   --->   Operation 57 'icmp' 'icmp_ln19' <Predicate = true> <Delay = 1.55> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.47> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 58 [1/1] (1.76ns)   --->   "br i1 %icmp_ln19, label %._crit_edge, label %1" [k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:19]   --->   Operation 58 'br' <Predicate = true> <Delay = 1.76>
+ST_1 : Operation 59 [1/1] (1.55ns)   --->   "%icmp_ln26 = icmp ugt i8 %fir_time_read, -56" [k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:26]   --->   Operation 59 'icmp' 'icmp_ln26' <Predicate = (!icmp_ln19)> <Delay = 1.55> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.47> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 60 [1/1] (1.24ns)   --->   "%select_ln26 = select i1 %icmp_ln26, i8 -56, i8 %fir_time_read" [k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:26]   --->   Operation 60 'select' 'select_ln26' <Predicate = (!icmp_ln19)> <Delay = 1.24> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 1.24> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 61 [1/1] (0.00ns)   --->   "%zext_ln26 = zext i8 %select_ln26 to i9" [k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:26]   --->   Operation 61 'zext' 'zext_ln26' <Predicate = (!icmp_ln19)> <Delay = 0.00>
+ST_1 : Operation 62 [1/1] (0.00ns)   --->   "%filter_ptr_load = load i32* @filter_ptr, align 4" [k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:27]   --->   Operation 62 'load' 'filter_ptr_load' <Predicate = (!icmp_ln19)> <Delay = 0.00>
+ST_1 : Operation 63 [1/1] (0.00ns)   --->   "%sext_ln27 = sext i32 %filter_ptr_load to i64" [k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:27]   --->   Operation 63 'sext' 'sext_ln27' <Predicate = (!icmp_ln19)> <Delay = 0.00>
+ST_1 : Operation 64 [1/1] (0.00ns)   --->   "%buffer_in_addr = getelementptr inbounds [256 x i32]* @buffer_in, i64 0, i64 %sext_ln27" [k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:27]   --->   Operation 64 'getelementptr' 'buffer_in_addr' <Predicate = (!icmp_ln19)> <Delay = 0.00>
+ST_1 : Operation 65 [1/1] (3.25ns)   --->   "store i32 %input_read, i32* %buffer_in_addr, align 4" [k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:27]   --->   Operation 65 'store' <Predicate = (!icmp_ln19)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 256> <RAM>
+ST_1 : Operation 66 [1/1] (1.55ns)   --->   "%empty = icmp ult i8 %fir_time_read, -56" [k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:6]   --->   Operation 66 'icmp' 'empty' <Predicate = (!icmp_ln19)> <Delay = 1.55> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.47> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 67 [1/1] (1.24ns)   --->   "%select_ln28 = select i1 %empty, i8 %fir_time_read, i8 -56" [k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:28]   --->   Operation 67 'select' 'select_ln28' <Predicate = (!icmp_ln19)> <Delay = 1.24> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 1.24> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 68 [1/1] (1.76ns)   --->   "br label %2" [k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:28]   --->   Operation 68 'br' <Predicate = (!icmp_ln19)> <Delay = 1.76>
+
+State 2 <SV = 1> <Delay = 6.79>
+ST_2 : Operation 69 [1/1] (0.00ns)   --->   "%tmp_add_value_0 = phi i40 [ 0, %1 ], [ %tmp_add_value, %3 ]"   --->   Operation 69 'phi' 'tmp_add_value_0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 70 [1/1] (0.00ns)   --->   "%i_0 = phi i8 [ 0, %1 ], [ %i, %3 ]"   --->   Operation 70 'phi' 'i_0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 71 [1/1] (0.00ns)   --->   "%empty_2 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 0, i64 255, i64 0) nounwind"   --->   Operation 71 'speclooptripcount' 'empty_2' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 72 [1/1] (1.55ns)   --->   "%icmp_ln28 = icmp eq i8 %i_0, %select_ln28" [k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:28]   --->   Operation 72 'icmp' 'icmp_ln28' <Predicate = true> <Delay = 1.55> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.47> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 73 [1/1] (1.91ns)   --->   "%i = add i8 %i_0, 1" [k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:28]   --->   Operation 73 'add' 'i' <Predicate = true> <Delay = 1.91> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.91> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 74 [1/1] (0.00ns)   --->   "br i1 %icmp_ln28, label %4, label %3" [k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:28]   --->   Operation 74 'br' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 75 [1/1] (0.00ns)   --->   "%zext_ln28 = zext i8 %i_0 to i64" [k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:28]   --->   Operation 75 'zext' 'zext_ln28' <Predicate = (!icmp_ln28)> <Delay = 0.00>
+ST_2 : Operation 76 [1/1] (0.00ns)   --->   "%buffer_in_addr_1 = getelementptr inbounds [256 x i32]* @buffer_in, i64 0, i64 %zext_ln28" [k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:28]   --->   Operation 76 'getelementptr' 'buffer_in_addr_1' <Predicate = (!icmp_ln28)> <Delay = 0.00>
+ST_2 : Operation 77 [2/2] (3.25ns)   --->   "%buffer_in_load = load i32* %buffer_in_addr_1, align 4" [k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:28]   --->   Operation 77 'load' 'buffer_in_load' <Predicate = (!icmp_ln28)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 256> <RAM>
+ST_2 : Operation 78 [1/1] (2.55ns)   --->   "%add_ln29 = add nsw i32 %filter_ptr_load, 1" [k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:29]   --->   Operation 78 'add' 'add_ln29' <Predicate = (icmp_ln28)> <Delay = 2.55> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.91> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 79 [1/1] (1.91ns)   --->   "%add_ln30 = add i9 %zext_ln26, -1" [k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:30]   --->   Operation 79 'add' 'add_ln30' <Predicate = (icmp_ln28)> <Delay = 1.91> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.91> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 80 [1/1] (0.00ns)   --->   "%sext_ln30 = sext i9 %add_ln30 to i32" [k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:30]   --->   Operation 80 'sext' 'sext_ln30' <Predicate = (icmp_ln28)> <Delay = 0.00>
+ST_2 : Operation 81 [1/1] (2.47ns)   --->   "%icmp_ln30 = icmp sgt i32 %add_ln29, %sext_ln30" [k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:30]   --->   Operation 81 'icmp' 'icmp_ln30' <Predicate = (icmp_ln28)> <Delay = 2.47> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.47> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 82 [1/1] (1.76ns)   --->   "br i1 %icmp_ln30, label %5, label %._crit_edge1" [k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:30]   --->   Operation 82 'br' <Predicate = (icmp_ln28)> <Delay = 1.76>
+ST_2 : Operation 83 [1/1] (0.00ns)   --->   "store i1 true, i1* @result_valid_flag, align 1" [k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:33]   --->   Operation 83 'store' <Predicate = (icmp_ln28 & icmp_ln30)> <Delay = 0.00>
+ST_2 : Operation 84 [1/1] (1.76ns)   --->   "br label %._crit_edge1" [k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:34]   --->   Operation 84 'br' <Predicate = (icmp_ln28 & icmp_ln30)> <Delay = 1.76>
+ST_2 : Operation 85 [1/1] (0.00ns)   --->   "%zext_ln36 = zext i8 %select_ln26 to i40" [k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:36]   --->   Operation 85 'zext' 'zext_ln36' <Predicate = (icmp_ln28)> <Delay = 0.00>
+ST_2 : Operation 86 [44/44] (4.37ns)   --->   "%udiv_ln36 = udiv i40 %tmp_add_value_0, %zext_ln36" [k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:36]   --->   Operation 86 'udiv' 'udiv_ln36' <Predicate = (icmp_ln28)> <Delay = 4.37> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 43> <II = 32> <Delay = 4.37> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 3 <SV = 2> <Delay = 6.13>
+ST_3 : Operation 87 [1/2] (3.25ns)   --->   "%buffer_in_load = load i32* %buffer_in_addr_1, align 4" [k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:28]   --->   Operation 87 'load' 'buffer_in_load' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 256> <RAM>
+ST_3 : Operation 88 [1/1] (0.00ns)   --->   "%zext_ln28_1 = zext i32 %buffer_in_load to i40" [k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:28]   --->   Operation 88 'zext' 'zext_ln28_1' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 89 [1/1] (2.87ns)   --->   "%tmp_add_value = add i40 %zext_ln28_1, %tmp_add_value_0" [k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:28]   --->   Operation 89 'add' 'tmp_add_value' <Predicate = true> <Delay = 2.87> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.91> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 90 [1/1] (0.00ns)   --->   "br label %2" [k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:28]   --->   Operation 90 'br' <Predicate = true> <Delay = 0.00>
+
+State 4 <SV = 2> <Delay = 4.37>
+ST_4 : Operation 91 [1/1] (0.00ns)   --->   "%filter_ptr_new_0 = phi i32 [ 0, %5 ], [ %add_ln29, %4 ]" [k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:29]   --->   Operation 91 'phi' 'filter_ptr_new_0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 92 [43/44] (4.37ns)   --->   "%udiv_ln36 = udiv i40 %tmp_add_value_0, %zext_ln36" [k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:36]   --->   Operation 92 'udiv' 'udiv_ln36' <Predicate = true> <Delay = 4.37> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 43> <II = 32> <Delay = 4.37> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 93 [1/1] (0.00ns)   --->   "store i32 %filter_ptr_new_0, i32* @filter_ptr, align 4" [k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:29]   --->   Operation 93 'store' <Predicate = true> <Delay = 0.00>
+
+State 5 <SV = 3> <Delay = 4.37>
+ST_5 : Operation 94 [42/44] (4.37ns)   --->   "%udiv_ln36 = udiv i40 %tmp_add_value_0, %zext_ln36" [k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:36]   --->   Operation 94 'udiv' 'udiv_ln36' <Predicate = true> <Delay = 4.37> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 43> <II = 32> <Delay = 4.37> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 6 <SV = 4> <Delay = 4.37>
+ST_6 : Operation 95 [41/44] (4.37ns)   --->   "%udiv_ln36 = udiv i40 %tmp_add_value_0, %zext_ln36" [k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:36]   --->   Operation 95 'udiv' 'udiv_ln36' <Predicate = true> <Delay = 4.37> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 43> <II = 32> <Delay = 4.37> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 7 <SV = 5> <Delay = 4.37>
+ST_7 : Operation 96 [40/44] (4.37ns)   --->   "%udiv_ln36 = udiv i40 %tmp_add_value_0, %zext_ln36" [k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:36]   --->   Operation 96 'udiv' 'udiv_ln36' <Predicate = true> <Delay = 4.37> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 43> <II = 32> <Delay = 4.37> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 8 <SV = 6> <Delay = 4.37>
+ST_8 : Operation 97 [39/44] (4.37ns)   --->   "%udiv_ln36 = udiv i40 %tmp_add_value_0, %zext_ln36" [k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:36]   --->   Operation 97 'udiv' 'udiv_ln36' <Predicate = true> <Delay = 4.37> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 43> <II = 32> <Delay = 4.37> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 9 <SV = 7> <Delay = 4.37>
+ST_9 : Operation 98 [38/44] (4.37ns)   --->   "%udiv_ln36 = udiv i40 %tmp_add_value_0, %zext_ln36" [k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:36]   --->   Operation 98 'udiv' 'udiv_ln36' <Predicate = true> <Delay = 4.37> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 43> <II = 32> <Delay = 4.37> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 10 <SV = 8> <Delay = 4.37>
+ST_10 : Operation 99 [37/44] (4.37ns)   --->   "%udiv_ln36 = udiv i40 %tmp_add_value_0, %zext_ln36" [k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:36]   --->   Operation 99 'udiv' 'udiv_ln36' <Predicate = true> <Delay = 4.37> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 43> <II = 32> <Delay = 4.37> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 11 <SV = 9> <Delay = 4.37>
+ST_11 : Operation 100 [36/44] (4.37ns)   --->   "%udiv_ln36 = udiv i40 %tmp_add_value_0, %zext_ln36" [k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:36]   --->   Operation 100 'udiv' 'udiv_ln36' <Predicate = true> <Delay = 4.37> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 43> <II = 32> <Delay = 4.37> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 12 <SV = 10> <Delay = 4.37>
+ST_12 : Operation 101 [35/44] (4.37ns)   --->   "%udiv_ln36 = udiv i40 %tmp_add_value_0, %zext_ln36" [k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:36]   --->   Operation 101 'udiv' 'udiv_ln36' <Predicate = true> <Delay = 4.37> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 43> <II = 32> <Delay = 4.37> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 13 <SV = 11> <Delay = 4.37>
+ST_13 : Operation 102 [34/44] (4.37ns)   --->   "%udiv_ln36 = udiv i40 %tmp_add_value_0, %zext_ln36" [k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:36]   --->   Operation 102 'udiv' 'udiv_ln36' <Predicate = true> <Delay = 4.37> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 43> <II = 32> <Delay = 4.37> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 14 <SV = 12> <Delay = 4.37>
+ST_14 : Operation 103 [33/44] (4.37ns)   --->   "%udiv_ln36 = udiv i40 %tmp_add_value_0, %zext_ln36" [k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:36]   --->   Operation 103 'udiv' 'udiv_ln36' <Predicate = true> <Delay = 4.37> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 43> <II = 32> <Delay = 4.37> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 15 <SV = 13> <Delay = 4.37>
+ST_15 : Operation 104 [32/44] (4.37ns)   --->   "%udiv_ln36 = udiv i40 %tmp_add_value_0, %zext_ln36" [k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:36]   --->   Operation 104 'udiv' 'udiv_ln36' <Predicate = true> <Delay = 4.37> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 43> <II = 32> <Delay = 4.37> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 16 <SV = 14> <Delay = 4.37>
+ST_16 : Operation 105 [31/44] (4.37ns)   --->   "%udiv_ln36 = udiv i40 %tmp_add_value_0, %zext_ln36" [k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:36]   --->   Operation 105 'udiv' 'udiv_ln36' <Predicate = true> <Delay = 4.37> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 43> <II = 32> <Delay = 4.37> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 17 <SV = 15> <Delay = 4.37>
+ST_17 : Operation 106 [30/44] (4.37ns)   --->   "%udiv_ln36 = udiv i40 %tmp_add_value_0, %zext_ln36" [k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:36]   --->   Operation 106 'udiv' 'udiv_ln36' <Predicate = true> <Delay = 4.37> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 43> <II = 32> <Delay = 4.37> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 18 <SV = 16> <Delay = 4.37>
+ST_18 : Operation 107 [29/44] (4.37ns)   --->   "%udiv_ln36 = udiv i40 %tmp_add_value_0, %zext_ln36" [k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:36]   --->   Operation 107 'udiv' 'udiv_ln36' <Predicate = true> <Delay = 4.37> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 43> <II = 32> <Delay = 4.37> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 19 <SV = 17> <Delay = 4.37>
+ST_19 : Operation 108 [28/44] (4.37ns)   --->   "%udiv_ln36 = udiv i40 %tmp_add_value_0, %zext_ln36" [k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:36]   --->   Operation 108 'udiv' 'udiv_ln36' <Predicate = true> <Delay = 4.37> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 43> <II = 32> <Delay = 4.37> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 20 <SV = 18> <Delay = 4.37>
+ST_20 : Operation 109 [27/44] (4.37ns)   --->   "%udiv_ln36 = udiv i40 %tmp_add_value_0, %zext_ln36" [k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:36]   --->   Operation 109 'udiv' 'udiv_ln36' <Predicate = true> <Delay = 4.37> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 43> <II = 32> <Delay = 4.37> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 21 <SV = 19> <Delay = 4.37>
+ST_21 : Operation 110 [26/44] (4.37ns)   --->   "%udiv_ln36 = udiv i40 %tmp_add_value_0, %zext_ln36" [k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:36]   --->   Operation 110 'udiv' 'udiv_ln36' <Predicate = true> <Delay = 4.37> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 43> <II = 32> <Delay = 4.37> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 22 <SV = 20> <Delay = 4.37>
+ST_22 : Operation 111 [25/44] (4.37ns)   --->   "%udiv_ln36 = udiv i40 %tmp_add_value_0, %zext_ln36" [k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:36]   --->   Operation 111 'udiv' 'udiv_ln36' <Predicate = true> <Delay = 4.37> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 43> <II = 32> <Delay = 4.37> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 23 <SV = 21> <Delay = 4.37>
+ST_23 : Operation 112 [24/44] (4.37ns)   --->   "%udiv_ln36 = udiv i40 %tmp_add_value_0, %zext_ln36" [k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:36]   --->   Operation 112 'udiv' 'udiv_ln36' <Predicate = true> <Delay = 4.37> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 43> <II = 32> <Delay = 4.37> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 24 <SV = 22> <Delay = 4.37>
+ST_24 : Operation 113 [23/44] (4.37ns)   --->   "%udiv_ln36 = udiv i40 %tmp_add_value_0, %zext_ln36" [k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:36]   --->   Operation 113 'udiv' 'udiv_ln36' <Predicate = true> <Delay = 4.37> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 43> <II = 32> <Delay = 4.37> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 25 <SV = 23> <Delay = 4.37>
+ST_25 : Operation 114 [22/44] (4.37ns)   --->   "%udiv_ln36 = udiv i40 %tmp_add_value_0, %zext_ln36" [k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:36]   --->   Operation 114 'udiv' 'udiv_ln36' <Predicate = true> <Delay = 4.37> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 43> <II = 32> <Delay = 4.37> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 26 <SV = 24> <Delay = 4.37>
+ST_26 : Operation 115 [21/44] (4.37ns)   --->   "%udiv_ln36 = udiv i40 %tmp_add_value_0, %zext_ln36" [k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:36]   --->   Operation 115 'udiv' 'udiv_ln36' <Predicate = true> <Delay = 4.37> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 43> <II = 32> <Delay = 4.37> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 27 <SV = 25> <Delay = 4.37>
+ST_27 : Operation 116 [20/44] (4.37ns)   --->   "%udiv_ln36 = udiv i40 %tmp_add_value_0, %zext_ln36" [k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:36]   --->   Operation 116 'udiv' 'udiv_ln36' <Predicate = true> <Delay = 4.37> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 43> <II = 32> <Delay = 4.37> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 28 <SV = 26> <Delay = 4.37>
+ST_28 : Operation 117 [19/44] (4.37ns)   --->   "%udiv_ln36 = udiv i40 %tmp_add_value_0, %zext_ln36" [k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:36]   --->   Operation 117 'udiv' 'udiv_ln36' <Predicate = true> <Delay = 4.37> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 43> <II = 32> <Delay = 4.37> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 29 <SV = 27> <Delay = 4.37>
+ST_29 : Operation 118 [18/44] (4.37ns)   --->   "%udiv_ln36 = udiv i40 %tmp_add_value_0, %zext_ln36" [k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:36]   --->   Operation 118 'udiv' 'udiv_ln36' <Predicate = true> <Delay = 4.37> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 43> <II = 32> <Delay = 4.37> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 30 <SV = 28> <Delay = 4.37>
+ST_30 : Operation 119 [17/44] (4.37ns)   --->   "%udiv_ln36 = udiv i40 %tmp_add_value_0, %zext_ln36" [k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:36]   --->   Operation 119 'udiv' 'udiv_ln36' <Predicate = true> <Delay = 4.37> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 43> <II = 32> <Delay = 4.37> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 31 <SV = 29> <Delay = 4.37>
+ST_31 : Operation 120 [16/44] (4.37ns)   --->   "%udiv_ln36 = udiv i40 %tmp_add_value_0, %zext_ln36" [k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:36]   --->   Operation 120 'udiv' 'udiv_ln36' <Predicate = true> <Delay = 4.37> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 43> <II = 32> <Delay = 4.37> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 32 <SV = 30> <Delay = 4.37>
+ST_32 : Operation 121 [15/44] (4.37ns)   --->   "%udiv_ln36 = udiv i40 %tmp_add_value_0, %zext_ln36" [k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:36]   --->   Operation 121 'udiv' 'udiv_ln36' <Predicate = true> <Delay = 4.37> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 43> <II = 32> <Delay = 4.37> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 33 <SV = 31> <Delay = 4.37>
+ST_33 : Operation 122 [14/44] (4.37ns)   --->   "%udiv_ln36 = udiv i40 %tmp_add_value_0, %zext_ln36" [k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:36]   --->   Operation 122 'udiv' 'udiv_ln36' <Predicate = true> <Delay = 4.37> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 43> <II = 32> <Delay = 4.37> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 34 <SV = 32> <Delay = 4.37>
+ST_34 : Operation 123 [13/44] (4.37ns)   --->   "%udiv_ln36 = udiv i40 %tmp_add_value_0, %zext_ln36" [k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:36]   --->   Operation 123 'udiv' 'udiv_ln36' <Predicate = true> <Delay = 4.37> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 43> <II = 32> <Delay = 4.37> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 35 <SV = 33> <Delay = 4.37>
+ST_35 : Operation 124 [12/44] (4.37ns)   --->   "%udiv_ln36 = udiv i40 %tmp_add_value_0, %zext_ln36" [k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:36]   --->   Operation 124 'udiv' 'udiv_ln36' <Predicate = true> <Delay = 4.37> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 43> <II = 32> <Delay = 4.37> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 36 <SV = 34> <Delay = 4.37>
+ST_36 : Operation 125 [11/44] (4.37ns)   --->   "%udiv_ln36 = udiv i40 %tmp_add_value_0, %zext_ln36" [k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:36]   --->   Operation 125 'udiv' 'udiv_ln36' <Predicate = true> <Delay = 4.37> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 43> <II = 32> <Delay = 4.37> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 37 <SV = 35> <Delay = 4.37>
+ST_37 : Operation 126 [10/44] (4.37ns)   --->   "%udiv_ln36 = udiv i40 %tmp_add_value_0, %zext_ln36" [k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:36]   --->   Operation 126 'udiv' 'udiv_ln36' <Predicate = true> <Delay = 4.37> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 43> <II = 32> <Delay = 4.37> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 38 <SV = 36> <Delay = 4.37>
+ST_38 : Operation 127 [9/44] (4.37ns)   --->   "%udiv_ln36 = udiv i40 %tmp_add_value_0, %zext_ln36" [k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:36]   --->   Operation 127 'udiv' 'udiv_ln36' <Predicate = true> <Delay = 4.37> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 43> <II = 32> <Delay = 4.37> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 39 <SV = 37> <Delay = 4.37>
+ST_39 : Operation 128 [8/44] (4.37ns)   --->   "%udiv_ln36 = udiv i40 %tmp_add_value_0, %zext_ln36" [k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:36]   --->   Operation 128 'udiv' 'udiv_ln36' <Predicate = true> <Delay = 4.37> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 43> <II = 32> <Delay = 4.37> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 40 <SV = 38> <Delay = 4.37>
+ST_40 : Operation 129 [7/44] (4.37ns)   --->   "%udiv_ln36 = udiv i40 %tmp_add_value_0, %zext_ln36" [k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:36]   --->   Operation 129 'udiv' 'udiv_ln36' <Predicate = true> <Delay = 4.37> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 43> <II = 32> <Delay = 4.37> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 41 <SV = 39> <Delay = 4.37>
+ST_41 : Operation 130 [6/44] (4.37ns)   --->   "%udiv_ln36 = udiv i40 %tmp_add_value_0, %zext_ln36" [k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:36]   --->   Operation 130 'udiv' 'udiv_ln36' <Predicate = true> <Delay = 4.37> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 43> <II = 32> <Delay = 4.37> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 42 <SV = 40> <Delay = 4.37>
+ST_42 : Operation 131 [5/44] (4.37ns)   --->   "%udiv_ln36 = udiv i40 %tmp_add_value_0, %zext_ln36" [k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:36]   --->   Operation 131 'udiv' 'udiv_ln36' <Predicate = true> <Delay = 4.37> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 43> <II = 32> <Delay = 4.37> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 43 <SV = 41> <Delay = 4.37>
+ST_43 : Operation 132 [4/44] (4.37ns)   --->   "%udiv_ln36 = udiv i40 %tmp_add_value_0, %zext_ln36" [k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:36]   --->   Operation 132 'udiv' 'udiv_ln36' <Predicate = true> <Delay = 4.37> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 43> <II = 32> <Delay = 4.37> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 44 <SV = 42> <Delay = 4.37>
+ST_44 : Operation 133 [3/44] (4.37ns)   --->   "%udiv_ln36 = udiv i40 %tmp_add_value_0, %zext_ln36" [k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:36]   --->   Operation 133 'udiv' 'udiv_ln36' <Predicate = true> <Delay = 4.37> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 43> <II = 32> <Delay = 4.37> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 45 <SV = 43> <Delay = 4.37>
+ST_45 : Operation 134 [2/44] (4.37ns)   --->   "%udiv_ln36 = udiv i40 %tmp_add_value_0, %zext_ln36" [k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:36]   --->   Operation 134 'udiv' 'udiv_ln36' <Predicate = true> <Delay = 4.37> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 43> <II = 32> <Delay = 4.37> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 46 <SV = 44> <Delay = 6.14>
+ST_46 : Operation 135 [1/1] (0.00ns)   --->   "%result_valid_flag_lo = load i1* @result_valid_flag, align 1" [k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:35]   --->   Operation 135 'load' 'result_valid_flag_lo' <Predicate = (!icmp_ln19)> <Delay = 0.00>
+ST_46 : Operation 136 [1/1] (0.00ns)   --->   "%zext_ln35 = zext i1 %result_valid_flag_lo to i8" [k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:35]   --->   Operation 136 'zext' 'zext_ln35' <Predicate = (!icmp_ln19)> <Delay = 0.00>
+ST_46 : Operation 137 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_none.i8P(i8* %result_valid, i8 %zext_ln35) nounwind" [k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:35]   --->   Operation 137 'write' <Predicate = (!icmp_ln19)> <Delay = 0.00>
+ST_46 : Operation 138 [1/44] (4.37ns)   --->   "%udiv_ln36 = udiv i40 %tmp_add_value_0, %zext_ln36" [k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:36]   --->   Operation 138 'udiv' 'udiv_ln36' <Predicate = (!icmp_ln19)> <Delay = 4.37> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 43> <II = 32> <Delay = 4.37> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_46 : Operation 139 [1/1] (0.00ns)   --->   "%trunc_ln36 = trunc i40 %udiv_ln36 to i32" [k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:36]   --->   Operation 139 'trunc' 'trunc_ln36' <Predicate = (!icmp_ln19)> <Delay = 0.00>
+ST_46 : Operation 140 [1/1] (1.76ns)   --->   "br label %._crit_edge" [k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:37]   --->   Operation 140 'br' <Predicate = (!icmp_ln19)> <Delay = 1.76>
+ST_46 : Operation 141 [1/1] (0.00ns)   --->   "%storemerge = phi i32 [ %trunc_ln36, %._crit_edge1 ], [ 0, %0 ]" [k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:36]   --->   Operation 141 'phi' 'storemerge' <Predicate = true> <Delay = 0.00>
+ST_46 : Operation 142 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_none.i32P(i32* %output_r, i32 %storemerge) nounwind" [k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:21]   --->   Operation 142 'write' <Predicate = true> <Delay = 0.00>
+ST_46 : Operation 143 [1/1] (0.00ns)   --->   "ret void" [k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:39]   --->   Operation 143 'ret' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1.25ns.
+
+ <State 1>: 3.32ns
+The critical path consists of the following:
+	wire read on port 'fir_time' (k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:6) [16]  (0 ns)
+	'icmp' operation ('icmp_ln19', k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:19) [21]  (1.55 ns)
+	multiplexor before 'phi' operation ('storemerge', k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:36) with incoming values : ('trunc_ln36', k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:36) [68]  (1.77 ns)
+
+ <State 2>: 6.79ns
+The critical path consists of the following:
+	'add' operation ('add_ln29', k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:29) [49]  (2.55 ns)
+	'icmp' operation ('icmp_ln30', k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:30) [52]  (2.47 ns)
+	multiplexor before 'phi' operation ('filter_ptr_new_0', k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:29) with incoming values : ('add_ln29', k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:29) [58]  (1.77 ns)
+
+ <State 3>: 6.13ns
+The critical path consists of the following:
+	'load' operation ('buffer_in_load', k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:28) on array 'buffer_in' [44]  (3.25 ns)
+	'add' operation ('tmp_add_value', k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:28) [46]  (2.88 ns)
+
+ <State 4>: 4.37ns
+The critical path consists of the following:
+	'udiv' operation ('udiv_ln36', k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:36) [63]  (4.37 ns)
+
+ <State 5>: 4.37ns
+The critical path consists of the following:
+	'udiv' operation ('udiv_ln36', k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:36) [63]  (4.37 ns)
+
+ <State 6>: 4.37ns
+The critical path consists of the following:
+	'udiv' operation ('udiv_ln36', k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:36) [63]  (4.37 ns)
+
+ <State 7>: 4.37ns
+The critical path consists of the following:
+	'udiv' operation ('udiv_ln36', k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:36) [63]  (4.37 ns)
+
+ <State 8>: 4.37ns
+The critical path consists of the following:
+	'udiv' operation ('udiv_ln36', k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:36) [63]  (4.37 ns)
+
+ <State 9>: 4.37ns
+The critical path consists of the following:
+	'udiv' operation ('udiv_ln36', k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:36) [63]  (4.37 ns)
+
+ <State 10>: 4.37ns
+The critical path consists of the following:
+	'udiv' operation ('udiv_ln36', k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:36) [63]  (4.37 ns)
+
+ <State 11>: 4.37ns
+The critical path consists of the following:
+	'udiv' operation ('udiv_ln36', k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:36) [63]  (4.37 ns)
+
+ <State 12>: 4.37ns
+The critical path consists of the following:
+	'udiv' operation ('udiv_ln36', k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:36) [63]  (4.37 ns)
+
+ <State 13>: 4.37ns
+The critical path consists of the following:
+	'udiv' operation ('udiv_ln36', k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:36) [63]  (4.37 ns)
+
+ <State 14>: 4.37ns
+The critical path consists of the following:
+	'udiv' operation ('udiv_ln36', k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:36) [63]  (4.37 ns)
+
+ <State 15>: 4.37ns
+The critical path consists of the following:
+	'udiv' operation ('udiv_ln36', k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:36) [63]  (4.37 ns)
+
+ <State 16>: 4.37ns
+The critical path consists of the following:
+	'udiv' operation ('udiv_ln36', k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:36) [63]  (4.37 ns)
+
+ <State 17>: 4.37ns
+The critical path consists of the following:
+	'udiv' operation ('udiv_ln36', k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:36) [63]  (4.37 ns)
+
+ <State 18>: 4.37ns
+The critical path consists of the following:
+	'udiv' operation ('udiv_ln36', k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:36) [63]  (4.37 ns)
+
+ <State 19>: 4.37ns
+The critical path consists of the following:
+	'udiv' operation ('udiv_ln36', k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:36) [63]  (4.37 ns)
+
+ <State 20>: 4.37ns
+The critical path consists of the following:
+	'udiv' operation ('udiv_ln36', k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:36) [63]  (4.37 ns)
+
+ <State 21>: 4.37ns
+The critical path consists of the following:
+	'udiv' operation ('udiv_ln36', k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:36) [63]  (4.37 ns)
+
+ <State 22>: 4.37ns
+The critical path consists of the following:
+	'udiv' operation ('udiv_ln36', k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:36) [63]  (4.37 ns)
+
+ <State 23>: 4.37ns
+The critical path consists of the following:
+	'udiv' operation ('udiv_ln36', k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:36) [63]  (4.37 ns)
+
+ <State 24>: 4.37ns
+The critical path consists of the following:
+	'udiv' operation ('udiv_ln36', k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:36) [63]  (4.37 ns)
+
+ <State 25>: 4.37ns
+The critical path consists of the following:
+	'udiv' operation ('udiv_ln36', k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:36) [63]  (4.37 ns)
+
+ <State 26>: 4.37ns
+The critical path consists of the following:
+	'udiv' operation ('udiv_ln36', k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:36) [63]  (4.37 ns)
+
+ <State 27>: 4.37ns
+The critical path consists of the following:
+	'udiv' operation ('udiv_ln36', k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:36) [63]  (4.37 ns)
+
+ <State 28>: 4.37ns
+The critical path consists of the following:
+	'udiv' operation ('udiv_ln36', k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:36) [63]  (4.37 ns)
+
+ <State 29>: 4.37ns
+The critical path consists of the following:
+	'udiv' operation ('udiv_ln36', k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:36) [63]  (4.37 ns)
+
+ <State 30>: 4.37ns
+The critical path consists of the following:
+	'udiv' operation ('udiv_ln36', k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:36) [63]  (4.37 ns)
+
+ <State 31>: 4.37ns
+The critical path consists of the following:
+	'udiv' operation ('udiv_ln36', k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:36) [63]  (4.37 ns)
+
+ <State 32>: 4.37ns
+The critical path consists of the following:
+	'udiv' operation ('udiv_ln36', k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:36) [63]  (4.37 ns)
+
+ <State 33>: 4.37ns
+The critical path consists of the following:
+	'udiv' operation ('udiv_ln36', k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:36) [63]  (4.37 ns)
+
+ <State 34>: 4.37ns
+The critical path consists of the following:
+	'udiv' operation ('udiv_ln36', k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:36) [63]  (4.37 ns)
+
+ <State 35>: 4.37ns
+The critical path consists of the following:
+	'udiv' operation ('udiv_ln36', k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:36) [63]  (4.37 ns)
+
+ <State 36>: 4.37ns
+The critical path consists of the following:
+	'udiv' operation ('udiv_ln36', k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:36) [63]  (4.37 ns)
+
+ <State 37>: 4.37ns
+The critical path consists of the following:
+	'udiv' operation ('udiv_ln36', k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:36) [63]  (4.37 ns)
+
+ <State 38>: 4.37ns
+The critical path consists of the following:
+	'udiv' operation ('udiv_ln36', k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:36) [63]  (4.37 ns)
+
+ <State 39>: 4.37ns
+The critical path consists of the following:
+	'udiv' operation ('udiv_ln36', k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:36) [63]  (4.37 ns)
+
+ <State 40>: 4.37ns
+The critical path consists of the following:
+	'udiv' operation ('udiv_ln36', k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:36) [63]  (4.37 ns)
+
+ <State 41>: 4.37ns
+The critical path consists of the following:
+	'udiv' operation ('udiv_ln36', k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:36) [63]  (4.37 ns)
+
+ <State 42>: 4.37ns
+The critical path consists of the following:
+	'udiv' operation ('udiv_ln36', k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:36) [63]  (4.37 ns)
+
+ <State 43>: 4.37ns
+The critical path consists of the following:
+	'udiv' operation ('udiv_ln36', k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:36) [63]  (4.37 ns)
+
+ <State 44>: 4.37ns
+The critical path consists of the following:
+	'udiv' operation ('udiv_ln36', k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:36) [63]  (4.37 ns)
+
+ <State 45>: 4.37ns
+The critical path consists of the following:
+	'udiv' operation ('udiv_ln36', k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:36) [63]  (4.37 ns)
+
+ <State 46>: 6.14ns
+The critical path consists of the following:
+	'udiv' operation ('udiv_ln36', k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:36) [63]  (4.37 ns)
+	multiplexor before 'phi' operation ('storemerge', k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:36) with incoming values : ('trunc_ln36', k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:36) [68]  (1.77 ns)
+	'phi' operation ('storemerge', k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:36) with incoming values : ('trunc_ln36', k732_hls_fir_filter_ip/k732_hls_fir_filter_ip.cpp:36) [68]  (0 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+	State 14
+	State 15
+	State 16
+	State 17
+	State 18
+	State 19
+	State 20
+	State 21
+	State 22
+	State 23
+	State 24
+	State 25
+	State 26
+	State 27
+	State 28
+	State 29
+	State 30
+	State 31
+	State 32
+	State 33
+	State 34
+	State 35
+	State 36
+	State 37
+	State 38
+	State 39
+	State 40
+	State 41
+	State 42
+	State 43
+	State 44
+	State 45
+	State 46
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

@@ -1,0 +1,200 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Mon Jul 13 22:19:49 2020
+# Process ID: 23332
+# Current directory: C:/Users/Administrator/Desktop/K7325/DEMO/k724_sfp1_gtx_10g_test
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8080 C:\Users\Administrator\Desktop\K7325\DEMO\k724_sfp1_gtx_10g_test\gtwizard_0_ex.xpr
+# Log file: C:/Users/Administrator/Desktop/K7325/DEMO/k724_sfp1_gtx_10g_test/vivado.log
+# Journal file: C:/Users/Administrator/Desktop/K7325/DEMO/k724_sfp1_gtx_10g_test\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Administrator/Desktop/K7325/DEMO/k724_sfp1_gtx_10g_test/gtwizard_0_ex.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/Administrator/Desktop/K7325/gtwizard_0_ex' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:07 . Memory (MB): peak = 892.805 ; gain = 236.563
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7k325tffg676-2
+Top: gtwizard_0_exdes
+INFO: [Device 21-403] Loading part xc7k325tffg676-2
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1465.605 ; gain = 225.387
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'gtwizard_0_exdes' [C:/Users/Administrator/Desktop/K7325/DEMO/k724_sfp1_gtx_10g_test/gtwizard_0_ex.srcs/sources_1/imports/example_design/gtwizard_0_exdes.v:70]
+	Parameter EXAMPLE_CONFIG_INDEPENDENT_LANES bound to: 1 - type: integer 
+	Parameter EXAMPLE_LANE_WITH_START_CHAR bound to: 0 - type: integer 
+	Parameter EXAMPLE_WORDS_IN_BRAM bound to: 512 - type: integer 
+	Parameter EXAMPLE_SIM_GTRESET_SPEEDUP bound to: TRUE - type: string 
+	Parameter EXAMPLE_USE_CHIPSCOPE bound to: 0 - type: integer 
+	Parameter STABLE_CLOCK_PERIOD bound to: 20 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [C:/Users/Administrator/Desktop/K7325/DEMO/k724_sfp1_gtx_10g_test/gtwizard_0_ex.srcs/sources_1/imports/example_design/gtwizard_0_exdes.v:92]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [C:/Users/Administrator/Desktop/K7325/DEMO/k724_sfp1_gtx_10g_test/gtwizard_0_ex.srcs/sources_1/imports/example_design/gtwizard_0_exdes.v:98]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [C:/Users/Administrator/Desktop/K7325/DEMO/k724_sfp1_gtx_10g_test/gtwizard_0_ex.srcs/sources_1/imports/example_design/gtwizard_0_exdes.v:99]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [C:/Users/Administrator/Desktop/K7325/DEMO/k724_sfp1_gtx_10g_test/gtwizard_0_ex.srcs/sources_1/imports/example_design/gtwizard_0_exdes.v:102]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [C:/Users/Administrator/Desktop/K7325/DEMO/k724_sfp1_gtx_10g_test/gtwizard_0_ex.srcs/sources_1/imports/example_design/gtwizard_0_exdes.v:103]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [C:/Users/Administrator/Desktop/K7325/DEMO/k724_sfp1_gtx_10g_test/gtwizard_0_ex.srcs/sources_1/imports/example_design/gtwizard_0_exdes.v:104]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [C:/Users/Administrator/Desktop/K7325/DEMO/k724_sfp1_gtx_10g_test/gtwizard_0_ex.srcs/sources_1/imports/example_design/gtwizard_0_exdes.v:105]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [C:/Users/Administrator/Desktop/K7325/DEMO/k724_sfp1_gtx_10g_test/gtwizard_0_ex.srcs/sources_1/imports/example_design/gtwizard_0_exdes.v:106]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [C:/Users/Administrator/Desktop/K7325/DEMO/k724_sfp1_gtx_10g_test/gtwizard_0_ex.srcs/sources_1/imports/example_design/gtwizard_0_exdes.v:107]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [C:/Users/Administrator/Desktop/K7325/DEMO/k724_sfp1_gtx_10g_test/gtwizard_0_ex.srcs/sources_1/imports/example_design/gtwizard_0_exdes.v:108]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [C:/Users/Administrator/Desktop/K7325/DEMO/k724_sfp1_gtx_10g_test/gtwizard_0_ex.srcs/sources_1/imports/example_design/gtwizard_0_exdes.v:109]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [C:/Users/Administrator/Desktop/K7325/DEMO/k724_sfp1_gtx_10g_test/gtwizard_0_ex.srcs/sources_1/imports/example_design/gtwizard_0_exdes.v:110]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [C:/Users/Administrator/Desktop/K7325/DEMO/k724_sfp1_gtx_10g_test/gtwizard_0_ex.srcs/sources_1/imports/example_design/gtwizard_0_exdes.v:111]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [C:/Users/Administrator/Desktop/K7325/DEMO/k724_sfp1_gtx_10g_test/gtwizard_0_ex.srcs/sources_1/imports/example_design/gtwizard_0_exdes.v:281]
+INFO: [Synth 8-6157] synthesizing module 'gtwizard_0_support' [C:/Users/Administrator/Desktop/K7325/DEMO/k724_sfp1_gtx_10g_test/gtwizard_0_ex.srcs/sources_1/imports/example_design/support/gtwizard_0_support.v:70]
+	Parameter EXAMPLE_SIM_GTRESET_SPEEDUP bound to: TRUE - type: string 
+	Parameter STABLE_CLOCK_PERIOD bound to: 20 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'gtwizard_0_GT_USRCLK_SOURCE' [C:/Users/Administrator/Desktop/K7325/DEMO/k724_sfp1_gtx_10g_test/gtwizard_0_ex.srcs/sources_1/imports/example_design/support/gtwizard_0_gt_usrclk_source.v:68]
+INFO: [Synth 8-6157] synthesizing module 'IBUFDS_GTE2' [C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:33090]
+	Parameter CLKCM_CFG bound to: TRUE - type: string 
+	Parameter CLKRCV_TRST bound to: TRUE - type: string 
+	Parameter CLKSWING_CFG bound to: 2'b11 
+INFO: [Synth 8-6155] done synthesizing module 'IBUFDS_GTE2' (1#1) [C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:33090]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:1075]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (2#1) [C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:1075]
+INFO: [Synth 8-6155] done synthesizing module 'gtwizard_0_GT_USRCLK_SOURCE' (3#1) [C:/Users/Administrator/Desktop/K7325/DEMO/k724_sfp1_gtx_10g_test/gtwizard_0_ex.srcs/sources_1/imports/example_design/support/gtwizard_0_gt_usrclk_source.v:68]
+INFO: [Synth 8-6157] synthesizing module 'gtwizard_0_common' [C:/Users/Administrator/Desktop/K7325/DEMO/k724_sfp1_gtx_10g_test/gtwizard_0_ex.srcs/sources_1/imports/example_design/support/gtwizard_0_common.v:69]
+	Parameter WRAPPER_SIM_GTRESET_SPEEDUP bound to: TRUE - type: string 
+	Parameter SIM_QPLLREFCLK_SEL bound to: 3'b010 
+	Parameter QPLL_FBDIV_TOP bound to: 80 - type: integer 
+	Parameter QPLL_FBDIV_IN bound to: 10'b0100100000 
+	Parameter QPLL_FBDIV_RATIO bound to: 1'b1 
+INFO: [Synth 8-6157] synthesizing module 'GTXE2_COMMON' [C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:21991]
+	Parameter BIAS_CFG bound to: 64'b0000000000000000000001000000000000000000000000000001000000000000 
+	Parameter COMMON_CFG bound to: 0 - type: integer 
+	Parameter IS_DRPCLK_INVERTED bound to: 1'b0 
+	Parameter IS_GTGREFCLK_INVERTED bound to: 1'b0 
+	Parameter IS_QPLLLOCKDETCLK_INVERTED bound to: 1'b0 
+	Parameter QPLL_CFG bound to: 27'b000011010000000000110000001 
+	Parameter QPLL_CLKOUT_CFG bound to: 4'b0000 
+	Parameter QPLL_COARSE_FREQ_OVRD bound to: 6'b010000 
+	Parameter QPLL_COARSE_FREQ_OVRD_EN bound to: 1'b0 
+	Parameter QPLL_CP bound to: 10'b0000011111 
+	Parameter QPLL_CP_MONITOR_EN bound to: 1'b0 
+	Parameter QPLL_DMONITOR_SEL bound to: 1'b0 
+	Parameter QPLL_FBDIV bound to: 10'b0100100000 
+	Parameter QPLL_FBDIV_MONITOR_EN bound to: 1'b0 
+	Parameter QPLL_FBDIV_RATIO bound to: 1'b1 
+	Parameter QPLL_INIT_CFG bound to: 24'b000000000000000000000110 
+	Parameter QPLL_LOCK_CFG bound to: 16'b0010000111101000 
+	Parameter QPLL_LPF bound to: 4'b1111 
+	Parameter QPLL_REFCLK_DIV bound to: 1 - type: integer 
+	Parameter SIM_QPLLREFCLK_SEL bound to: 3'b010 
+	Parameter SIM_RESET_SPEEDUP bound to: TRUE - type: string 
+	Parameter SIM_VERSION bound to: 4.0 - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'GTXE2_COMMON' (4#1) [C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:21991]
+INFO: [Synth 8-6155] done synthesizing module 'gtwizard_0_common' (5#1) [C:/Users/Administrator/Desktop/K7325/DEMO/k724_sfp1_gtx_10g_test/gtwizard_0_ex.srcs/sources_1/imports/example_design/support/gtwizard_0_common.v:69]
+INFO: [Synth 8-6157] synthesizing module 'gtwizard_0_common_reset' [C:/Users/Administrator/Desktop/K7325/DEMO/k724_sfp1_gtx_10g_test/gtwizard_0_ex.srcs/sources_1/imports/example_design/support/gtwizard_0_common_reset.v:74]
+	Parameter STABLE_CLOCK_PERIOD bound to: 20 - type: integer 
+	Parameter STARTUP_DELAY bound to: 500 - type: integer 
+	Parameter WAIT_CYCLES bound to: 25 - type: integer 
+	Parameter WAIT_MAX bound to: 35 - type: integer 
+	Parameter INIT bound to: 1'b0 
+	Parameter ASSERT_COMMON_RESET bound to: 1'b1 
+INFO: [Synth 8-226] default block is never used [C:/Users/Administrator/Desktop/K7325/DEMO/k724_sfp1_gtx_10g_test/gtwizard_0_ex.srcs/sources_1/imports/example_design/support/gtwizard_0_common_reset.v:121]
+INFO: [Synth 8-6155] done synthesizing module 'gtwizard_0_common_reset' (6#1) [C:/Users/Administrator/Desktop/K7325/DEMO/k724_sfp1_gtx_10g_test/gtwizard_0_ex.srcs/sources_1/imports/example_design/support/gtwizard_0_common_reset.v:74]
+INFO: [Synth 8-6157] synthesizing module 'gtwizard_0' [C:/Users/Administrator/Desktop/K7325/DEMO/k724_sfp1_gtx_10g_test/.Xil/Vivado-23332-FXTVWR85EI30285/realtime/gtwizard_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'gtwizard_0' (7#1) [C:/Users/Administrator/Desktop/K7325/DEMO/k724_sfp1_gtx_10g_test/.Xil/Vivado-23332-FXTVWR85EI30285/realtime/gtwizard_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'gtwizard_0_support' (8#1) [C:/Users/Administrator/Desktop/K7325/DEMO/k724_sfp1_gtx_10g_test/gtwizard_0_ex.srcs/sources_1/imports/example_design/support/gtwizard_0_support.v:70]
+INFO: [Synth 8-6157] synthesizing module 'gtwizard_0_GT_FRAME_GEN' [C:/Users/Administrator/Desktop/K7325/DEMO/k724_sfp1_gtx_10g_test/gtwizard_0_ex.srcs/sources_1/imports/example_design/gtwizard_0_gt_frame_gen.v:69]
+	Parameter WORDS_IN_BRAM bound to: 512 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/Administrator/Desktop/K7325/DEMO/k724_sfp1_gtx_10g_test/gtwizard_0_ex.srcs/sources_1/imports/example_design/gtwizard_0_gt_frame_gen.v:83]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/Administrator/Desktop/K7325/DEMO/k724_sfp1_gtx_10g_test/gtwizard_0_ex.srcs/sources_1/imports/example_design/gtwizard_0_gt_frame_gen.v:84]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [C:/Users/Administrator/Desktop/K7325/DEMO/k724_sfp1_gtx_10g_test/gtwizard_0_ex.srcs/sources_1/imports/example_design/gtwizard_0_gt_frame_gen.v:102]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [C:/Users/Administrator/Desktop/K7325/DEMO/k724_sfp1_gtx_10g_test/gtwizard_0_ex.srcs/sources_1/imports/example_design/gtwizard_0_gt_frame_gen.v:102]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [C:/Users/Administrator/Desktop/K7325/DEMO/k724_sfp1_gtx_10g_test/gtwizard_0_ex.srcs/sources_1/imports/example_design/gtwizard_0_gt_frame_gen.v:103]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [C:/Users/Administrator/Desktop/K7325/DEMO/k724_sfp1_gtx_10g_test/gtwizard_0_ex.srcs/sources_1/imports/example_design/gtwizard_0_gt_frame_gen.v:103]
+INFO: [Synth 8-3876] $readmem data file 'gt_rom_init_tx.dat' is read successfully [C:/Users/Administrator/Desktop/K7325/DEMO/k724_sfp1_gtx_10g_test/gtwizard_0_ex.srcs/sources_1/imports/example_design/gtwizard_0_gt_frame_gen.v:146]
+INFO: [Synth 8-6155] done synthesizing module 'gtwizard_0_GT_FRAME_GEN' (9#1) [C:/Users/Administrator/Desktop/K7325/DEMO/k724_sfp1_gtx_10g_test/gtwizard_0_ex.srcs/sources_1/imports/example_design/gtwizard_0_gt_frame_gen.v:69]
+INFO: [Synth 8-6157] synthesizing module 'gtwizard_0_GT_FRAME_CHECK' [C:/Users/Administrator/Desktop/K7325/DEMO/k724_sfp1_gtx_10g_test/gtwizard_0_ex.srcs/sources_1/imports/example_design/gtwizard_0_gt_frame_check.v:69]
+	Parameter RX_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter RXCTRL_WIDTH bound to: 4 - type: integer 
+	Parameter WORDS_IN_BRAM bound to: 512 - type: integer 
+	Parameter CHANBOND_SEQ_LEN bound to: 1 - type: integer 
+	Parameter COMMA_DOUBLE bound to: 16'b0000010010111100 
+	Parameter START_OF_PACKET_CHAR bound to: 100992188 - type: integer 
+	Parameter ST_LINK_DOWN bound to: 1'b0 
+	Parameter ST_LINK_UP bound to: 1'b1 
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/Administrator/Desktop/K7325/DEMO/k724_sfp1_gtx_10g_test/gtwizard_0_ex.srcs/sources_1/imports/example_design/gtwizard_0_gt_frame_check.v:106]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/Administrator/Desktop/K7325/DEMO/k724_sfp1_gtx_10g_test/gtwizard_0_ex.srcs/sources_1/imports/example_design/gtwizard_0_gt_frame_check.v:107]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [C:/Users/Administrator/Desktop/K7325/DEMO/k724_sfp1_gtx_10g_test/gtwizard_0_ex.srcs/sources_1/imports/example_design/gtwizard_0_gt_frame_check.v:116]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [C:/Users/Administrator/Desktop/K7325/DEMO/k724_sfp1_gtx_10g_test/gtwizard_0_ex.srcs/sources_1/imports/example_design/gtwizard_0_gt_frame_check.v:116]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [C:/Users/Administrator/Desktop/K7325/DEMO/k724_sfp1_gtx_10g_test/gtwizard_0_ex.srcs/sources_1/imports/example_design/gtwizard_0_gt_frame_check.v:117]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [C:/Users/Administrator/Desktop/K7325/DEMO/k724_sfp1_gtx_10g_test/gtwizard_0_ex.srcs/sources_1/imports/example_design/gtwizard_0_gt_frame_check.v:117]
+INFO: [Synth 8-6157] synthesizing module 'FD' [C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:13467]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'FD' (10#1) [C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:13467]
+INFO: [Synth 8-3876] $readmem data file 'gt_rom_init_rx.dat' is read successfully [C:/Users/Administrator/Desktop/K7325/DEMO/k724_sfp1_gtx_10g_test/gtwizard_0_ex.srcs/sources_1/imports/example_design/gtwizard_0_gt_frame_check.v:482]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [C:/Users/Administrator/Desktop/K7325/DEMO/k724_sfp1_gtx_10g_test/gtwizard_0_ex.srcs/sources_1/imports/example_design/gtwizard_0_gt_frame_check.v:416]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [C:/Users/Administrator/Desktop/K7325/DEMO/k724_sfp1_gtx_10g_test/gtwizard_0_ex.srcs/sources_1/imports/example_design/gtwizard_0_gt_frame_check.v:431]
+WARNING: [Synth 8-6014] Unused sequential element rx_chanbond_seq_r3_reg was removed.  [C:/Users/Administrator/Desktop/K7325/DEMO/k724_sfp1_gtx_10g_test/gtwizard_0_ex.srcs/sources_1/imports/example_design/gtwizard_0_gt_frame_check.v:297]
+INFO: [Synth 8-3936] Found unconnected internal register 'rx_data_ram_r_reg' and it is trimmed from '80' to '48' bits. [C:/Users/Administrator/Desktop/K7325/DEMO/k724_sfp1_gtx_10g_test/gtwizard_0_ex.srcs/sources_1/imports/example_design/gtwizard_0_gt_frame_check.v:476]
+INFO: [Synth 8-4471] merging register 'RXENMCOMMADET_OUT_reg' into 'RXENPCOMMADET_OUT_reg' [C:/Users/Administrator/Desktop/K7325/DEMO/k724_sfp1_gtx_10g_test/gtwizard_0_ex.srcs/sources_1/imports/example_design/gtwizard_0_gt_frame_check.v:366]
+INFO: [Synth 8-4471] merging register 'RX_ENCHAN_SYNC_OUT_reg' into 'RXENPCOMMADET_OUT_reg' [C:/Users/Administrator/Desktop/K7325/DEMO/k724_sfp1_gtx_10g_test/gtwizard_0_ex.srcs/sources_1/imports/example_design/gtwizard_0_gt_frame_check.v:375]
+WARNING: [Synth 8-6014] Unused sequential element RXENMCOMMADET_OUT_reg was removed.  [C:/Users/Administrator/Desktop/K7325/DEMO/k724_sfp1_gtx_10g_test/gtwizard_0_ex.srcs/sources_1/imports/example_design/gtwizard_0_gt_frame_check.v:366]
+WARNING: [Synth 8-6014] Unused sequential element RX_ENCHAN_SYNC_OUT_reg was removed.  [C:/Users/Administrator/Desktop/K7325/DEMO/k724_sfp1_gtx_10g_test/gtwizard_0_ex.srcs/sources_1/imports/example_design/gtwizard_0_gt_frame_check.v:375]
+INFO: [Synth 8-6155] done synthesizing module 'gtwizard_0_GT_FRAME_CHECK' (11#1) [C:/Users/Administrator/Desktop/K7325/DEMO/k724_sfp1_gtx_10g_test/gtwizard_0_ex.srcs/sources_1/imports/example_design/gtwizard_0_gt_frame_check.v:69]
+INFO: [Synth 8-6155] done synthesizing module 'gtwizard_0_exdes' (12#1) [C:/Users/Administrator/Desktop/K7325/DEMO/k724_sfp1_gtx_10g_test/gtwizard_0_ex.srcs/sources_1/imports/example_design/gtwizard_0_exdes.v:70]
+INFO: [Synth 8-3917] design gtwizard_0_exdes has port TX_DIS driven by constant 0
+WARNING: [Synth 8-3331] design gtwizard_0_GT_FRAME_CHECK has unconnected port INC_IN
+WARNING: [Synth 8-3331] design gtwizard_0_support has unconnected port gt0_txpmareset_in
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 1515.977 ; gain = 275.758
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1515.977 ; gain = 275.758
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1515.977 ; gain = 275.758
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Administrator/Desktop/K7325/DEMO/k724_sfp1_gtx_10g_test/gtwizard_0_ex.srcs/sources_1/ip/gtwizard_0/gtwizard_0.dcp' for cell 'gtwizard_0_support_i/gtwizard_0_init_i'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.028 . Memory (MB): peak = 1515.977 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 36 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 3 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 3 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/Administrator/Desktop/K7325/DEMO/k724_sfp1_gtx_10g_test/gtwizard_0_ex.srcs/sources_1/ip/gtwizard_0/gtwizard_0.xdc] for cell 'gtwizard_0_support_i/gtwizard_0_init_i/inst'
+Finished Parsing XDC File [c:/Users/Administrator/Desktop/K7325/DEMO/k724_sfp1_gtx_10g_test/gtwizard_0_ex.srcs/sources_1/ip/gtwizard_0/gtwizard_0.xdc] for cell 'gtwizard_0_support_i/gtwizard_0_init_i/inst'
+Parsing XDC File [C:/Users/Administrator/Desktop/K7325/DEMO/k724_sfp1_gtx_10g_test/gtwizard_0_ex.srcs/constrs_1/imports/example_design/gtwizard_0_exdes.xdc]
+WARNING: [Vivado 12-584] No ports matched 'DRP_CLK_IN_P'. [C:/Users/Administrator/Desktop/K7325/DEMO/k724_sfp1_gtx_10g_test/gtwizard_0_ex.srcs/constrs_1/imports/example_design/gtwizard_0_exdes.xdc:75]
+Finished Parsing XDC File [C:/Users/Administrator/Desktop/K7325/DEMO/k724_sfp1_gtx_10g_test/gtwizard_0_ex.srcs/constrs_1/imports/example_design/gtwizard_0_exdes.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/Administrator/Desktop/K7325/DEMO/k724_sfp1_gtx_10g_test/gtwizard_0_ex.srcs/constrs_1/imports/example_design/gtwizard_0_exdes.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/gtwizard_0_exdes_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Administrator/Desktop/K7325/DEMO/k724_sfp1_gtx_10g_test/gtwizard_0_ex.srcs/constrs_1/imports/example_design/gtwizard_0_exdes.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/gtwizard_0_exdes_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/gtwizard_0_exdes_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1657.949 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  FD => FDRE: 1 instance 
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:19 ; elapsed = 00:00:12 . Memory (MB): peak = 1695.637 ; gain = 455.418
+68 Infos, 9 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:17 . Memory (MB): peak = 1695.637 ; gain = 726.984
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Jul 13 22:22:14 2020...

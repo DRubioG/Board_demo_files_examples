@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Sat Dec 12 16:35:26 2020
+# Process ID: 8776
+# Current directory: C:/Users/Administrator/Desktop/K7325/DEMO/k713_double_ov5640_switch/k713_double_ov5640_switch.runs/synth_1
+# Command line: vivado.exe -log double_ov5640_switch.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source double_ov5640_switch.tcl
+# Log file: C:/Users/Administrator/Desktop/K7325/DEMO/k713_double_ov5640_switch/k713_double_ov5640_switch.runs/synth_1/double_ov5640_switch.vds
+# Journal file: C:/Users/Administrator/Desktop/K7325/DEMO/k713_double_ov5640_switch/k713_double_ov5640_switch.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source double_ov5640_switch.tcl -notrace

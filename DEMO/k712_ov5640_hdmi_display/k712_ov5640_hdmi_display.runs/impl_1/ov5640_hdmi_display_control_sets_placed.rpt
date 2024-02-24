@@ -1,0 +1,97 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Wed May 19 22:30:47 2021
+| Host         : FXTVWR85EI30285 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file ov5640_hdmi_display_control_sets_placed.rpt
+| Design       : ov5640_hdmi_display
+| Device       : xc7k325t
+------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    19 |
+|    Minimum number of control sets                        |    19 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    63 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    19 |
+| >= 0 to < 4        |     2 |
+| >= 4 to < 6        |     2 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     1 |
+| >= 10 to < 12      |     3 |
+| >= 12 to < 14      |     2 |
+| >= 14 to < 16      |     2 |
+| >= 16              |     7 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             118 |           60 |
+| No           | No                    | Yes                    |              48 |           21 |
+| No           | Yes                   | No                     |              42 |           16 |
+| Yes          | No                    | No                     |              22 |           18 |
+| Yes          | No                    | Yes                    |              99 |           28 |
+| Yes          | Yes                   | No                     |              16 |            4 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-------------------------------+----------------------------------------------------+--------------------------------------------------------------------------+------------------+----------------+
+|          Clock Signal         |                    Enable Signal                   |                             Set/Reset Signal                             | Slice Load Count | Bel Load Count |
++-------------------------------+----------------------------------------------------+--------------------------------------------------------------------------+------------------+----------------+
+|  clk_wiz_0_inst/inst/clk_out1 |                                                    | power_on_reset_inst1/rstn                                                |                1 |              1 |
+|  clk50m_IBUF_BUFG             |                                                    |                                                                          |                2 |              2 |
+|  cmos_pclk1_IBUF_BUFG         | ov5640_capture_inst1/frame_cont                    | power_on_reset_inst1/camera_rstn_reg_reg_0                               |                1 |              4 |
+|  cmos_pclk1_IBUF_BUFG         |                                                    | power_on_reset_inst1/camera_rstn_reg_reg_0                               |                3 |              5 |
+|  cmos_pclk1_IBUF_BUFG         | ov5640_capture_inst1/__3                           | power_on_reset_inst1/camera_rstn_reg_reg_0                               |                2 |              8 |
+|  clk_wiz_0_inst/inst/clk_out1 |                                                    | rgb2dvi_0_inst1/U0/DataEncoders[0].DataEncoder/pDataOutRaw[9]_i_1__1_n_0 |                4 |             10 |
+|  clk_wiz_0_inst/inst/clk_out1 | y_reg[9]_i_1_n_0                                   | power_on_reset_inst1/rstn                                                |                5 |             10 |
+|  clk_wiz_0_inst/inst/clk_out1 | x_reg[9]_i_1_n_0                                   | power_on_reset_inst1/rstn                                                |                3 |             10 |
+|  clk50m_IBUF_BUFG             |                                                    | power_on_reset_inst1/camera_rstn_reg_reg_0                               |                3 |             13 |
+|  clk_wiz_0_inst/inst/clk_out1 | vga_driver_inst/vga_sync_inst/cnt_vreg[12]_i_1_n_0 | vga_driver_inst/vga_sync_inst/ready_reg_i_2_n_0                          |                3 |             13 |
+|  clk_wiz_0_inst/inst/clk_out1 |                                                    | vga_driver_inst/vga_sync_inst/ready_reg_i_2_n_0                          |                5 |             14 |
+|  clock_iic_ref_reg            |                                                    | power_on_reset_inst1/camera_rstn_reg_reg_0                               |                9 |             15 |
+|  clk50m_IBUF_BUFG             | power_on_reset_inst1/cnt2[0]_i_1_n_0               | power_on_reset_inst1/camera_pwnd_reg                                     |                4 |             16 |
+|  cmos_pclk1_IBUF_BUFG         | ov5640_capture_inst1/p_2_out[15]                   | power_on_reset_inst1/camera_rstn_reg_reg_0                               |                4 |             16 |
+|  clock_iic_ref_reg            | ov5640_reg_config_inst1/reg_index_rep[8]_i_1_n_0   | power_on_reset_inst1/camera_rstn_reg_reg_0                               |                5 |             18 |
+|  cmos_pclk1_IBUF_BUFG         | ov5640_capture_inst1/cmos_oclk_reg_0               | power_on_reset_inst1/rstn                                                |                5 |             20 |
+|  clock_iic_ref_reg            | ov5640_reg_config_inst1/i2c_data[22]_i_1_n_0       |                                                                          |               18 |             22 |
+|  clk_wiz_0_inst/inst/clk_out1 |                                                    | rgb2dvi_0_inst1/U0/DataEncoders[0].DataEncoder/SR[0]                     |               12 |             32 |
+|  clk_wiz_0_inst/inst/clk_out1 |                                                    |                                                                          |               58 |            116 |
++-------------------------------+----------------------------------------------------+--------------------------------------------------------------------------+------------------+----------------+
+
+

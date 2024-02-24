@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Sat Jun 27 10:01:04 2020
+# Process ID: 19332
+# Current directory: C:/Users/Administrator/Desktop/K7325/DEMO/k704_iic_eeprom/k704_iic_eeprom.runs/impl_1
+# Command line: vivado.exe -log iic_eeprom.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source iic_eeprom.tcl -notrace
+# Log file: C:/Users/Administrator/Desktop/K7325/DEMO/k704_iic_eeprom/k704_iic_eeprom.runs/impl_1/iic_eeprom.vdi
+# Journal file: C:/Users/Administrator/Desktop/K7325/DEMO/k704_iic_eeprom/k704_iic_eeprom.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source iic_eeprom.tcl -notrace

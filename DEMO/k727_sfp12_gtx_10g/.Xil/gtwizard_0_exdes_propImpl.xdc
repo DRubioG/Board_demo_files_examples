@@ -1,0 +1,7 @@
+set_property SRC_FILE_INFO {cfile:c:/Users/Administrator/Desktop/gtwizard_0_ex/gtwizard_0_ex.srcs/constrs_1/imports/example_design/gtwizard_0_exdes.xdc rfile:../gtwizard_0_ex.srcs/constrs_1/imports/example_design/gtwizard_0_exdes.xdc id:1} [current_design]
+set_property src_info {type:XDC file:1 line:78 export:INPUT save:INPUT read:READ} [current_design]
+create_clock -name drpclk_in_i -period 20.0 [get_ports DRP_CLK_IN_P]
+set_property src_info {type:XDC file:1 line:101 export:INPUT save:INPUT read:READ} [current_design]
+set_property LOC GTXE2_CHANNEL_X0Y0 [get_cells gtwizard_0_support_i/gtwizard_0_init_i/inst/gtwizard_0_i/gt0_gtwizard_0_i/gtxe2_i]
+set_property src_info {type:XDC file:1 line:103 export:INPUT save:INPUT read:READ} [current_design]
+set_property LOC GTXE2_CHANNEL_X0Y1 [get_cells gtwizard_0_support_i/gtwizard_0_init_i/inst/gtwizard_0_i/gt1_gtwizard_0_i/gtxe2_i]

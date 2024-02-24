@@ -1,0 +1,191 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Wed May 19 22:24:54 2021
+# Process ID: 18504
+# Current directory: C:/Users/Administrator/Desktop/K7325/R5/k714_ov5640_rgb_to_ycbcr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5304 C:\Users\Administrator\Desktop\K7325\R5\k714_ov5640_rgb_to_ycbcr\k714_ov5640_rgb_to_ycbcr.xpr
+# Log file: C:/Users/Administrator/Desktop/K7325/R5/k714_ov5640_rgb_to_ycbcr/vivado.log
+# Journal file: C:/Users/Administrator/Desktop/K7325/R5/k714_ov5640_rgb_to_ycbcr\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Administrator/Desktop/K7325/R5/k714_ov5640_rgb_to_ycbcr/k714_ov5640_rgb_to_ycbcr.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/Administrator/Desktop/K7325/DEMO/k714_ov5640_rgb_to_ycbcr' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Administrator/Desktop/K7325/R5/k714_ov5640_rgb_to_ycbcr/tmds_ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
+open_project: Time (s): cpu = 00:00:27 ; elapsed = 00:00:18 . Memory (MB): peak = 888.207 ; gain = 234.707
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7k325tffg676-2
+Top: rgb_to_ycbcr
+INFO: [Device 21-403] Loading part xc7k325tffg676-2
+WARNING: [Synth 8-6901] identifier 'ack_state_reg' is used before its declaration [C:/Users/Administrator/Desktop/K7325/R5/k714_ov5640_rgb_to_ycbcr/k714_ov5640_rgb_to_ycbcr.srcs/sources_1/new/i2c_driver.v:30]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1461.273 ; gain = 234.293
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'rgb_to_ycbcr' [C:/Users/Administrator/Desktop/K7325/R5/k714_ov5640_rgb_to_ycbcr/k714_ov5640_rgb_to_ycbcr.srcs/sources_1/new/rgb_to_ycbcr.v:1]
+	Parameter VEDIO_X_LENTH bound to: 1024 - type: integer 
+	Parameter VEDIO_Y_LENTH bound to: 720 - type: integer 
+	Parameter VEDIO_X_START bound to: 0 - type: integer 
+	Parameter VEDIO_Y_START bound to: 0 - type: integer 
+	Parameter VEDIO_X_END bound to: 1024 - type: integer 
+	Parameter VEDIO_Y_END bound to: 720 - type: integer 
+	Parameter KEY_SWITCH_CNT_MAX bound to: 49999999 - type: integer 
+	Parameter KYR bound to: 306 - type: integer 
+	Parameter KYG bound to: 601 - type: integer 
+	Parameter KYB bound to: 116 - type: integer 
+	Parameter OFFSET_Y bound to: 0 - type: integer 
+	Parameter KCBR bound to: -173 - type: integer 
+	Parameter KCBG bound to: -339 - type: integer 
+	Parameter KCBB bound to: 512 - type: integer 
+	Parameter OFFSET_CB bound to: 131000 - type: integer 
+	Parameter KCRR bound to: 512 - type: integer 
+	Parameter KCRG bound to: -428 - type: integer 
+	Parameter KCRB bound to: -83 - type: integer 
+	Parameter OFFSET_CR bound to: 131000 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/Administrator/Desktop/K7325/R5/k714_ov5640_rgb_to_ycbcr/k714_ov5640_rgb_to_ycbcr.srcs/sources_1/new/rgb_to_ycbcr.v:59]
+INFO: [Synth 8-6157] synthesizing module 'power_on_reset' [C:/Users/Administrator/Desktop/K7325/R5/k714_ov5640_rgb_to_ycbcr/k714_ov5640_rgb_to_ycbcr.srcs/sources_1/new/power_on_reset.v:1]
+WARNING: [Synth 8-6014] Unused sequential element cnt1_reg was removed.  [C:/Users/Administrator/Desktop/K7325/R5/k714_ov5640_rgb_to_ycbcr/k714_ov5640_rgb_to_ycbcr.srcs/sources_1/new/power_on_reset.v:20]
+INFO: [Synth 8-6155] done synthesizing module 'power_on_reset' (1#1) [C:/Users/Administrator/Desktop/K7325/R5/k714_ov5640_rgb_to_ycbcr/k714_ov5640_rgb_to_ycbcr.srcs/sources_1/new/power_on_reset.v:1]
+INFO: [Synth 8-6157] synthesizing module 'ov5640_reg_config' [C:/Users/Administrator/Desktop/K7325/R5/k714_ov5640_rgb_to_ycbcr/k714_ov5640_rgb_to_ycbcr.srcs/sources_1/new/ov5640_reg_config.v:2]
+	Parameter IIC_REF_CLK_CNT bound to: 3000 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'i2c_driver' [C:/Users/Administrator/Desktop/K7325/R5/k714_ov5640_rgb_to_ycbcr/k714_ov5640_rgb_to_ycbcr.srcs/sources_1/new/i2c_driver.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'i2c_driver' (2#1) [C:/Users/Administrator/Desktop/K7325/R5/k714_ov5640_rgb_to_ycbcr/k714_ov5640_rgb_to_ycbcr.srcs/sources_1/new/i2c_driver.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Administrator/Desktop/K7325/R5/k714_ov5640_rgb_to_ycbcr/k714_ov5640_rgb_to_ycbcr.srcs/sources_1/new/ov5640_reg_config.v:63]
+WARNING: [Synth 8-5788] Register i2c_data_reg in module ov5640_reg_config is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Administrator/Desktop/K7325/R5/k714_ov5640_rgb_to_ycbcr/k714_ov5640_rgb_to_ycbcr.srcs/sources_1/new/ov5640_reg_config.v:27]
+INFO: [Synth 8-6155] done synthesizing module 'ov5640_reg_config' (3#1) [C:/Users/Administrator/Desktop/K7325/R5/k714_ov5640_rgb_to_ycbcr/k714_ov5640_rgb_to_ycbcr.srcs/sources_1/new/ov5640_reg_config.v:2]
+INFO: [Synth 8-6157] synthesizing module 'ov5640_capture' [C:/Users/Administrator/Desktop/K7325/R5/k714_ov5640_rgb_to_ycbcr/k714_ov5640_rgb_to_ycbcr.srcs/sources_1/new/ov5640_capture.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'ov5640_capture' (4#1) [C:/Users/Administrator/Desktop/K7325/R5/k714_ov5640_rgb_to_ycbcr/k714_ov5640_rgb_to_ycbcr.srcs/sources_1/new/ov5640_capture.v:1]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [C:/Users/Administrator/Desktop/K7325/R5/k714_ov5640_rgb_to_ycbcr/.Xil/Vivado-18504-FXTVWR85EI30285/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (5#1) [C:/Users/Administrator/Desktop/K7325/R5/k714_ov5640_rgb_to_ycbcr/.Xil/Vivado-18504-FXTVWR85EI30285/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'rgb2dvi_0' [C:/Users/Administrator/Desktop/K7325/R5/k714_ov5640_rgb_to_ycbcr/.Xil/Vivado-18504-FXTVWR85EI30285/realtime/rgb2dvi_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'rgb2dvi_0' (6#1) [C:/Users/Administrator/Desktop/K7325/R5/k714_ov5640_rgb_to_ycbcr/.Xil/Vivado-18504-FXTVWR85EI30285/realtime/rgb2dvi_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'vga_driver' [C:/Users/Administrator/Desktop/K7325/R5/k714_ov5640_rgb_to_ycbcr/k714_ov5640_rgb_to_ycbcr.srcs/sources_1/new/vga_driver.v:1]
+INFO: [Synth 8-6157] synthesizing module 'vga_sync' [C:/Users/Administrator/Desktop/K7325/R5/k714_ov5640_rgb_to_ycbcr/k714_ov5640_rgb_to_ycbcr.srcs/sources_1/new/vga_sync.v:1]
+	Parameter H_FRONT_PROCH bound to: 88 - type: integer 
+	Parameter H_SYNC_TIME bound to: 44 - type: integer 
+	Parameter H_BACK_PROCH bound to: 148 - type: integer 
+	Parameter H_ADDR_TIME bound to: 1920 - type: integer 
+	Parameter H_TIME_TOTAL bound to: 2200 - type: integer 
+	Parameter H_ADDR_START_PIX bound to: 132 - type: integer 
+	Parameter H_ADDR_END_PIX bound to: 2052 - type: integer 
+	Parameter V_FRONT_PROCH bound to: 4 - type: integer 
+	Parameter V_SYNC_TIME bound to: 5 - type: integer 
+	Parameter V_BACK_PROCH bound to: 36 - type: integer 
+	Parameter V_ADDR_TIME bound to: 1080 - type: integer 
+	Parameter V_TIME_TOTAL bound to: 1125 - type: integer 
+	Parameter V_ADDR_START_PIX bound to: 9 - type: integer 
+	Parameter V_ADDR_END_PIX bound to: 1089 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'vga_sync' (7#1) [C:/Users/Administrator/Desktop/K7325/R5/k714_ov5640_rgb_to_ycbcr/k714_ov5640_rgb_to_ycbcr.srcs/sources_1/new/vga_sync.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'vga_driver' (8#1) [C:/Users/Administrator/Desktop/K7325/R5/k714_ov5640_rgb_to_ycbcr/k714_ov5640_rgb_to_ycbcr.srcs/sources_1/new/vga_driver.v:1]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_0' [C:/Users/Administrator/Desktop/K7325/R5/k714_ov5640_rgb_to_ycbcr/.Xil/Vivado-18504-FXTVWR85EI30285/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_0' (9#1) [C:/Users/Administrator/Desktop/K7325/R5/k714_ov5640_rgb_to_ycbcr/.Xil/Vivado-18504-FXTVWR85EI30285/realtime/blk_mem_gen_0_stub.v:6]
+WARNING: [Synth 8-689] width (21) of port connection 'addra' does not match port width (20) of module 'blk_mem_gen_0' [C:/Users/Administrator/Desktop/K7325/R5/k714_ov5640_rgb_to_ycbcr/k714_ov5640_rgb_to_ycbcr.srcs/sources_1/new/rgb_to_ycbcr.v:324]
+WARNING: [Synth 8-689] width (21) of port connection 'addrb' does not match port width (20) of module 'blk_mem_gen_0' [C:/Users/Administrator/Desktop/K7325/R5/k714_ov5640_rgb_to_ycbcr/k714_ov5640_rgb_to_ycbcr.srcs/sources_1/new/rgb_to_ycbcr.v:328]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ov5640_capture_inst2'. This will prevent further optimization [C:/Users/Administrator/Desktop/K7325/R5/k714_ov5640_rgb_to_ycbcr/k714_ov5640_rgb_to_ycbcr.srcs/sources_1/new/rgb_to_ycbcr.v:192]
+INFO: [Synth 8-6155] done synthesizing module 'rgb_to_ycbcr' (10#1) [C:/Users/Administrator/Desktop/K7325/R5/k714_ov5640_rgb_to_ycbcr/k714_ov5640_rgb_to_ycbcr.srcs/sources_1/new/rgb_to_ycbcr.v:1]
+WARNING: [Synth 8-3917] design rgb_to_ycbcr has port HDMI_OUT_EN1 driven by constant 1
+WARNING: [Synth 8-3917] design rgb_to_ycbcr has port HDMI_OUT_EN2 driven by constant 1
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1512.766 ; gain = 285.785
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1512.766 ; gain = 285.785
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1512.766 ; gain = 285.785
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Administrator/Desktop/K7325/R5/k714_ov5640_rgb_to_ycbcr/k714_ov5640_rgb_to_ycbcr.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.dcp' for cell 'clk_wiz_0_inst'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Administrator/Desktop/K7325/R5/k714_ov5640_rgb_to_ycbcr/k714_ov5640_rgb_to_ycbcr.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0.dcp' for cell 'rgb2dvi_0_inst1'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Administrator/Desktop/K7325/R5/k714_ov5640_rgb_to_ycbcr/k714_ov5640_rgb_to_ycbcr.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.dcp' for cell 'blk_mem_gen_0_inst1'
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.244 . Memory (MB): peak = 1512.766 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 626 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 2 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/Administrator/Desktop/K7325/R5/k714_ov5640_rgb_to_ycbcr/k714_ov5640_rgb_to_ycbcr.srcs/sources_1/ip/rgb2dvi_0/src/rgb2dvi.xdc] for cell 'rgb2dvi_0_inst1/U0'
+Finished Parsing XDC File [c:/Users/Administrator/Desktop/K7325/R5/k714_ov5640_rgb_to_ycbcr/k714_ov5640_rgb_to_ycbcr.srcs/sources_1/ip/rgb2dvi_0/src/rgb2dvi.xdc] for cell 'rgb2dvi_0_inst1/U0'
+Parsing XDC File [c:/Users/Administrator/Desktop/K7325/R5/k714_ov5640_rgb_to_ycbcr/k714_ov5640_rgb_to_ycbcr.srcs/sources_1/ip/rgb2dvi_0/src/rgb2dvi.xdc] for cell 'rgb2dvi_0_inst2/U0'
+Finished Parsing XDC File [c:/Users/Administrator/Desktop/K7325/R5/k714_ov5640_rgb_to_ycbcr/k714_ov5640_rgb_to_ycbcr.srcs/sources_1/ip/rgb2dvi_0/src/rgb2dvi.xdc] for cell 'rgb2dvi_0_inst2/U0'
+Parsing XDC File [c:/Users/Administrator/Desktop/K7325/R5/k714_ov5640_rgb_to_ycbcr/k714_ov5640_rgb_to_ycbcr.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'clk_wiz_0_inst/inst'
+Finished Parsing XDC File [c:/Users/Administrator/Desktop/K7325/R5/k714_ov5640_rgb_to_ycbcr/k714_ov5640_rgb_to_ycbcr.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'clk_wiz_0_inst/inst'
+Parsing XDC File [c:/Users/Administrator/Desktop/K7325/R5/k714_ov5640_rgb_to_ycbcr/k714_ov5640_rgb_to_ycbcr.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'clk_wiz_0_inst/inst'
+Finished Parsing XDC File [c:/Users/Administrator/Desktop/K7325/R5/k714_ov5640_rgb_to_ycbcr/k714_ov5640_rgb_to_ycbcr.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'clk_wiz_0_inst/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/Administrator/Desktop/K7325/R5/k714_ov5640_rgb_to_ycbcr/k714_ov5640_rgb_to_ycbcr.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/rgb_to_ycbcr_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/rgb_to_ycbcr_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [C:/Users/Administrator/Desktop/K7325/R5/k714_ov5640_rgb_to_ycbcr/k714_ov5640_rgb_to_ycbcr.srcs/constrs_1/new/rgb_to_ycbcr.xdc]
+WARNING: [Vivado 12-584] No ports matched 'clk'. [C:/Users/Administrator/Desktop/K7325/R5/k714_ov5640_rgb_to_ycbcr/k714_ov5640_rgb_to_ycbcr.srcs/constrs_1/new/rgb_to_ycbcr.xdc:42]
+WARNING: [Vivado 12-584] No ports matched 'clk'. [C:/Users/Administrator/Desktop/K7325/R5/k714_ov5640_rgb_to_ycbcr/k714_ov5640_rgb_to_ycbcr.srcs/constrs_1/new/rgb_to_ycbcr.xdc:50]
+WARNING: [Vivado 12-507] No nets matched 'cmos_pclk1_IBUF'. [C:/Users/Administrator/Desktop/K7325/R5/k714_ov5640_rgb_to_ycbcr/k714_ov5640_rgb_to_ycbcr.srcs/constrs_1/new/rgb_to_ycbcr.xdc:93]
+WARNING: [Vivado 12-507] No nets matched 'cmos_pclk2_IBUF'. [C:/Users/Administrator/Desktop/K7325/R5/k714_ov5640_rgb_to_ycbcr/k714_ov5640_rgb_to_ycbcr.srcs/constrs_1/new/rgb_to_ycbcr.xdc:94]
+Finished Parsing XDC File [C:/Users/Administrator/Desktop/K7325/R5/k714_ov5640_rgb_to_ycbcr/k714_ov5640_rgb_to_ycbcr.srcs/constrs_1/new/rgb_to_ycbcr.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/Administrator/Desktop/K7325/R5/k714_ov5640_rgb_to_ycbcr/k714_ov5640_rgb_to_ycbcr.srcs/constrs_1/new/rgb_to_ycbcr.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/rgb_to_ycbcr_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Administrator/Desktop/K7325/R5/k714_ov5640_rgb_to_ycbcr/k714_ov5640_rgb_to_ycbcr.srcs/constrs_1/new/rgb_to_ycbcr.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/rgb_to_ycbcr_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/rgb_to_ycbcr_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [c:/Users/Administrator/Desktop/K7325/R5/k714_ov5640_rgb_to_ycbcr/k714_ov5640_rgb_to_ycbcr.srcs/sources_1/ip/rgb2dvi_0/src/rgb2dvi_clocks.xdc] for cell 'rgb2dvi_0_inst1/U0'
+Finished Parsing XDC File [c:/Users/Administrator/Desktop/K7325/R5/k714_ov5640_rgb_to_ycbcr/k714_ov5640_rgb_to_ycbcr.srcs/sources_1/ip/rgb2dvi_0/src/rgb2dvi_clocks.xdc] for cell 'rgb2dvi_0_inst1/U0'
+Parsing XDC File [c:/Users/Administrator/Desktop/K7325/R5/k714_ov5640_rgb_to_ycbcr/k714_ov5640_rgb_to_ycbcr.srcs/sources_1/ip/rgb2dvi_0/src/rgb2dvi_clocks.xdc] for cell 'rgb2dvi_0_inst2/U0'
+Finished Parsing XDC File [c:/Users/Administrator/Desktop/K7325/R5/k714_ov5640_rgb_to_ycbcr/k714_ov5640_rgb_to_ycbcr.srcs/sources_1/ip/rgb2dvi_0/src/rgb2dvi_clocks.xdc] for cell 'rgb2dvi_0_inst2/U0'
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.039 . Memory (MB): peak = 1687.121 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:35 ; elapsed = 00:00:29 . Memory (MB): peak = 1759.316 ; gain = 532.336
+38 Infos, 12 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:44 ; elapsed = 00:00:40 . Memory (MB): peak = 1759.316 ; gain = 830.832
+place_ports TMDS_CLK_P1 Y22
+set_property target_constrs_file C:/Users/Administrator/Desktop/K7325/R5/k714_ov5640_rgb_to_ycbcr/k714_ov5640_rgb_to_ycbcr.srcs/constrs_1/new/rgb_to_ycbcr.xdc [current_fileset -constrset]
+save_constraints -force
+reset_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/Administrator/Desktop/K7325/R5/k714_ov5640_rgb_to_ycbcr/k714_ov5640_rgb_to_ycbcr.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/Administrator/Desktop/K7325/R5/k714_ov5640_rgb_to_ycbcr/k714_ov5640_rgb_to_ycbcr.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/Administrator/Desktop/K7325/R5/k714_ov5640_rgb_to_ycbcr/k714_ov5640_rgb_to_ycbcr.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci' is already up-to-date
+[Wed May 19 22:29:12 2021] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/K7325/R5/k714_ov5640_rgb_to_ycbcr/k714_ov5640_rgb_to_ycbcr.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3414] Connected to existing cs_server.
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210251A08870
+current_hw_device [get_hw_devices xc7k325t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7k325t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k325t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k325t_0]
+set_property PROGRAM.FILE {C:/Users/Administrator/Desktop/K7325/R5/k714_ov5640_rgb_to_ycbcr/k714_ov5640_rgb_to_ycbcr.runs/impl_1/rgb_to_ycbcr.bit} [get_hw_devices xc7k325t_0]
+program_hw_devices [get_hw_devices xc7k325t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 3046.984 ; gain = 0.117
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k325t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed May 19 22:36:38 2021...

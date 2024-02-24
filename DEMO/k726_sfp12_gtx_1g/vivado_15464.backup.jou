@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Mon Mar  8 19:36:39 2021
+# Process ID: 15464
+# Current directory: C:/Users/Administrator/Desktop/K7325/DEMO/k726_sfp12_gtx_1g
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4512 C:\Users\Administrator\Desktop\K7325\DEMO\k726_sfp12_gtx_1g\gtwizard_0_ex.xpr
+# Log file: C:/Users/Administrator/Desktop/K7325/DEMO/k726_sfp12_gtx_1g/vivado.log
+# Journal file: C:/Users/Administrator/Desktop/K7325/DEMO/k726_sfp12_gtx_1g\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Administrator/Desktop/K7325/DEMO/k726_sfp12_gtx_1g/gtwizard_0_ex.xpr
+update_compile_order -fileset sources_1

@@ -1,0 +1,140 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'k732_hls_fir_filter_ip'" level="0">
+<item name = "Date">Mon Jun 29 22:00:38 2020
+</item>
+<item name = "Version">2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)</item>
+<item name = "Project">k732_hls_fir_filter_ip</item>
+<item name = "Solution">solution1</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z010-clg400-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 6.794 ns, 1.25 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">1, 554, 10.000 ns, 5.540 us, 1, 554, none</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- Loop 1">0, 510, 2, -, -, 0 ~ 255, no</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, 0, 194, -</column>
+<column name="FIFO">-, -, -, -, -</column>
+<column name="Instance">-, -, 490, 296, -</column>
+<column name="Memory">1, -, 0, 0, 0</column>
+<column name="Multiplexer">-, -, -, 265, -</column>
+<column name="Register">-, -, 256, -, -</column>
+<specialColumn name="Available">120, 80, 35200, 17600, 0</specialColumn>
+<specialColumn name="Utilization (%)">~0, 0, 2, 4, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
+<column name="k732_hls_fir_filtcud_U1">k732_hls_fir_filtcud, 0, 0, 490, 296, 0</column>
+</table>
+</item>
+<item name = "DSP48E"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+<column name="buffer_in_U">k732_hls_fir_filtbkb, 1, 0, 0, 0, 256, 32, 1, 8192</column>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="add_ln29_fu_215_p2">+, 0, 0, 39, 32, 1</column>
+<column name="add_ln30_fu_220_p2">+, 0, 0, 15, 9, 2</column>
+<column name="i_fu_204_p2">+, 0, 0, 15, 8, 1</column>
+<column name="tmp_add_value_fu_254_p2">+, 0, 0, 47, 40, 40</column>
+<column name="empty_fu_185_p2">icmp, 0, 0, 11, 8, 7</column>
+<column name="icmp_ln19_fu_152_p2">icmp, 0, 0, 11, 8, 1</column>
+<column name="icmp_ln26_fu_158_p2">icmp, 0, 0, 11, 8, 7</column>
+<column name="icmp_ln28_fu_199_p2">icmp, 0, 0, 11, 8, 8</column>
+<column name="icmp_ln30_fu_229_p2">icmp, 0, 0, 18, 32, 32</column>
+<column name="select_ln26_fu_164_p3">select, 0, 0, 8, 1, 7</column>
+<column name="select_ln28_fu_191_p3">select, 0, 0, 8, 1, 8</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="ap_NS_fsm">205, 47, 1, 47</column>
+<column name="ap_phi_mux_storemerge_phi_fu_144_p4">9, 2, 32, 64</column>
+<column name="buffer_in_address0">15, 3, 8, 24</column>
+<column name="filter_ptr_new_0_reg_129">9, 2, 32, 64</column>
+<column name="i_0_reg_118">9, 2, 8, 16</column>
+<column name="storemerge_reg_140">9, 2, 32, 64</column>
+<column name="tmp_add_value_0_reg_106">9, 2, 40, 80</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="ap_CS_fsm">46, 0, 46, 0</column>
+<column name="filter_ptr">32, 0, 32, 0</column>
+<column name="filter_ptr_load_reg_294">32, 0, 32, 0</column>
+<column name="filter_ptr_new_0_reg_129">32, 0, 32, 0</column>
+<column name="i_0_reg_118">8, 0, 8, 0</column>
+<column name="i_reg_307">8, 0, 8, 0</column>
+<column name="icmp_ln19_reg_280">1, 0, 1, 0</column>
+<column name="result_valid_flag">1, 0, 1, 0</column>
+<column name="select_ln26_reg_284">8, 0, 8, 0</column>
+<column name="select_ln28_reg_299">8, 0, 8, 0</column>
+<column name="storemerge_reg_140">32, 0, 32, 0</column>
+<column name="tmp_add_value_0_reg_106">40, 0, 40, 0</column>
+<column name="zext_ln26_reg_289">8, 0, 9, 1</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_none, k732_hls_fir_filter_ip, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_none, k732_hls_fir_filter_ip, return value</column>
+<column name="input_r">in, 32, ap_none, input_r, scalar</column>
+<column name="fir_time">in, 8, ap_none, fir_time, scalar</column>
+<column name="output_r">out, 32, ap_none, output_r, pointer</column>
+<column name="result_valid">out, 8, ap_none, result_valid, pointer</column>
+</table>
+</item>
+</section>
+</profile>

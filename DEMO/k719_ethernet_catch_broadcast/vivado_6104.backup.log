@@ -1,0 +1,1211 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Thu Jul  9 17:48:25 2020
+# Process ID: 6104
+# Current directory: C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4080 C:\Users\Administrator\Desktop\k719_ethernet_catch_broadcast\k719_ethernet_catch_broadcast.xpr
+# Log file: C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/vivado.log
+# Journal file: C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/Administrator/Desktop/K7325/DEMO/k719_ethernet_catch_broadcast' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
+open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:07 . Memory (MB): peak = 908.730 ; gain = 255.000
+update_compile_order -fileset sources_1
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7k325tffg676-2
+INFO: [Device 21-403] Loading part xc7k325tffg676-2
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1234.570 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/constrs_1/new/ethernet_catch_broadcast.xdc]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/constrs_1/new/ethernet_catch_broadcast.xdc:24]
+WARNING: [Vivado 12-507] No nets matched 'gmii_rxd1_IBUF[0]'. [C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/constrs_1/new/ethernet_catch_broadcast.xdc:25]
+WARNING: [Vivado 12-507] No nets matched 'gmii_rxd1_IBUF[1]'. [C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/constrs_1/new/ethernet_catch_broadcast.xdc:25]
+WARNING: [Vivado 12-507] No nets matched 'gmii_rxd1_IBUF[2]'. [C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/constrs_1/new/ethernet_catch_broadcast.xdc:25]
+WARNING: [Vivado 12-507] No nets matched 'gmii_rxd1_IBUF[3]'. [C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/constrs_1/new/ethernet_catch_broadcast.xdc:25]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/constrs_1/new/ethernet_catch_broadcast.xdc:25]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/constrs_1/new/ethernet_catch_broadcast.xdc:26]
+WARNING: [Vivado 12-507] No nets matched 'gmii_rx_dv1'. [C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/constrs_1/new/ethernet_catch_broadcast.xdc:27]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/constrs_1/new/ethernet_catch_broadcast.xdc:27]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'dbg_hub' was not found. [C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/constrs_1/new/ethernet_catch_broadcast.xdc:28]
+WARNING: [Vivado 12-507] No nets matched 'clk1'. [C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/constrs_1/new/ethernet_catch_broadcast.xdc:30]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/constrs_1/new/ethernet_catch_broadcast.xdc:30]
+WARNING: [Vivado 12-507] No nets matched 'clk1'. [C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/constrs_1/new/ethernet_catch_broadcast.xdc:31]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/constrs_1/new/ethernet_catch_broadcast.xdc:31]
+WARNING: [Vivado 12-507] No nets matched 'clk1'. [C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/constrs_1/new/ethernet_catch_broadcast.xdc:32]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'dbg_hub' was not found. [C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/constrs_1/new/ethernet_catch_broadcast.xdc:32]
+WARNING: [Vivado 12-507] No nets matched 'clk1'. [C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/constrs_1/new/ethernet_catch_broadcast.xdc:45]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/constrs_1/new/ethernet_catch_broadcast.xdc:45]
+WARNING: [Vivado 12-507] No nets matched 'clk1'. [C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/constrs_1/new/ethernet_catch_broadcast.xdc:46]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/constrs_1/new/ethernet_catch_broadcast.xdc:46]
+WARNING: [Vivado 12-507] No nets matched 'clk2'. [C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/constrs_1/new/ethernet_catch_broadcast.xdc:47]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/constrs_1/new/ethernet_catch_broadcast.xdc:47]
+WARNING: [Vivado 12-507] No nets matched 'clk1'. [C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/constrs_1/new/ethernet_catch_broadcast.xdc:48]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'dbg_hub' was not found. [C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/constrs_1/new/ethernet_catch_broadcast.xdc:48]
+Finished Parsing XDC File [C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/constrs_1/new/ethernet_catch_broadcast.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1319.789 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:17 ; elapsed = 00:00:10 . Memory (MB): peak = 1475.379 ; gain = 537.039
+delete_debug_core [get_debug_cores {u_ila_0 }]
+create_debug_core u_ila_0 ila
+set_property C_DATA_DEPTH 4096 [get_debug_cores u_ila_0]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_0]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]
+startgroup 
+set_property C_EN_STRG_QUAL true [get_debug_cores u_ila_0 ]
+set_property C_ADV_TRIGGER true [get_debug_cores u_ila_0 ]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0 ]
+set_property ALL_PROBE_SAME_MU_CNT 4 [get_debug_cores u_ila_0 ]
+endgroup
+connect_debug_port u_ila_0/clk [get_nets [list gmii_rx_clk1_IBUF ]]
+set_property port_width 4 [get_debug_ports u_ila_0/probe0]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
+connect_debug_port u_ila_0/probe0 [get_nets [list {rxd2[0]} {rxd2[1]} {rxd2[2]} {rxd2[3]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 8 [get_debug_ports u_ila_0/probe1]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe1]
+connect_debug_port u_ila_0/probe1 [get_nets [list {rxd_eth1[0]} {rxd_eth1[1]} {rxd_eth1[2]} {rxd_eth1[3]} {rxd_eth1[4]} {rxd_eth1[5]} {rxd_eth1[6]} {rxd_eth1[7]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 4 [get_debug_ports u_ila_0/probe2]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe2]
+connect_debug_port u_ila_0/probe2 [get_nets [list {rxd1[0]} {rxd1[1]} {rxd1[2]} {rxd1[3]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 8 [get_debug_ports u_ila_0/probe3]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe3]
+connect_debug_port u_ila_0/probe3 [get_nets [list {rxd_eth2[0]} {rxd_eth2[1]} {rxd_eth2[2]} {rxd_eth2[3]} {rxd_eth2[4]} {rxd_eth2[5]} {rxd_eth2[6]} {rxd_eth2[7]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe4]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe4]
+connect_debug_port u_ila_0/probe4 [get_nets [list rxdv1 ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe5]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe5]
+connect_debug_port u_ila_0/probe5 [get_nets [list rxdv2 ]]
+save_constraints
+reset_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1490.738 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.078 . Memory (MB): peak = 1505.875 ; gain = 15.137
+[Thu Jul  9 17:49:31 2020] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.2
+  **** Build date : Nov  6 2019 at 22:12:23
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+****** Xilinx cs_server v2019.2.0
+  **** Build date : Nov 07 2019-13:28:22
+    ** Copyright 2017-2019 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1517.367 ; gain = 2.918
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210251A08870
+set_property PROGRAM.FILE {C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.runs/impl_1/ethernet_catch_bordcast.bit} [get_hw_devices xc7k325t_0]
+set_property PROBES.FILE {C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.runs/impl_1/ethernet_catch_bordcast.ltx} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.runs/impl_1/ethernet_catch_bordcast.ltx} [get_hw_devices xc7k325t_0]
+current_hw_device [get_hw_devices xc7k325t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k325t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'u_ila_0' at location 'uuid_23E7D65A79BC59F7BC47406C1714DFAE' from probes file, since it cannot be found on the programmed device.
+set_property PROBES.FILE {C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.runs/impl_1/ethernet_catch_bordcast.ltx} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.runs/impl_1/ethernet_catch_bordcast.ltx} [get_hw_devices xc7k325t_0]
+set_property PROGRAM.FILE {C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.runs/impl_1/ethernet_catch_bordcast.bit} [get_hw_devices xc7k325t_0]
+program_hw_devices [get_hw_devices xc7k325t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2736.676 ; gain = 0.004
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+WARNING: [Xicom 50-38] xicom: No CseXsdb register file specified for CseXsdb slave type: 0, cse driver version: 0. Slave initialization skipped.
+INFO: [Labtools 27-1434] Device xc7k325t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'u_ila_0' at location 'uuid_23E7D65A79BC59F7BC47406C1714DFAE' from probes file, since it cannot be found on the programmed device.
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k325t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'u_ila_0' at location 'uuid_23E7D65A79BC59F7BC47406C1714DFAE' from probes file, since it cannot be found on the programmed device.
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k325t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'u_ila_0' at location 'uuid_23E7D65A79BC59F7BC47406C1714DFAE' from probes file, since it cannot be found on the programmed device.
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k325t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'u_ila_0' at location 'uuid_23E7D65A79BC59F7BC47406C1714DFAE' from probes file, since it cannot be found on the programmed device.
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k325t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'u_ila_0' at location 'uuid_23E7D65A79BC59F7BC47406C1714DFAE' from probes file, since it cannot be found on the programmed device.
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k325t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'u_ila_0' at location 'uuid_23E7D65A79BC59F7BC47406C1714DFAE' from probes file, since it cannot be found on the programmed device.
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k325t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'u_ila_0' at location 'uuid_23E7D65A79BC59F7BC47406C1714DFAE' from probes file, since it cannot be found on the programmed device.
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k325t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'u_ila_0' at location 'uuid_23E7D65A79BC59F7BC47406C1714DFAE' from probes file, since it cannot be found on the programmed device.
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k325t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'u_ila_0' at location 'uuid_23E7D65A79BC59F7BC47406C1714DFAE' from probes file, since it cannot be found on the programmed device.
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k325t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'u_ila_0' at location 'uuid_23E7D65A79BC59F7BC47406C1714DFAE' from probes file, since it cannot be found on the programmed device.
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k325t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'u_ila_0' at location 'uuid_23E7D65A79BC59F7BC47406C1714DFAE' from probes file, since it cannot be found on the programmed device.
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k325t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'u_ila_0' at location 'uuid_23E7D65A79BC59F7BC47406C1714DFAE' from probes file, since it cannot be found on the programmed device.
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k325t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'u_ila_0' at location 'uuid_23E7D65A79BC59F7BC47406C1714DFAE' from probes file, since it cannot be found on the programmed device.
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k325t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'u_ila_0' at location 'uuid_23E7D65A79BC59F7BC47406C1714DFAE' from probes file, since it cannot be found on the programmed device.
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k325t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'u_ila_0' at location 'uuid_23E7D65A79BC59F7BC47406C1714DFAE' from probes file, since it cannot be found on the programmed device.
+close_hw_manager
+close_design
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7k325tffg676-2
+Top: ethernet_catch_bordcast
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2900.746 ; gain = 107.148
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'ethernet_catch_bordcast' [C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/sources_1/new/ethernet_catch_bordcast.v:1]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/sources_1/new/ethernet_catch_bordcast.v:13]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/sources_1/new/ethernet_catch_bordcast.v:14]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/sources_1/new/ethernet_catch_bordcast.v:15]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/sources_1/new/ethernet_catch_bordcast.v:16]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/sources_1/new/ethernet_catch_bordcast.v:17]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/sources_1/new/ethernet_catch_bordcast.v:18]
+INFO: [Synth 8-6157] synthesizing module 'eth_catch' [C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/sources_1/new/eth_catch.v:1]
+INFO: [Synth 8-6157] synthesizing module 'IDDR2' [C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:34918]
+	Parameter DDR_ALIGNMENT bound to: C1 - type: string 
+	Parameter INIT_Q0 bound to: 1'b0 
+	Parameter INIT_Q1 bound to: 1'b0 
+	Parameter SRTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IDDR2' (1#1) [C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:34918]
+INFO: [Synth 8-6155] done synthesizing module 'eth_catch' (2#1) [C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/sources_1/new/eth_catch.v:1]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'eth_catch_inst1'. This will prevent further optimization [C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/sources_1/new/ethernet_catch_bordcast.v:23]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'eth_catch_inst2'. This will prevent further optimization [C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/sources_1/new/ethernet_catch_bordcast.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'ethernet_catch_bordcast' (3#1) [C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/sources_1/new/ethernet_catch_bordcast.v:1]
+WARNING: [Synth 8-3331] design eth_catch has unconnected port rstn
+WARNING: [Synth 8-3331] design ethernet_catch_bordcast has unconnected port gmii_rx_dv1
+WARNING: [Synth 8-3331] design ethernet_catch_bordcast has unconnected port gmii_rx_dv2
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2909.633 ; gain = 116.035
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2926.566 ; gain = 132.969
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2926.566 ; gain = 132.969
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2934.598 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
+WARNING: [Netlist 29-151] Pin 'C0' on instance 'eth_catch_inst1/IDDR2_inst1[0]' of cell type 'IDDR2' does not have an equivalent function on the new cell type 'IDDR'. Net 'gmii_rx_clk' that is connected to this pin will not be connected to the replacement instance.
+WARNING: [Netlist 29-151] Pin 'C0' on instance 'eth_catch_inst1/IDDR2_inst1[1]' of cell type 'IDDR2' does not have an equivalent function on the new cell type 'IDDR'. Net 'gmii_rx_clk' that is connected to this pin will not be connected to the replacement instance.
+WARNING: [Netlist 29-151] Pin 'C0' on instance 'eth_catch_inst1/IDDR2_inst1[2]' of cell type 'IDDR2' does not have an equivalent function on the new cell type 'IDDR'. Net 'gmii_rx_clk' that is connected to this pin will not be connected to the replacement instance.
+WARNING: [Netlist 29-151] Pin 'C0' on instance 'eth_catch_inst1/IDDR2_inst1[3]' of cell type 'IDDR2' does not have an equivalent function on the new cell type 'IDDR'. Net 'gmii_rx_clk' that is connected to this pin will not be connected to the replacement instance.
+WARNING: [Netlist 29-151] Pin 'C0' on instance 'eth_catch_inst2/IDDR2_inst1[0]' of cell type 'IDDR2' does not have an equivalent function on the new cell type 'IDDR'. Net 'gmii_rx_clk' that is connected to this pin will not be connected to the replacement instance.
+WARNING: [Netlist 29-151] Pin 'C0' on instance 'eth_catch_inst2/IDDR2_inst1[1]' of cell type 'IDDR2' does not have an equivalent function on the new cell type 'IDDR'. Net 'gmii_rx_clk' that is connected to this pin will not be connected to the replacement instance.
+WARNING: [Netlist 29-151] Pin 'C0' on instance 'eth_catch_inst2/IDDR2_inst1[2]' of cell type 'IDDR2' does not have an equivalent function on the new cell type 'IDDR'. Net 'gmii_rx_clk' that is connected to this pin will not be connected to the replacement instance.
+WARNING: [Netlist 29-151] Pin 'C0' on instance 'eth_catch_inst2/IDDR2_inst1[3]' of cell type 'IDDR2' does not have an equivalent function on the new cell type 'IDDR'. Net 'gmii_rx_clk' that is connected to this pin will not be connected to the replacement instance.
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: rxd1[0]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets rxd1[0]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: rxd1[0]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets rxd1[0]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: rxd1[1]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets rxd1[1]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: rxd1[1]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets rxd1[1]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: rxd1[2]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets rxd1[2]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: rxd1[2]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets rxd1[2]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: rxd1[3]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets rxd1[3]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: rxd1[3]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets rxd1[3]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: rxd2[0]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets rxd2[0]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: rxd2[0]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets rxd2[0]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: rxd2[1]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets rxd2[1]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: rxd2[1]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets rxd2[1]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: rxd2[2]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets rxd2[2]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: rxd2[2]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets rxd2[2]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: rxd2[3]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets rxd2[3]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: rxd2[3]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets rxd2[3]]
+INFO: [Opt 31-140] Inserted 8 IBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/constrs_1/new/ethernet_catch_broadcast.xdc]
+Finished Parsing XDC File [C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/constrs_1/new/ethernet_catch_broadcast.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/constrs_1/new/ethernet_catch_broadcast.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/ethernet_catch_bordcast_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/ethernet_catch_bordcast_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3007.348 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 8 instances were transformed.
+  IDDR2 => IDDR: 8 instances
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 3007.348 ; gain = 213.750
+21 Infos, 27 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 3007.348 ; gain = 213.750
+create_ip -name clk_wiz -vendor xilinx.com -library ip -version 6.0 -module_name clk_wiz_0 -dir c:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/sources_1/ip
+set_property -dict [list CONFIG.PRIM_IN_FREQ {50} CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {250.000} CONFIG.USE_LOCKED {false} CONFIG.USE_RESET {false} CONFIG.CLKIN1_JITTER_PS {200.0} CONFIG.MMCM_CLKFBOUT_MULT_F {20.000} CONFIG.MMCM_CLKIN1_PERIOD {20.000} CONFIG.MMCM_CLKIN2_PERIOD {10.0} CONFIG.MMCM_CLKOUT0_DIVIDE_F {4.000} CONFIG.CLKOUT1_JITTER {136.987} CONFIG.CLKOUT1_PHASE_ERROR {164.985}] [get_ips clk_wiz_0]
+generate_target {instantiation_template} [get_files c:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'clk_wiz_0'...
+generate_target all [get_files  c:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'clk_wiz_0'...
+catch { config_ip_cache -export [get_ips -all clk_wiz_0] }
+export_ip_user_files -of_objects [get_files c:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci]
+launch_runs -jobs 8 clk_wiz_0_synth_1
+[Thu Jul  9 18:32:22 2020] Launched clk_wiz_0_synth_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.runs/clk_wiz_0_synth_1/runme.log
+export_simulation -of_objects [get_files c:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci] -directory C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.ip_user_files -ipstatic_source_dir C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.cache/compile_simlib/modelsim} {questa=C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.cache/compile_simlib/questa} {riviera=C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.cache/compile_simlib/riviera} {activehdl=C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+wait_on_run clk_wiz_0_synth_1
+[Thu Jul  9 18:32:30 2020] Waiting for clk_wiz_0_synth_1 to finish...
+[Thu Jul  9 18:32:35 2020] Waiting for clk_wiz_0_synth_1 to finish...
+[Thu Jul  9 18:32:40 2020] Waiting for clk_wiz_0_synth_1 to finish...
+[Thu Jul  9 18:32:45 2020] Waiting for clk_wiz_0_synth_1 to finish...
+[Thu Jul  9 18:32:55 2020] Waiting for clk_wiz_0_synth_1 to finish...
+[Thu Jul  9 18:33:05 2020] Waiting for clk_wiz_0_synth_1 to finish...
+
+*** Running vivado
+    with args -log clk_wiz_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source clk_wiz_0.tcl
+
+
+****** Vivado v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source clk_wiz_0.tcl -notrace
+Command: synth_design -top clk_wiz_0 -part xc7k325tffg676-2 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k325t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k325t'
+INFO: [Device 21-403] Loading part xc7k325tffg676-2
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 6120 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1020.441 ; gain = 234.207
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [c:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v:70]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0_clk_wiz' [c:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v:68]
+INFO: [Synth 8-6157] synthesizing module 'IBUF' [C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:32937]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IBUF' (1#1) [C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:32937]
+INFO: [Synth 8-6157] synthesizing module 'MMCME2_ADV' [C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39940]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 20.000000 - type: double 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKFBOUT_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKIN1_PERIOD bound to: 20.000000 - type: double 
+	Parameter CLKIN2_PERIOD bound to: 0.000000 - type: double 
+	Parameter CLKOUT0_DIVIDE_F bound to: 4.000000 - type: double 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT0_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT1_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT1_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT2_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT2_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT3_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT3_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT4_CASCADE bound to: FALSE - type: string 
+	Parameter CLKOUT4_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT4_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT5_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT6_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT6_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT6_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT6_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter COMPENSATION bound to: ZHOLD - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter IS_CLKINSEL_INVERTED bound to: 1'b0 
+	Parameter IS_PSEN_INVERTED bound to: 1'b0 
+	Parameter IS_PSINCDEC_INVERTED bound to: 1'b0 
+	Parameter IS_PWRDWN_INVERTED bound to: 1'b0 
+	Parameter IS_RST_INVERTED bound to: 1'b0 
+	Parameter REF_JITTER1 bound to: 0.010000 - type: double 
+	Parameter REF_JITTER2 bound to: 0.010000 - type: double 
+	Parameter SS_EN bound to: FALSE - type: string 
+	Parameter SS_MODE bound to: CENTER_HIGH - type: string 
+	Parameter SS_MOD_PERIOD bound to: 10000 - type: integer 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'MMCME2_ADV' (2#1) [C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39940]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:1075]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (3#1) [C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:1075]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0_clk_wiz' (4#1) [c:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (5#1) [c:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v:70]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1094.020 ; gain = 307.785
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1094.020 ; gain = 307.785
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1094.020 ; gain = 307.785
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1094.020 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [c:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'inst'
+Parsing XDC File [c:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/clk_wiz_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/clk_wiz_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.runs/clk_wiz_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.runs/clk_wiz_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1113.012 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1113.016 ; gain = 0.004
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1113.016 ; gain = 326.781
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k325tffg676-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1113.016 ; gain = 326.781
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for inst. (constraint file  C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.runs/clk_wiz_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1113.016 ; gain = 326.781
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1113.016 ; gain = 326.781
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 840 (col length:140)
+BRAMs: 890 (col length: RAMB18 140 RAMB36 70)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1113.016 ; gain = 326.781
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1147.570 ; gain = 361.336
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1147.570 ; gain = 361.336
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1157.105 ; gain = 370.871
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1172.965 ; gain = 386.730
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1172.965 ; gain = 386.730
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1172.965 ; gain = 386.730
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1172.965 ; gain = 386.730
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1172.965 ; gain = 386.730
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1172.965 ; gain = 386.730
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |BUFG       |     2|
+|2     |MMCME2_ADV |     1|
+|3     |IBUF       |     1|
++------+-----------+------+
+
+Report Instance Areas: 
++------+---------+------------------+------+
+|      |Instance |Module            |Cells |
++------+---------+------------------+------+
+|1     |top      |                  |     4|
+|2     |  inst   |clk_wiz_0_clk_wiz |     4|
++------+---------+------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1172.965 ; gain = 386.730
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:21 . Memory (MB): peak = 1172.965 ; gain = 367.734
+Synthesis Optimization Complete : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1172.965 ; gain = 386.730
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1172.965 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1198.438 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+25 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 1198.438 ; gain = 741.105
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1198.438 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.runs/clk_wiz_0_synth_1/clk_wiz_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP clk_wiz_0, cache-ID = cba97f66a09a5afb
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1198.438 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.runs/clk_wiz_0_synth_1/clk_wiz_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file clk_wiz_0_utilization_synth.rpt -pb clk_wiz_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Jul  9 18:33:02 2020...
+[Thu Jul  9 18:33:05 2020] clk_wiz_0_synth_1 finished
+wait_on_run: Time (s): cpu = 00:00:02 ; elapsed = 00:00:35 . Memory (MB): peak = 3087.133 ; gain = 0.000
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 3159.563 ; gain = 72.430
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'ethernet_catch_bordcast' [C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/sources_1/new/ethernet_catch_bordcast.v:1]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/sources_1/new/ethernet_catch_bordcast.v:14]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/sources_1/new/ethernet_catch_bordcast.v:15]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/sources_1/new/ethernet_catch_bordcast.v:16]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/sources_1/new/ethernet_catch_bordcast.v:17]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/sources_1/new/ethernet_catch_bordcast.v:18]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/sources_1/new/ethernet_catch_bordcast.v:19]
+INFO: [Synth 8-6157] synthesizing module 'eth_catch' [C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/sources_1/new/eth_catch.v:1]
+INFO: [Synth 8-6157] synthesizing module 'IDDR2' [C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:34918]
+	Parameter DDR_ALIGNMENT bound to: C1 - type: string 
+	Parameter INIT_Q0 bound to: 1'b0 
+	Parameter INIT_Q1 bound to: 1'b0 
+	Parameter SRTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IDDR2' (1#1) [C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:34918]
+INFO: [Synth 8-6155] done synthesizing module 'eth_catch' (2#1) [C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/sources_1/new/eth_catch.v:1]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'eth_catch_inst1'. This will prevent further optimization [C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/sources_1/new/ethernet_catch_bordcast.v:24]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'eth_catch_inst2'. This will prevent further optimization [C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/sources_1/new/ethernet_catch_bordcast.v:32]
+INFO: [Synth 8-6155] done synthesizing module 'ethernet_catch_bordcast' (3#1) [C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/sources_1/new/ethernet_catch_bordcast.v:1]
+WARNING: [Synth 8-3331] design eth_catch has unconnected port rstn
+WARNING: [Synth 8-3331] design ethernet_catch_bordcast has unconnected port clk
+WARNING: [Synth 8-3331] design ethernet_catch_bordcast has unconnected port gmii_rx_dv1
+WARNING: [Synth 8-3331] design ethernet_catch_bordcast has unconnected port gmii_rx_dv2
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 3196.809 ; gain = 109.676
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 3219.660 ; gain = 132.527
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 3219.660 ; gain = 132.527
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 3222.902 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
+WARNING: [Netlist 29-151] Pin 'C0' on instance 'eth_catch_inst1/IDDR2_inst1[0]' of cell type 'IDDR2' does not have an equivalent function on the new cell type 'IDDR'. Net 'gmii_rx_clk' that is connected to this pin will not be connected to the replacement instance.
+WARNING: [Netlist 29-151] Pin 'C0' on instance 'eth_catch_inst1/IDDR2_inst1[1]' of cell type 'IDDR2' does not have an equivalent function on the new cell type 'IDDR'. Net 'gmii_rx_clk' that is connected to this pin will not be connected to the replacement instance.
+WARNING: [Netlist 29-151] Pin 'C0' on instance 'eth_catch_inst1/IDDR2_inst1[2]' of cell type 'IDDR2' does not have an equivalent function on the new cell type 'IDDR'. Net 'gmii_rx_clk' that is connected to this pin will not be connected to the replacement instance.
+WARNING: [Netlist 29-151] Pin 'C0' on instance 'eth_catch_inst1/IDDR2_inst1[3]' of cell type 'IDDR2' does not have an equivalent function on the new cell type 'IDDR'. Net 'gmii_rx_clk' that is connected to this pin will not be connected to the replacement instance.
+WARNING: [Netlist 29-151] Pin 'C0' on instance 'eth_catch_inst2/IDDR2_inst1[0]' of cell type 'IDDR2' does not have an equivalent function on the new cell type 'IDDR'. Net 'gmii_rx_clk' that is connected to this pin will not be connected to the replacement instance.
+WARNING: [Netlist 29-151] Pin 'C0' on instance 'eth_catch_inst2/IDDR2_inst1[1]' of cell type 'IDDR2' does not have an equivalent function on the new cell type 'IDDR'. Net 'gmii_rx_clk' that is connected to this pin will not be connected to the replacement instance.
+WARNING: [Netlist 29-151] Pin 'C0' on instance 'eth_catch_inst2/IDDR2_inst1[2]' of cell type 'IDDR2' does not have an equivalent function on the new cell type 'IDDR'. Net 'gmii_rx_clk' that is connected to this pin will not be connected to the replacement instance.
+WARNING: [Netlist 29-151] Pin 'C0' on instance 'eth_catch_inst2/IDDR2_inst1[3]' of cell type 'IDDR2' does not have an equivalent function on the new cell type 'IDDR'. Net 'gmii_rx_clk' that is connected to this pin will not be connected to the replacement instance.
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: rxd1[0]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets rxd1[0]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: rxd1[0]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets rxd1[0]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: rxd1[1]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets rxd1[1]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: rxd1[1]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets rxd1[1]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: rxd1[2]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets rxd1[2]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: rxd1[2]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets rxd1[2]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: rxd1[3]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets rxd1[3]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: rxd1[3]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets rxd1[3]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: rxd2[0]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets rxd2[0]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: rxd2[0]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets rxd2[0]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: rxd2[1]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets rxd2[1]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: rxd2[1]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets rxd2[1]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: rxd2[2]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets rxd2[2]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: rxd2[2]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets rxd2[2]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: rxd2[3]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets rxd2[3]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: rxd2[3]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets rxd2[3]]
+INFO: [Opt 31-140] Inserted 8 IBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/constrs_1/new/ethernet_catch_broadcast.xdc]
+Finished Parsing XDC File [C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/constrs_1/new/ethernet_catch_broadcast.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/constrs_1/new/ethernet_catch_broadcast.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/ethernet_catch_bordcast_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/ethernet_catch_bordcast_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:09 . Memory (MB): peak = 3275.508 ; gain = 188.375
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 3431.465 ; gain = 6.352
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'ethernet_catch_bordcast' [C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/sources_1/new/ethernet_catch_bordcast.v:1]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/sources_1/new/ethernet_catch_bordcast.v:21]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/sources_1/new/ethernet_catch_bordcast.v:22]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/sources_1/new/ethernet_catch_bordcast.v:23]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/sources_1/new/ethernet_catch_bordcast.v:24]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/sources_1/new/ethernet_catch_bordcast.v:25]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/sources_1/new/ethernet_catch_bordcast.v:26]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/.Xil/Vivado-6104-FXTVWR85EI30285/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (1#1) [C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/.Xil/Vivado-6104-FXTVWR85EI30285/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'eth_catch' [C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/sources_1/new/eth_catch.v:1]
+INFO: [Synth 8-6157] synthesizing module 'IDDR2' [C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:34918]
+	Parameter DDR_ALIGNMENT bound to: C1 - type: string 
+	Parameter INIT_Q0 bound to: 1'b0 
+	Parameter INIT_Q1 bound to: 1'b0 
+	Parameter SRTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IDDR2' (2#1) [C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:34918]
+INFO: [Synth 8-6155] done synthesizing module 'eth_catch' (3#1) [C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/sources_1/new/eth_catch.v:1]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'eth_catch_inst1'. This will prevent further optimization [C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/sources_1/new/ethernet_catch_bordcast.v:31]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'eth_catch_inst2'. This will prevent further optimization [C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/sources_1/new/ethernet_catch_bordcast.v:39]
+INFO: [Synth 8-6155] done synthesizing module 'ethernet_catch_bordcast' (4#1) [C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/sources_1/new/ethernet_catch_bordcast.v:1]
+WARNING: [Synth 8-3331] design eth_catch has unconnected port rstn
+WARNING: [Synth 8-3331] design ethernet_catch_bordcast has unconnected port gmii_rx_dv1
+WARNING: [Synth 8-3331] design ethernet_catch_bordcast has unconnected port gmii_rx_dv2
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 3431.465 ; gain = 6.352
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 3452.238 ; gain = 27.125
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 3452.238 ; gain = 27.125
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.dcp' for cell 'clk_wiz_0_inst'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 3465.273 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 9 Unisim elements for replacement
+WARNING: [Netlist 29-151] Pin 'C0' on instance 'eth_catch_inst1/IDDR2_inst1[0]' of cell type 'IDDR2' does not have an equivalent function on the new cell type 'IDDR'. Net 'gmii_rx_clk' that is connected to this pin will not be connected to the replacement instance.
+WARNING: [Netlist 29-151] Pin 'C0' on instance 'eth_catch_inst1/IDDR2_inst1[1]' of cell type 'IDDR2' does not have an equivalent function on the new cell type 'IDDR'. Net 'gmii_rx_clk' that is connected to this pin will not be connected to the replacement instance.
+WARNING: [Netlist 29-151] Pin 'C0' on instance 'eth_catch_inst1/IDDR2_inst1[2]' of cell type 'IDDR2' does not have an equivalent function on the new cell type 'IDDR'. Net 'gmii_rx_clk' that is connected to this pin will not be connected to the replacement instance.
+WARNING: [Netlist 29-151] Pin 'C0' on instance 'eth_catch_inst1/IDDR2_inst1[3]' of cell type 'IDDR2' does not have an equivalent function on the new cell type 'IDDR'. Net 'gmii_rx_clk' that is connected to this pin will not be connected to the replacement instance.
+WARNING: [Netlist 29-151] Pin 'C0' on instance 'eth_catch_inst2/IDDR2_inst1[0]' of cell type 'IDDR2' does not have an equivalent function on the new cell type 'IDDR'. Net 'gmii_rx_clk' that is connected to this pin will not be connected to the replacement instance.
+WARNING: [Netlist 29-151] Pin 'C0' on instance 'eth_catch_inst2/IDDR2_inst1[1]' of cell type 'IDDR2' does not have an equivalent function on the new cell type 'IDDR'. Net 'gmii_rx_clk' that is connected to this pin will not be connected to the replacement instance.
+WARNING: [Netlist 29-151] Pin 'C0' on instance 'eth_catch_inst2/IDDR2_inst1[2]' of cell type 'IDDR2' does not have an equivalent function on the new cell type 'IDDR'. Net 'gmii_rx_clk' that is connected to this pin will not be connected to the replacement instance.
+WARNING: [Netlist 29-151] Pin 'C0' on instance 'eth_catch_inst2/IDDR2_inst1[3]' of cell type 'IDDR2' does not have an equivalent function on the new cell type 'IDDR'. Net 'gmii_rx_clk' that is connected to this pin will not be connected to the replacement instance.
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: rxd1[0]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets rxd1[0]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: rxd1[0]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets rxd1[0]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: rxd1[1]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets rxd1[1]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: rxd1[1]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets rxd1[1]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: rxd1[2]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets rxd1[2]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: rxd1[2]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets rxd1[2]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: rxd1[3]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets rxd1[3]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: rxd1[3]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets rxd1[3]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: rxd2[0]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets rxd2[0]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: rxd2[0]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets rxd2[0]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: rxd2[1]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets rxd2[1]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: rxd2[1]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets rxd2[1]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: rxd2[2]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets rxd2[2]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: rxd2[2]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets rxd2[2]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: rxd2[3]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets rxd2[3]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: rxd2[3]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets rxd2[3]]
+INFO: [Opt 31-140] Inserted 8 IBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'clk_wiz_0_inst/inst'
+Finished Parsing XDC File [c:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'clk_wiz_0_inst/inst'
+Parsing XDC File [c:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'clk_wiz_0_inst/inst'
+Finished Parsing XDC File [c:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'clk_wiz_0_inst/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/ethernet_catch_bordcast_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/ethernet_catch_bordcast_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/constrs_1/new/ethernet_catch_broadcast.xdc]
+Finished Parsing XDC File [C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/constrs_1/new/ethernet_catch_broadcast.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/constrs_1/new/ethernet_catch_broadcast.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/ethernet_catch_bordcast_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/ethernet_catch_bordcast_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 3465.273 ; gain = 40.160
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Thu Jul  9 18:34:59 2020] Launched synth_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.runs/synth_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7k325tffg676-2
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.dcp' for cell 'clk_wiz_0_inst'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 3655.621 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 9 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [c:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'clk_wiz_0_inst/inst'
+Finished Parsing XDC File [c:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'clk_wiz_0_inst/inst'
+Parsing XDC File [c:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'clk_wiz_0_inst/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [c:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [c:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc:57]
+get_clocks: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 4220.133 ; gain = 526.953
+Finished Parsing XDC File [c:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'clk_wiz_0_inst/inst'
+Parsing XDC File [C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/constrs_1/new/ethernet_catch_broadcast.xdc]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/constrs_1/new/ethernet_catch_broadcast.xdc:24]
+WARNING: [Vivado 12-507] No nets matched 'gmii_rxd1_IBUF[0]'. [C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/constrs_1/new/ethernet_catch_broadcast.xdc:25]
+WARNING: [Vivado 12-507] No nets matched 'gmii_rxd1_IBUF[1]'. [C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/constrs_1/new/ethernet_catch_broadcast.xdc:25]
+WARNING: [Vivado 12-507] No nets matched 'gmii_rxd1_IBUF[2]'. [C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/constrs_1/new/ethernet_catch_broadcast.xdc:25]
+WARNING: [Vivado 12-507] No nets matched 'gmii_rxd1_IBUF[3]'. [C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/constrs_1/new/ethernet_catch_broadcast.xdc:25]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/constrs_1/new/ethernet_catch_broadcast.xdc:25]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/constrs_1/new/ethernet_catch_broadcast.xdc:26]
+WARNING: [Vivado 12-507] No nets matched 'gmii_rx_dv1'. [C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/constrs_1/new/ethernet_catch_broadcast.xdc:27]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/constrs_1/new/ethernet_catch_broadcast.xdc:27]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'dbg_hub' was not found. [C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/constrs_1/new/ethernet_catch_broadcast.xdc:28]
+WARNING: [Vivado 12-507] No nets matched 'clk1'. [C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/constrs_1/new/ethernet_catch_broadcast.xdc:30]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/constrs_1/new/ethernet_catch_broadcast.xdc:30]
+WARNING: [Vivado 12-507] No nets matched 'clk1'. [C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/constrs_1/new/ethernet_catch_broadcast.xdc:31]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/constrs_1/new/ethernet_catch_broadcast.xdc:31]
+WARNING: [Vivado 12-507] No nets matched 'clk1'. [C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/constrs_1/new/ethernet_catch_broadcast.xdc:32]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'dbg_hub' was not found. [C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/constrs_1/new/ethernet_catch_broadcast.xdc:32]
+WARNING: [Vivado 12-507] No nets matched 'clk1'. [C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/constrs_1/new/ethernet_catch_broadcast.xdc:45]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/constrs_1/new/ethernet_catch_broadcast.xdc:45]
+WARNING: [Vivado 12-507] No nets matched 'clk1'. [C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/constrs_1/new/ethernet_catch_broadcast.xdc:46]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/constrs_1/new/ethernet_catch_broadcast.xdc:46]
+WARNING: [Vivado 12-507] No nets matched 'clk2'. [C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/constrs_1/new/ethernet_catch_broadcast.xdc:47]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/constrs_1/new/ethernet_catch_broadcast.xdc:47]
+WARNING: [Vivado 12-507] No nets matched 'clk1'. [C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/constrs_1/new/ethernet_catch_broadcast.xdc:48]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'dbg_hub' was not found. [C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/constrs_1/new/ethernet_catch_broadcast.xdc:48]
+Finished Parsing XDC File [C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/constrs_1/new/ethernet_catch_broadcast.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 4220.133 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:13 ; elapsed = 00:00:11 . Memory (MB): peak = 4220.133 ; gain = 578.398
+delete_debug_core [get_debug_cores {u_ila_0 }]
+create_debug_core u_ila_0 ila
+set_property C_DATA_DEPTH 4096 [get_debug_cores u_ila_0]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_0]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]
+startgroup 
+set_property C_EN_STRG_QUAL true [get_debug_cores u_ila_0 ]
+set_property C_ADV_TRIGGER true [get_debug_cores u_ila_0 ]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0 ]
+set_property ALL_PROBE_SAME_MU_CNT 4 [get_debug_cores u_ila_0 ]
+endgroup
+connect_debug_port u_ila_0/clk [get_nets [list clk_wiz_0_inst/inst/clk_out1 ]]
+set_property port_width 4 [get_debug_ports u_ila_0/probe0]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
+connect_debug_port u_ila_0/probe0 [get_nets [list {rxd2[0]} {rxd2[1]} {rxd2[2]} {rxd2[3]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 8 [get_debug_ports u_ila_0/probe1]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe1]
+connect_debug_port u_ila_0/probe1 [get_nets [list {rxd_eth2[0]} {rxd_eth2[1]} {rxd_eth2[2]} {rxd_eth2[3]} {rxd_eth2[4]} {rxd_eth2[5]} {rxd_eth2[6]} {rxd_eth2[7]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 4 [get_debug_ports u_ila_0/probe2]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe2]
+connect_debug_port u_ila_0/probe2 [get_nets [list {rxd1[0]} {rxd1[1]} {rxd1[2]} {rxd1[3]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 8 [get_debug_ports u_ila_0/probe3]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe3]
+connect_debug_port u_ila_0/probe3 [get_nets [list {rxd_eth1[0]} {rxd_eth1[1]} {rxd_eth1[2]} {rxd_eth1[3]} {rxd_eth1[4]} {rxd_eth1[5]} {rxd_eth1[6]} {rxd_eth1[7]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe4]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe4]
+connect_debug_port u_ila_0/probe4 [get_nets [list rxdv1 ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe5]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe5]
+connect_debug_port u_ila_0/probe5 [get_nets [list rxdv2 ]]
+current_design rtl_1
+place_ports clk G22
+set_property IOSTANDARD LVCMOS33 [get_ports [list clk]]
+save_constraints
+current_design synth_1
+refresh_design
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.dcp' for cell 'clk_wiz_0_inst'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4220.133 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 9 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [c:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'clk_wiz_0_inst/inst'
+Finished Parsing XDC File [c:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'clk_wiz_0_inst/inst'
+Parsing XDC File [c:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'clk_wiz_0_inst/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [c:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [c:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc:57]
+Finished Parsing XDC File [c:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'clk_wiz_0_inst/inst'
+Parsing XDC File [C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/constrs_1/new/ethernet_catch_broadcast.xdc]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/constrs_1/new/ethernet_catch_broadcast.xdc:24]
+WARNING: [Vivado 12-507] No nets matched 'gmii_rxd1_IBUF[0]'. [C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/constrs_1/new/ethernet_catch_broadcast.xdc:25]
+WARNING: [Vivado 12-507] No nets matched 'gmii_rxd1_IBUF[1]'. [C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/constrs_1/new/ethernet_catch_broadcast.xdc:25]
+WARNING: [Vivado 12-507] No nets matched 'gmii_rxd1_IBUF[2]'. [C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/constrs_1/new/ethernet_catch_broadcast.xdc:25]
+WARNING: [Vivado 12-507] No nets matched 'gmii_rxd1_IBUF[3]'. [C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/constrs_1/new/ethernet_catch_broadcast.xdc:25]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/constrs_1/new/ethernet_catch_broadcast.xdc:25]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/constrs_1/new/ethernet_catch_broadcast.xdc:26]
+WARNING: [Vivado 12-507] No nets matched 'gmii_rx_dv1'. [C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/constrs_1/new/ethernet_catch_broadcast.xdc:27]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/constrs_1/new/ethernet_catch_broadcast.xdc:27]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'dbg_hub' was not found. [C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/constrs_1/new/ethernet_catch_broadcast.xdc:28]
+WARNING: [Vivado 12-507] No nets matched 'clk1'. [C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/constrs_1/new/ethernet_catch_broadcast.xdc:30]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/constrs_1/new/ethernet_catch_broadcast.xdc:30]
+WARNING: [Vivado 12-507] No nets matched 'clk1'. [C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/constrs_1/new/ethernet_catch_broadcast.xdc:31]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/constrs_1/new/ethernet_catch_broadcast.xdc:31]
+WARNING: [Vivado 12-507] No nets matched 'clk1'. [C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/constrs_1/new/ethernet_catch_broadcast.xdc:32]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'dbg_hub' was not found. [C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/constrs_1/new/ethernet_catch_broadcast.xdc:32]
+WARNING: [Vivado 12-507] No nets matched 'clk1'. [C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/constrs_1/new/ethernet_catch_broadcast.xdc:45]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/constrs_1/new/ethernet_catch_broadcast.xdc:45]
+WARNING: [Vivado 12-507] No nets matched 'clk1'. [C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/constrs_1/new/ethernet_catch_broadcast.xdc:46]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/constrs_1/new/ethernet_catch_broadcast.xdc:46]
+WARNING: [Vivado 12-507] No nets matched 'clk2'. [C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/constrs_1/new/ethernet_catch_broadcast.xdc:47]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/constrs_1/new/ethernet_catch_broadcast.xdc:47]
+WARNING: [Vivado 12-507] No nets matched 'clk1'. [C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/constrs_1/new/ethernet_catch_broadcast.xdc:48]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'dbg_hub' was not found. [C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/constrs_1/new/ethernet_catch_broadcast.xdc:48]
+Finished Parsing XDC File [C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.srcs/constrs_1/new/ethernet_catch_broadcast.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4220.133 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.035 . Memory (MB): peak = 4220.133 ; gain = 0.000
+[Thu Jul  9 18:37:39 2020] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.2
+  **** Build date : Nov  6 2019 at 22:12:23
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+****** Xilinx cs_server v2019.2.0
+  **** Build date : Nov 07 2019-13:28:22
+    ** Copyright 2017-2019 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 4220.133 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210251A08870
+set_property PROGRAM.FILE {C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.runs/impl_1/ethernet_catch_bordcast.bit} [get_hw_devices xc7k325t_0]
+set_property PROBES.FILE {C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.runs/impl_1/ethernet_catch_bordcast.ltx} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.runs/impl_1/ethernet_catch_bordcast.ltx} [get_hw_devices xc7k325t_0]
+current_hw_device [get_hw_devices xc7k325t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+WARNING: [Xicom 50-38] xicom: No CseXsdb register file specified for CseXsdb slave type: 0, cse driver version: 0. Slave initialization skipped.
+INFO: [Labtools 27-1434] Device xc7k325t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'u_ila_0' at location 'uuid_23E7D65A79BC59F7BC47406C1714DFAE' from probes file, since it cannot be found on the programmed device.
+set_property PROBES.FILE {C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.runs/impl_1/ethernet_catch_bordcast.ltx} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.runs/impl_1/ethernet_catch_bordcast.ltx} [get_hw_devices xc7k325t_0]
+set_property PROGRAM.FILE {C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.runs/impl_1/ethernet_catch_bordcast.bit} [get_hw_devices xc7k325t_0]
+program_hw_devices [get_hw_devices xc7k325t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 4220.133 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+WARNING: [Xicom 50-38] xicom: No CseXsdb register file specified for CseXsdb slave type: 0, cse driver version: 0. Slave initialization skipped.
+INFO: [Labtools 27-1434] Device xc7k325t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'u_ila_0' at location 'uuid_23E7D65A79BC59F7BC47406C1714DFAE' from probes file, since it cannot be found on the programmed device.
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k325t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'u_ila_0' at location 'uuid_23E7D65A79BC59F7BC47406C1714DFAE' from probes file, since it cannot be found on the programmed device.
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k325t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'u_ila_0' at location 'uuid_23E7D65A79BC59F7BC47406C1714DFAE' from probes file, since it cannot be found on the programmed device.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210251A08870
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210251A08870
+INFO: [Labtools 27-1434] Device xc7k325t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'u_ila_0' at location 'uuid_23E7D65A79BC59F7BC47406C1714DFAE' from probes file, since it cannot be found on the programmed device.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.runs/impl_1/ethernet_catch_bordcast.ltx} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.runs/impl_1/ethernet_catch_bordcast.ltx} [get_hw_devices xc7k325t_0]
+set_property PROGRAM.FILE {C:/Users/Administrator/Desktop/k719_ethernet_catch_broadcast/k719_ethernet_catch_broadcast.runs/impl_1/ethernet_catch_bordcast.bit} [get_hw_devices xc7k325t_0]
+program_hw_devices [get_hw_devices xc7k325t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 4220.133 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+WARNING: [Xicom 50-38] xicom: No CseXsdb register file specified for CseXsdb slave type: 0, cse driver version: 0. Slave initialization skipped.
+INFO: [Labtools 27-1434] Device xc7k325t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'u_ila_0' at location 'uuid_23E7D65A79BC59F7BC47406C1714DFAE' from probes file, since it cannot be found on the programmed device.
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Jul  9 18:42:03 2020...

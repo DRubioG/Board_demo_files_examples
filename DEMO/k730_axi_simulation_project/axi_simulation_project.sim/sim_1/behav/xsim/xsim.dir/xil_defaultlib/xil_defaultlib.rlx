@@ -1,0 +1,9 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+C:/Users/Administrator/Desktop/FPGADEMO/AXI_PL_WRITE_DDR3/axi_simulation_project/axi_simulation_project.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
+C:/Users/Administrator/Desktop/FPGADEMO/AXI_PL_WRITE_DDR3/axi_simulation_project/axi_simulation_project.srcs/sim_1/imports/Desktop/axi_full_v1.v,1570693301,verilog,,C:/Users/Administrator/Desktop/FPGADEMO/AXI_PL_WRITE_DDR3/axi_simulation_project/axi_simulation_project.srcs/sim_1/imports/Desktop/axi_full_v1_M00_AXI.v,,axi_full_v1,,,,,,,,
+C:/Users/Administrator/Desktop/FPGADEMO/AXI_PL_WRITE_DDR3/axi_simulation_project/axi_simulation_project.srcs/sim_1/imports/Desktop/axi_full_v1_M00_AXI.v,1582425075,verilog,,C:/Users/Administrator/Desktop/FPGADEMO/AXI_PL_WRITE_DDR3/axi_simulation_project/axi_simulation_project.srcs/sim_1/imports/Desktop/axi_full_v1_S00_AXI.v,,axi_full_v1_M00_AXI,,,,,,,,
+C:/Users/Administrator/Desktop/FPGADEMO/AXI_PL_WRITE_DDR3/axi_simulation_project/axi_simulation_project.srcs/sim_1/imports/Desktop/axi_full_v1_S00_AXI.v,1570693301,verilog,,C:/Users/Administrator/Desktop/FPGADEMO/AXI_PL_WRITE_DDR3/axi_simulation_project/axi_simulation_project.srcs/sim_1/imports/Desktop/tb_AXI_full.v,,axi_full_v1_S00_AXI,,,,,,,,
+C:/Users/Administrator/Desktop/FPGADEMO/AXI_PL_WRITE_DDR3/axi_simulation_project/axi_simulation_project.srcs/sim_1/imports/Desktop/tb_AXI_full.v,1583553402,verilog,,,,tb_AXI_full,,,,,,,,

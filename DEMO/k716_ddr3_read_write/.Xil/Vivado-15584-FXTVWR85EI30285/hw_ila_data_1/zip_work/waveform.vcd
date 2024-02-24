@@ -1,0 +1,49 @@
+$date
+        2020-Jul-30 22:48:25
+$end
+$version
+        Vivado v2019.2 (64-bit)
+$end
+$timescale
+        1ps
+$end
+$scope module dut $end
+$var reg 3 " app_cmd [2:0] $end
+$var reg 256 % app_wdf_data [255:0] $end
+$var reg 29 i# app_addr [28:0] $end
+$var reg 256 ($ app_rd_data [255:0] $end
+$var reg 256 l& app_rd_data_reg [255:0] $end
+$var reg 1 R) app_en $end
+$var reg 1 S) app_rd_data_end $end
+$var reg 1 T) app_rd_data_valid $end
+$var reg 1 U) app_rdy $end
+$var reg 1 V) app_wdf_end $end
+$var reg 1 W) app_wdf_rdy $end
+$var reg 1 X) app_wdf_wren $end
+$var reg 1 Y) ui_clk $end
+$var reg 1 Z) _TRIGGER $end
+$var reg 1 [) _WINDOW $end
+$var reg 1 \) _GAP $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 "
+b0 %
+b0 i#
+b0 ($
+b0 l&
+0R)
+0S)
+0T)
+0U)
+0V)
+1W)
+0X)
+1Y)
+0Z)
+1[)
+0\)
+$end
+#2048
+1Z)

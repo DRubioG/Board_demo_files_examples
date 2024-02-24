@@ -1,0 +1,698 @@
+{
+    "ltx_root": {
+        "version": 4,
+        "minor": 0,
+        "ltx_data": [
+            {
+                "name": "EDA_PROBESET",
+                "active": true,
+                "debug_cores": [
+                    {
+                        "type": "XSDB_V3",
+                        "name": "dbg_hub",
+                        "spec": "labtools_xsdbm_v3"
+                    },
+                    {
+                        "type": "ILA_V3",
+                        "name": "u_ila_0",
+                        "spec": "labtools_ila_v6",
+                        "core_location": {
+                            "user_chain": 1,
+                            "slave_index": 0,
+                            "bscan_switch_index": 0
+                        },
+                        "uuid": "23e7d65a79bc59f7bc47406c1714dfae",
+                        "pins": [
+                            {
+                                "name": "probe0",
+                                "id": 0,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 7,
+                                "portIndex": 0,
+                                "nets": [
+                                    {
+                                        "name": "write_byte_reg",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "write_byte_reg[7]"
+                                            },
+                                            {
+                                                "name": "write_byte_reg[6]"
+                                            },
+                                            {
+                                                "name": "write_byte_reg[5]"
+                                            },
+                                            {
+                                                "name": "write_byte_reg[4]"
+                                            },
+                                            {
+                                                "name": "write_byte_reg[3]"
+                                            },
+                                            {
+                                                "name": "write_byte_reg[2]"
+                                            },
+                                            {
+                                                "name": "write_byte_reg[1]"
+                                            },
+                                            {
+                                                "name": "write_byte_reg[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe1",
+                                "id": 1,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 6,
+                                "portIndex": 1,
+                                "nets": [
+                                    {
+                                        "name": "cnt",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "cnt[6]"
+                                            },
+                                            {
+                                                "name": "cnt[5]"
+                                            },
+                                            {
+                                                "name": "cnt[4]"
+                                            },
+                                            {
+                                                "name": "cnt[3]"
+                                            },
+                                            {
+                                                "name": "cnt[2]"
+                                            },
+                                            {
+                                                "name": "cnt[1]"
+                                            },
+                                            {
+                                                "name": "cnt[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe2",
+                                "id": 2,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 3,
+                                "portIndex": 2,
+                                "nets": [
+                                    {
+                                        "name": "write_byte_cnt",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "write_byte_cnt[3]"
+                                            },
+                                            {
+                                                "name": "write_byte_cnt[2]"
+                                            },
+                                            {
+                                                "name": "write_byte_cnt[1]"
+                                            },
+                                            {
+                                                "name": "write_byte_cnt[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe3",
+                                "id": 3,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 4,
+                                "portIndex": 3,
+                                "nets": [
+                                    {
+                                        "name": "state_reg",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "state_reg[4]",
+                                                "parentNetId": 19
+                                            },
+                                            {
+                                                "name": "state_reg[3]",
+                                                "parentNetId": 20
+                                            },
+                                            {
+                                                "name": "state_reg[2]",
+                                                "parentNetId": 21
+                                            },
+                                            {
+                                                "name": "state_reg[1]",
+                                                "parentNetId": 22
+                                            },
+                                            {
+                                                "name": "state_reg[0]",
+                                                "parentNetId": 23
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe4",
+                                "id": 4,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 4,
+                                "nets": [
+                                    {
+                                        "name": "read_start_flag_wire",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe5",
+                                "id": 5,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 5,
+                                "nets": [
+                                    {
+                                        "name": "SCL_OBUF",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe6",
+                                "id": 6,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 6,
+                                "nets": [
+                                    {
+                                        "name": "SDA_IBUF",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe7",
+                                "id": 7,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 7,
+                                "nets": [
+                                    {
+                                        "name": "SDA_OBUF",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe8",
+                                "id": 8,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 8,
+                                "nets": [
+                                    {
+                                        "name": "write_start_flag_wire",
+                                        "isBus": false
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "parent_nets": [
+                    {
+                        "id": 19,
+                        "name": "state_reg[4]",
+                        "state_reg": [
+                            {
+                                "name": "state_reg_reg[4]",
+                                "states": [
+                                    {
+                                        "name": "STATE_IDLE",
+                                        "val": "00000"
+                                    },
+                                    {
+                                        "name": "START_WRITE",
+                                        "val": "00001"
+                                    },
+                                    {
+                                        "name": "SEND_CTRL_BYTE_W",
+                                        "val": "00010"
+                                    },
+                                    {
+                                        "name": "RECEIVE_ACK_1_W",
+                                        "val": "00011"
+                                    },
+                                    {
+                                        "name": "SEND_ADDR_BYTE_W",
+                                        "val": "00100"
+                                    },
+                                    {
+                                        "name": "RECEIVE_ACK_2_W",
+                                        "val": "00101"
+                                    },
+                                    {
+                                        "name": "SEND_DATA_BYTE_W",
+                                        "val": "00110"
+                                    },
+                                    {
+                                        "name": "RECEIVE_ACK_3_W",
+                                        "val": "00111"
+                                    },
+                                    {
+                                        "name": "STOP_WRITE",
+                                        "val": "01000"
+                                    },
+                                    {
+                                        "name": "START_READ_1",
+                                        "val": "01001"
+                                    },
+                                    {
+                                        "name": "SEND_CTRL_BYTE_1_R",
+                                        "val": "01010"
+                                    },
+                                    {
+                                        "name": "RECEIVE_ACK_1_R",
+                                        "val": "01011"
+                                    },
+                                    {
+                                        "name": "SEND_ADDR_BYTE_R",
+                                        "val": "01100"
+                                    },
+                                    {
+                                        "name": "RECEIVE_ACK_2_R",
+                                        "val": "01101"
+                                    },
+                                    {
+                                        "name": "START_READ_2",
+                                        "val": "01110"
+                                    },
+                                    {
+                                        "name": "SEND_CTRL_BYTE_2_R",
+                                        "val": "01111"
+                                    },
+                                    {
+                                        "name": "RECEIVE_ACK_3_R",
+                                        "val": "10000"
+                                    },
+                                    {
+                                        "name": "RECEIVE_DATA_R",
+                                        "val": "10001"
+                                    },
+                                    {
+                                        "name": "STOP_READ",
+                                        "val": "10010"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": 20,
+                        "name": "state_reg[3]",
+                        "state_reg": [
+                            {
+                                "name": "state_reg_reg[3]",
+                                "states": [
+                                    {
+                                        "name": "STATE_IDLE",
+                                        "val": "00000"
+                                    },
+                                    {
+                                        "name": "START_WRITE",
+                                        "val": "00001"
+                                    },
+                                    {
+                                        "name": "SEND_CTRL_BYTE_W",
+                                        "val": "00010"
+                                    },
+                                    {
+                                        "name": "RECEIVE_ACK_1_W",
+                                        "val": "00011"
+                                    },
+                                    {
+                                        "name": "SEND_ADDR_BYTE_W",
+                                        "val": "00100"
+                                    },
+                                    {
+                                        "name": "RECEIVE_ACK_2_W",
+                                        "val": "00101"
+                                    },
+                                    {
+                                        "name": "SEND_DATA_BYTE_W",
+                                        "val": "00110"
+                                    },
+                                    {
+                                        "name": "RECEIVE_ACK_3_W",
+                                        "val": "00111"
+                                    },
+                                    {
+                                        "name": "STOP_WRITE",
+                                        "val": "01000"
+                                    },
+                                    {
+                                        "name": "START_READ_1",
+                                        "val": "01001"
+                                    },
+                                    {
+                                        "name": "SEND_CTRL_BYTE_1_R",
+                                        "val": "01010"
+                                    },
+                                    {
+                                        "name": "RECEIVE_ACK_1_R",
+                                        "val": "01011"
+                                    },
+                                    {
+                                        "name": "SEND_ADDR_BYTE_R",
+                                        "val": "01100"
+                                    },
+                                    {
+                                        "name": "RECEIVE_ACK_2_R",
+                                        "val": "01101"
+                                    },
+                                    {
+                                        "name": "START_READ_2",
+                                        "val": "01110"
+                                    },
+                                    {
+                                        "name": "SEND_CTRL_BYTE_2_R",
+                                        "val": "01111"
+                                    },
+                                    {
+                                        "name": "RECEIVE_ACK_3_R",
+                                        "val": "10000"
+                                    },
+                                    {
+                                        "name": "RECEIVE_DATA_R",
+                                        "val": "10001"
+                                    },
+                                    {
+                                        "name": "STOP_READ",
+                                        "val": "10010"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": 21,
+                        "name": "state_reg[2]",
+                        "state_reg": [
+                            {
+                                "name": "state_reg_reg[2]",
+                                "states": [
+                                    {
+                                        "name": "STATE_IDLE",
+                                        "val": "00000"
+                                    },
+                                    {
+                                        "name": "START_WRITE",
+                                        "val": "00001"
+                                    },
+                                    {
+                                        "name": "SEND_CTRL_BYTE_W",
+                                        "val": "00010"
+                                    },
+                                    {
+                                        "name": "RECEIVE_ACK_1_W",
+                                        "val": "00011"
+                                    },
+                                    {
+                                        "name": "SEND_ADDR_BYTE_W",
+                                        "val": "00100"
+                                    },
+                                    {
+                                        "name": "RECEIVE_ACK_2_W",
+                                        "val": "00101"
+                                    },
+                                    {
+                                        "name": "SEND_DATA_BYTE_W",
+                                        "val": "00110"
+                                    },
+                                    {
+                                        "name": "RECEIVE_ACK_3_W",
+                                        "val": "00111"
+                                    },
+                                    {
+                                        "name": "STOP_WRITE",
+                                        "val": "01000"
+                                    },
+                                    {
+                                        "name": "START_READ_1",
+                                        "val": "01001"
+                                    },
+                                    {
+                                        "name": "SEND_CTRL_BYTE_1_R",
+                                        "val": "01010"
+                                    },
+                                    {
+                                        "name": "RECEIVE_ACK_1_R",
+                                        "val": "01011"
+                                    },
+                                    {
+                                        "name": "SEND_ADDR_BYTE_R",
+                                        "val": "01100"
+                                    },
+                                    {
+                                        "name": "RECEIVE_ACK_2_R",
+                                        "val": "01101"
+                                    },
+                                    {
+                                        "name": "START_READ_2",
+                                        "val": "01110"
+                                    },
+                                    {
+                                        "name": "SEND_CTRL_BYTE_2_R",
+                                        "val": "01111"
+                                    },
+                                    {
+                                        "name": "RECEIVE_ACK_3_R",
+                                        "val": "10000"
+                                    },
+                                    {
+                                        "name": "RECEIVE_DATA_R",
+                                        "val": "10001"
+                                    },
+                                    {
+                                        "name": "STOP_READ",
+                                        "val": "10010"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": 22,
+                        "name": "state_reg[1]",
+                        "state_reg": [
+                            {
+                                "name": "state_reg_reg[1]",
+                                "states": [
+                                    {
+                                        "name": "STATE_IDLE",
+                                        "val": "00000"
+                                    },
+                                    {
+                                        "name": "START_WRITE",
+                                        "val": "00001"
+                                    },
+                                    {
+                                        "name": "SEND_CTRL_BYTE_W",
+                                        "val": "00010"
+                                    },
+                                    {
+                                        "name": "RECEIVE_ACK_1_W",
+                                        "val": "00011"
+                                    },
+                                    {
+                                        "name": "SEND_ADDR_BYTE_W",
+                                        "val": "00100"
+                                    },
+                                    {
+                                        "name": "RECEIVE_ACK_2_W",
+                                        "val": "00101"
+                                    },
+                                    {
+                                        "name": "SEND_DATA_BYTE_W",
+                                        "val": "00110"
+                                    },
+                                    {
+                                        "name": "RECEIVE_ACK_3_W",
+                                        "val": "00111"
+                                    },
+                                    {
+                                        "name": "STOP_WRITE",
+                                        "val": "01000"
+                                    },
+                                    {
+                                        "name": "START_READ_1",
+                                        "val": "01001"
+                                    },
+                                    {
+                                        "name": "SEND_CTRL_BYTE_1_R",
+                                        "val": "01010"
+                                    },
+                                    {
+                                        "name": "RECEIVE_ACK_1_R",
+                                        "val": "01011"
+                                    },
+                                    {
+                                        "name": "SEND_ADDR_BYTE_R",
+                                        "val": "01100"
+                                    },
+                                    {
+                                        "name": "RECEIVE_ACK_2_R",
+                                        "val": "01101"
+                                    },
+                                    {
+                                        "name": "START_READ_2",
+                                        "val": "01110"
+                                    },
+                                    {
+                                        "name": "SEND_CTRL_BYTE_2_R",
+                                        "val": "01111"
+                                    },
+                                    {
+                                        "name": "RECEIVE_ACK_3_R",
+                                        "val": "10000"
+                                    },
+                                    {
+                                        "name": "RECEIVE_DATA_R",
+                                        "val": "10001"
+                                    },
+                                    {
+                                        "name": "STOP_READ",
+                                        "val": "10010"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": 23,
+                        "name": "state_reg[0]",
+                        "state_reg": [
+                            {
+                                "name": "state_reg_reg[0]",
+                                "states": [
+                                    {
+                                        "name": "STATE_IDLE",
+                                        "val": "00000"
+                                    },
+                                    {
+                                        "name": "START_WRITE",
+                                        "val": "00001"
+                                    },
+                                    {
+                                        "name": "SEND_CTRL_BYTE_W",
+                                        "val": "00010"
+                                    },
+                                    {
+                                        "name": "RECEIVE_ACK_1_W",
+                                        "val": "00011"
+                                    },
+                                    {
+                                        "name": "SEND_ADDR_BYTE_W",
+                                        "val": "00100"
+                                    },
+                                    {
+                                        "name": "RECEIVE_ACK_2_W",
+                                        "val": "00101"
+                                    },
+                                    {
+                                        "name": "SEND_DATA_BYTE_W",
+                                        "val": "00110"
+                                    },
+                                    {
+                                        "name": "RECEIVE_ACK_3_W",
+                                        "val": "00111"
+                                    },
+                                    {
+                                        "name": "STOP_WRITE",
+                                        "val": "01000"
+                                    },
+                                    {
+                                        "name": "START_READ_1",
+                                        "val": "01001"
+                                    },
+                                    {
+                                        "name": "SEND_CTRL_BYTE_1_R",
+                                        "val": "01010"
+                                    },
+                                    {
+                                        "name": "RECEIVE_ACK_1_R",
+                                        "val": "01011"
+                                    },
+                                    {
+                                        "name": "SEND_ADDR_BYTE_R",
+                                        "val": "01100"
+                                    },
+                                    {
+                                        "name": "RECEIVE_ACK_2_R",
+                                        "val": "01101"
+                                    },
+                                    {
+                                        "name": "START_READ_2",
+                                        "val": "01110"
+                                    },
+                                    {
+                                        "name": "SEND_CTRL_BYTE_2_R",
+                                        "val": "01111"
+                                    },
+                                    {
+                                        "name": "RECEIVE_ACK_3_R",
+                                        "val": "10000"
+                                    },
+                                    {
+                                        "name": "RECEIVE_DATA_R",
+                                        "val": "10001"
+                                    },
+                                    {
+                                        "name": "STOP_READ",
+                                        "val": "10010"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

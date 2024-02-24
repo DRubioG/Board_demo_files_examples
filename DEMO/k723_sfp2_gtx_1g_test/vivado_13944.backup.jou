@@ -1,0 +1,155 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Mon Jul 13 17:19:11 2020
+# Process ID: 13944
+# Current directory: c:/Users/Administrator/Desktop/K7325/gtwizard_0_ex
+# Command line: vivado.exe -notrace -source c:/Users/Administrator/Desktop/K7325/tmp_sfp/tmp_sfp.srcs/sources_1/ip/gtwizard_0/gtwizard_0_ex.tcl
+# Log file: c:/Users/Administrator/Desktop/K7325/gtwizard_0_ex/vivado.log
+# Journal file: c:/Users/Administrator/Desktop/K7325/gtwizard_0_ex\vivado.jou
+#-----------------------------------------------------------
+start_gui
+source c:/Users/Administrator/Desktop/K7325/tmp_sfp/tmp_sfp.srcs/sources_1/ip/gtwizard_0/gtwizard_0_ex.tcl -notrace
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+synth_design -rtl -name rtl_1
+refresh_design
+refresh_design
+refresh_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+reset_run impl_1
+place_ports Q0_CLK1_GTREFCLK_PAD_P_IN D6
+set_property target_constrs_file c:/Users/Administrator/Desktop/K7325/gtwizard_0_ex/gtwizard_0_ex.srcs/constrs_1/imports/example_design/gtwizard_0_exdes.xdc [current_fileset -constrset]
+save_constraints -force
+place_ports RXP_IN G4
+save_constraints
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+close_design
+synth_design -rtl -name rtl_1
+set_property package_pin "" [get_ports [list  drp_clk]]
+set_property package_pin "" [get_ports [list  drp_clk]]
+save_constraints
+close_design
+synth_design -rtl -name rtl_1
+set_property IOSTANDARD LVCMOS33 [get_ports [list drp_clk]]
+place_ports drp_clk G22
+save_constraints
+set_property package_pin "" [get_ports [list  drp_clk]]
+save_constraints
+refresh_design
+close_design
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+synth_design -rtl -name rtl_1
+set_property IOSTANDARD LVCMOS33 [get_ports [list drp_clk_in]]
+place_ports drp_clk_in G22
+save_constraints
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+reset_run impl_1
+open_run synth_1 -name synth_1
+create_debug_core u_ila_0 ila
+set_property C_DATA_DEPTH 4096 [get_debug_cores u_ila_0]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_0]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]
+startgroup 
+set_property C_EN_STRG_QUAL true [get_debug_cores u_ila_0 ]
+set_property C_ADV_TRIGGER true [get_debug_cores u_ila_0 ]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0 ]
+set_property ALL_PROBE_SAME_MU_CNT 4 [get_debug_cores u_ila_0 ]
+endgroup
+connect_debug_port u_ila_0/clk [get_nets [list gtwizard_0_support_i/gt_usrclk_source/GT0_TXUSRCLK_OUT ]]
+set_property port_width 2 [get_debug_ports u_ila_0/probe0]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
+connect_debug_port u_ila_0/probe0 [get_nets [list {gt0_frame_check/rx_ctrl[0]} {gt0_frame_check/rx_ctrl[1]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 64 [get_debug_ports u_ila_0/probe1]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe1]
+connect_debug_port u_ila_0/probe1 [get_nets [list {gt0_frame_check/rx_data_wire[0]} {gt0_frame_check/rx_data_wire[1]} {gt0_frame_check/rx_data_wire[2]} {gt0_frame_check/rx_data_wire[3]} {gt0_frame_check/rx_data_wire[4]} {gt0_frame_check/rx_data_wire[5]} {gt0_frame_check/rx_data_wire[6]} {gt0_frame_check/rx_data_wire[7]} {gt0_frame_check/rx_data_wire[8]} {gt0_frame_check/rx_data_wire[9]} {gt0_frame_check/rx_data_wire[10]} {gt0_frame_check/rx_data_wire[11]} {gt0_frame_check/rx_data_wire[12]} {gt0_frame_check/rx_data_wire[13]} {gt0_frame_check/rx_data_wire[14]} {gt0_frame_check/rx_data_wire[15]} {gt0_frame_check/rx_data_wire[16]} {gt0_frame_check/rx_data_wire[17]} {gt0_frame_check/rx_data_wire[18]} {gt0_frame_check/rx_data_wire[19]} {gt0_frame_check/rx_data_wire[20]} {gt0_frame_check/rx_data_wire[21]} {gt0_frame_check/rx_data_wire[22]} {gt0_frame_check/rx_data_wire[23]} {gt0_frame_check/rx_data_wire[24]} {gt0_frame_check/rx_data_wire[25]} {gt0_frame_check/rx_data_wire[26]} {gt0_frame_check/rx_data_wire[27]} {gt0_frame_check/rx_data_wire[28]} {gt0_frame_check/rx_data_wire[29]} {gt0_frame_check/rx_data_wire[30]} {gt0_frame_check/rx_data_wire[31]} {gt0_frame_check/rx_data_wire[32]} {gt0_frame_check/rx_data_wire[33]} {gt0_frame_check/rx_data_wire[34]} {gt0_frame_check/rx_data_wire[35]} {gt0_frame_check/rx_data_wire[36]} {gt0_frame_check/rx_data_wire[37]} {gt0_frame_check/rx_data_wire[38]} {gt0_frame_check/rx_data_wire[39]} {gt0_frame_check/rx_data_wire[40]} {gt0_frame_check/rx_data_wire[41]} {gt0_frame_check/rx_data_wire[42]} {gt0_frame_check/rx_data_wire[43]} {gt0_frame_check/rx_data_wire[44]} {gt0_frame_check/rx_data_wire[45]} {gt0_frame_check/rx_data_wire[46]} {gt0_frame_check/rx_data_wire[47]} {gt0_frame_check/rx_data_wire[48]} {gt0_frame_check/rx_data_wire[49]} {gt0_frame_check/rx_data_wire[50]} {gt0_frame_check/rx_data_wire[51]} {gt0_frame_check/rx_data_wire[52]} {gt0_frame_check/rx_data_wire[53]} {gt0_frame_check/rx_data_wire[54]} {gt0_frame_check/rx_data_wire[55]} {gt0_frame_check/rx_data_wire[56]} {gt0_frame_check/rx_data_wire[57]} {gt0_frame_check/rx_data_wire[58]} {gt0_frame_check/rx_data_wire[59]} {gt0_frame_check/rx_data_wire[60]} {gt0_frame_check/rx_data_wire[61]} {gt0_frame_check/rx_data_wire[62]} {gt0_frame_check/rx_data_wire[63]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 8 [get_debug_ports u_ila_0/probe2]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe2]
+connect_debug_port u_ila_0/probe2 [get_nets [list {gt0_frame_gen/tx_ctrl[0]} {gt0_frame_gen/tx_ctrl[1]} {gt0_frame_gen/tx_ctrl[2]} {gt0_frame_gen/tx_ctrl[3]} {gt0_frame_gen/tx_ctrl[4]} {gt0_frame_gen/tx_ctrl[5]} {gt0_frame_gen/tx_ctrl[6]} {gt0_frame_gen/tx_ctrl[7]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 80 [get_debug_ports u_ila_0/probe3]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe3]
+connect_debug_port u_ila_0/probe3 [get_nets [list {gt0_frame_gen/tx_data_out_wire[0]} {gt0_frame_gen/tx_data_out_wire[1]} {gt0_frame_gen/tx_data_out_wire[2]} {gt0_frame_gen/tx_data_out_wire[3]} {gt0_frame_gen/tx_data_out_wire[4]} {gt0_frame_gen/tx_data_out_wire[5]} {gt0_frame_gen/tx_data_out_wire[6]} {gt0_frame_gen/tx_data_out_wire[7]} {gt0_frame_gen/tx_data_out_wire[8]} {gt0_frame_gen/tx_data_out_wire[9]} {gt0_frame_gen/tx_data_out_wire[10]} {gt0_frame_gen/tx_data_out_wire[11]} {gt0_frame_gen/tx_data_out_wire[12]} {gt0_frame_gen/tx_data_out_wire[13]} {gt0_frame_gen/tx_data_out_wire[14]} {gt0_frame_gen/tx_data_out_wire[15]} {gt0_frame_gen/tx_data_out_wire[16]} {gt0_frame_gen/tx_data_out_wire[17]} {gt0_frame_gen/tx_data_out_wire[18]} {gt0_frame_gen/tx_data_out_wire[19]} {gt0_frame_gen/tx_data_out_wire[20]} {gt0_frame_gen/tx_data_out_wire[21]} {gt0_frame_gen/tx_data_out_wire[22]} {gt0_frame_gen/tx_data_out_wire[23]} {gt0_frame_gen/tx_data_out_wire[24]} {gt0_frame_gen/tx_data_out_wire[25]} {gt0_frame_gen/tx_data_out_wire[26]} {gt0_frame_gen/tx_data_out_wire[27]} {gt0_frame_gen/tx_data_out_wire[28]} {gt0_frame_gen/tx_data_out_wire[29]} {gt0_frame_gen/tx_data_out_wire[30]} {gt0_frame_gen/tx_data_out_wire[31]} {gt0_frame_gen/tx_data_out_wire[32]} {gt0_frame_gen/tx_data_out_wire[33]} {gt0_frame_gen/tx_data_out_wire[34]} {gt0_frame_gen/tx_data_out_wire[35]} {gt0_frame_gen/tx_data_out_wire[36]} {gt0_frame_gen/tx_data_out_wire[37]} {gt0_frame_gen/tx_data_out_wire[38]} {gt0_frame_gen/tx_data_out_wire[39]} {gt0_frame_gen/tx_data_out_wire[40]} {gt0_frame_gen/tx_data_out_wire[41]} {gt0_frame_gen/tx_data_out_wire[42]} {gt0_frame_gen/tx_data_out_wire[43]} {gt0_frame_gen/tx_data_out_wire[44]} {gt0_frame_gen/tx_data_out_wire[45]} {gt0_frame_gen/tx_data_out_wire[46]} {gt0_frame_gen/tx_data_out_wire[47]} {gt0_frame_gen/tx_data_out_wire[48]} {gt0_frame_gen/tx_data_out_wire[49]} {gt0_frame_gen/tx_data_out_wire[50]} {gt0_frame_gen/tx_data_out_wire[51]} {gt0_frame_gen/tx_data_out_wire[52]} {gt0_frame_gen/tx_data_out_wire[53]} {gt0_frame_gen/tx_data_out_wire[54]} {gt0_frame_gen/tx_data_out_wire[55]} {gt0_frame_gen/tx_data_out_wire[56]} {gt0_frame_gen/tx_data_out_wire[57]} {gt0_frame_gen/tx_data_out_wire[58]} {gt0_frame_gen/tx_data_out_wire[59]} {gt0_frame_gen/tx_data_out_wire[60]} {gt0_frame_gen/tx_data_out_wire[61]} {gt0_frame_gen/tx_data_out_wire[62]} {gt0_frame_gen/tx_data_out_wire[63]} {gt0_frame_gen/tx_data_out_wire[64]} {gt0_frame_gen/tx_data_out_wire[65]} {gt0_frame_gen/tx_data_out_wire[66]} {gt0_frame_gen/tx_data_out_wire[67]} {gt0_frame_gen/tx_data_out_wire[68]} {gt0_frame_gen/tx_data_out_wire[69]} {gt0_frame_gen/tx_data_out_wire[70]} {gt0_frame_gen/tx_data_out_wire[71]} {gt0_frame_gen/tx_data_out_wire[72]} {gt0_frame_gen/tx_data_out_wire[73]} {gt0_frame_gen/tx_data_out_wire[74]} {gt0_frame_gen/tx_data_out_wire[75]} {gt0_frame_gen/tx_data_out_wire[76]} {gt0_frame_gen/tx_data_out_wire[77]} {gt0_frame_gen/tx_data_out_wire[78]} {gt0_frame_gen/tx_data_out_wire[79]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe4]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe4]
+connect_debug_port u_ila_0/probe4 [get_nets [list rxresetdone_vio_i ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe5]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe5]
+connect_debug_port u_ila_0/probe5 [get_nets [list soft_reset_vio_i ]]
+save_constraints
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {c:/Users/Administrator/Desktop/K7325/gtwizard_0_ex/gtwizard_0_ex.runs/impl_1/gtwizard_0_exdes.bit} [get_hw_devices xc7k325t_0]
+set_property PROBES.FILE {c:/Users/Administrator/Desktop/K7325/gtwizard_0_ex/gtwizard_0_ex.runs/impl_1/gtwizard_0_exdes.ltx} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {c:/Users/Administrator/Desktop/K7325/gtwizard_0_ex/gtwizard_0_ex.runs/impl_1/gtwizard_0_exdes.ltx} [get_hw_devices xc7k325t_0]
+current_hw_device [get_hw_devices xc7k325t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+set_property PROBES.FILE {c:/Users/Administrator/Desktop/K7325/gtwizard_0_ex/gtwizard_0_ex.runs/impl_1/gtwizard_0_exdes.ltx} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {c:/Users/Administrator/Desktop/K7325/gtwizard_0_ex/gtwizard_0_ex.runs/impl_1/gtwizard_0_exdes.ltx} [get_hw_devices xc7k325t_0]
+set_property PROGRAM.FILE {c:/Users/Administrator/Desktop/K7325/gtwizard_0_ex/gtwizard_0_ex.runs/impl_1/gtwizard_0_exdes.bit} [get_hw_devices xc7k325t_0]
+program_hw_devices [get_hw_devices xc7k325t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+save_wave_config {c:/Users/Administrator/Desktop/K7325/gtwizard_0_ex/gtwizard_0_ex.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+close_hw_manager
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+close_design
+refresh_design
+refresh_design
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+set_property IOSTANDARD LVCMOS33 [get_ports [list DRP_CLK_IN]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list TX_DIS]]
+place_ports TX_DIS H23
+place_ports DRP_CLK_IN G22
+save_constraints
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {c:/Users/Administrator/Desktop/K7325/gtwizard_0_ex/gtwizard_0_ex.runs/impl_1/gtwizard_0_exdes.bit} [get_hw_devices xc7k325t_0]
+set_property PROBES.FILE {c:/Users/Administrator/Desktop/K7325/gtwizard_0_ex/gtwizard_0_ex.runs/impl_1/gtwizard_0_exdes.ltx} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {c:/Users/Administrator/Desktop/K7325/gtwizard_0_ex/gtwizard_0_ex.runs/impl_1/gtwizard_0_exdes.ltx} [get_hw_devices xc7k325t_0]
+current_hw_device [get_hw_devices xc7k325t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+set_property PROBES.FILE {c:/Users/Administrator/Desktop/K7325/gtwizard_0_ex/gtwizard_0_ex.runs/impl_1/gtwizard_0_exdes.ltx} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {c:/Users/Administrator/Desktop/K7325/gtwizard_0_ex/gtwizard_0_ex.runs/impl_1/gtwizard_0_exdes.ltx} [get_hw_devices xc7k325t_0]
+set_property PROGRAM.FILE {c:/Users/Administrator/Desktop/K7325/gtwizard_0_ex/gtwizard_0_ex.runs/impl_1/gtwizard_0_exdes.bit} [get_hw_devices xc7k325t_0]
+program_hw_devices [get_hw_devices xc7k325t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+save_wave_config {c:/Users/Administrator/Desktop/K7325/gtwizard_0_ex/gtwizard_0_ex.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}

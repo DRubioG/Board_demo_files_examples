@@ -1,0 +1,1 @@
+Please be sure to put the sample project in the root directory of the hard disk.

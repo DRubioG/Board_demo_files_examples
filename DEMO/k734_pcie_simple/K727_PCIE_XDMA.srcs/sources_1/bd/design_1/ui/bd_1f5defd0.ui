@@ -1,0 +1,44 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.759305",
+   "Default View_TopLeft":"-175,-402",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0.21  2019-05-29 bk=1.5064 VDI=41 GEI=36 GUI=JA:9.0 non-TLS
+#  -string -flagsOSRD
+preplace port PCIE_REF_CLK -pg 1 -lvl 0 -x -20 -y 120 -defaultsOSRD
+preplace port pcie_7x_mgt_rtl_0 -pg 1 -lvl 5 -x 1250 -y -10 -defaultsOSRD
+preplace port DDR3_0 -pg 1 -lvl 5 -x 1250 -y -70 -defaultsOSRD
+preplace port clk50m -pg 1 -lvl 0 -x -20 -y -40 -defaultsOSRD
+preplace port reset_rtl_0 -pg 1 -lvl 0 -x -20 -y 180 -defaultsOSRD
+preplace port init_calib_complete_0 -pg 1 -lvl 5 -x 1250 -y 10 -defaultsOSRD
+preplace inst xdma_0 -pg 1 -lvl 3 -x 730 -y 50 -defaultsOSRD
+preplace inst mig_7series_0 -pg 1 -lvl 2 -x 370 -y -30 -defaultsOSRD
+preplace inst util_ds_buf_0 -pg 1 -lvl 2 -x 370 -y 120 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 1 -x 100 -y -40 -defaultsOSRD
+preplace inst axi_smc -pg 1 -lvl 4 -x 1090 -y -230 -defaultsOSRD
+preplace inst rst_mig_7series_0_100M -pg 1 -lvl 3 -x 730 -y -240 -defaultsOSRD
+preplace netloc clk_wiz_0_clk_out1 1 1 1 190 -40n
+preplace netloc clk_in1_0_1 1 0 1 N -40
+preplace netloc xdma_0_axi_aclk 1 3 1 940 -240n
+preplace netloc mig_7series_0_ui_clk 1 2 2 520 -340 930
+preplace netloc mig_7series_0_mmcm_locked 1 2 1 550 -200n
+preplace netloc mig_7series_0_ui_clk_sync_rst 1 2 1 530 -260n
+preplace netloc rst_mig_7series_0_100M_peripheral_aresetn 1 1 3 200 -130 NJ -130 900
+preplace netloc mig_7series_0_init_calib_complete 1 2 3 530J 180 950J 10 NJ
+preplace netloc util_ds_buf_0_IBUF_OUT 1 2 1 550 40n
+preplace netloc reset_rtl_0_1 1 0 3 N 180 200 190 560J
+preplace netloc xdma_0_axi_aresetn 1 1 3 190 -150 560J -120 900
+preplace netloc mig_7series_0_DDR3 1 2 3 540J -80 910J -70 NJ
+preplace netloc PCIE_REF_CLK_1 1 0 2 NJ 120 N
+preplace netloc xdma_0_M_AXI 1 3 1 920 -260n
+preplace netloc xdma_0_pcie_mgt 1 3 2 NJ 0 1230J
+preplace netloc axi_smc_M00_AXI 1 1 4 210 -140 NJ -140 NJ -140 1230
+levelinfo -pg 1 -20 100 370 730 1090 1250
+pagesize -pg 1 -db -bbox -sgen -180 -400 1440 370
+"
+}
+{
+   "da_axi4_cnt":"5",
+   "da_board_cnt":"13",
+   "da_clkrst_cnt":"3"
+}

@@ -1,0 +1,20 @@
+set_property SRC_FILE_INFO {cfile:c:/Users/Administrator/Desktop/K7325/R5/k714_ov5640_rgb_to_ycbcr/k714_ov5640_rgb_to_ycbcr.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc rfile:../k714_ov5640_rgb_to_ycbcr.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc id:1 order:EARLY scoped_inst:clk_wiz_0_inst/inst} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/Users/Administrator/Desktop/K7325/R5/k714_ov5640_rgb_to_ycbcr/k714_ov5640_rgb_to_ycbcr.srcs/constrs_1/new/rgb_to_ycbcr.xdc rfile:../k714_ov5640_rgb_to_ycbcr.srcs/constrs_1/new/rgb_to_ycbcr.xdc id:2} [current_design]
+current_instance clk_wiz_0_inst/inst
+set_property src_info {type:SCOPED_XDC file:1 line:57 export:INPUT save:INPUT read:READ} [current_design]
+set_input_jitter [get_clocks -of_objects [get_ports clk_in]] 0.2
+current_instance
+set_property src_info {type:XDC file:2 line:42 export:INPUT save:INPUT read:READ} [current_design]
+set_property IOSTANDARD LVCMOS33 [get_ports clk]
+set_property src_info {type:XDC file:2 line:50 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN G22 [get_ports clk]
+set_property src_info {type:XDC file:2 line:93 export:INPUT save:INPUT read:READ} [current_design]
+set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets cmos_pclk1_IBUF]
+set_property src_info {type:XDC file:2 line:94 export:INPUT save:INPUT read:READ} [current_design]
+set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets cmos_pclk2_IBUF]
+set_property src_info {type:XDC file:2 line:103 export:INPUT save:INPUT read:READ} [current_design]
+connect_debug_port u_ila_0/probe2 [get_nets [list {y_reg[0]} {y_reg[1]} {y_reg[2]} {y_reg[3]} {y_reg[4]} {y_reg[5]} {y_reg[6]} {y_reg[7]} {y_reg[8]} {y_reg[9]} {y_reg[10]}]]
+set_property src_info {type:XDC file:2 line:104 export:INPUT save:INPUT read:READ} [current_design]
+connect_debug_port u_ila_0/probe4 [get_nets [list {vga_pix_data[0]} {vga_pix_data[1]} {vga_pix_data[2]} {vga_pix_data[3]} {vga_pix_data[4]} {vga_pix_data[5]} {vga_pix_data[6]} {vga_pix_data[7]} {vga_pix_data[8]} {vga_pix_data[9]} {vga_pix_data[10]} {vga_pix_data[11]} {vga_pix_data[12]} {vga_pix_data[13]} {vga_pix_data[14]} {vga_pix_data[15]}]]
+set_property src_info {type:XDC file:2 line:105 export:INPUT save:INPUT read:READ} [current_design]
+connect_debug_port u_ila_0/probe5 [get_nets [list {x_reg[0]} {x_reg[1]} {x_reg[2]} {x_reg[3]} {x_reg[4]} {x_reg[5]} {x_reg[6]} {x_reg[7]} {x_reg[8]} {x_reg[9]} {x_reg[10]}]]
